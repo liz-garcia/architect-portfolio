@@ -3,6 +3,7 @@
     "aaron-bond.better-comments", // Better Comments
     "esbenp.prettier-vscode", // Prettier - Code formatter
     "dbaeumer.vscode-eslint", // ESLint
-    "bradlc.vscode-tailwindcss" // Tailwind CSS IntelliSense
+    "bradlc.vscode-tailwindcss", // Tailwind CSS IntelliSense
+    "streetsidesoftware.code-spell-checker" // Code Spell Checker
   ]
 }
