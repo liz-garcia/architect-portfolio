@@ -1,7 +1,4 @@
 {
-  "editor.defaultFormatter": "esbenp.prettier-vscode",  // Set Prettier as the default formatter globally
-  "editor.formatOnSave": true,  // Enable format on save for all file types
-  
   // * Tailwind CSS settings
   "files.associations": {
     "*.css": "tailwindcss"  // Associate .css files with Tailwind CSS for IntelliSense
