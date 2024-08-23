@@ -16,7 +16,8 @@ function Home() {
           <img src={reactLogo} className="logo react" alt="React logo" />
         </a>
       </div>
-      <h1>Vite + React + Node</h1>
+      <h2>Vite + React + Node</h2>
+      <h1 className="text-3xl font-bold underline">Hello world!</h1>
       <div className="card">
         <button onClick={() => setCount((count) => count + 1)}>
           count is {count}

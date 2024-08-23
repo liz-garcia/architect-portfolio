@@ -1,13 +1,16 @@
 {
+  "editor.defaultFormatter": "esbenp.prettier-vscode", // Set Prettier as the default formatter globally
+  "editor.formatOnSave": true, // Enable format on save for all file types
+
   // * Tailwind CSS settings to work with VSCode
   "files.associations": {
-    "*.css": "tailwindcss"  // Associate .css files with Tailwind CSS for IntelliSense
+    "*.css": "tailwindcss" // Associate .css files with Tailwind CSS for IntelliSense
   },
   "editor.quickSuggestions": {
-    "strings": true  // Enable IntelliSense suggestions in string literals
+    "strings": true // Enable IntelliSense suggestions in string literals
   },
   "tailwindCSS.includeLanguages": {
-    "plaintext": "html"  // Treat plain text files as HTML for Tailwind IntelliSense
+    "plaintext": "html" // Treat plain text files as HTML for Tailwind IntelliSense
   },
-  "tailwindCSS.emmetCompletions": true  // Enable Emmet-style completions for Tailwind CSS
+  "tailwindCSS.emmetCompletions": true // Enable Emmet-style completions for Tailwind CSS
 }
