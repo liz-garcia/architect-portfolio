@@ -1,5 +1,5 @@
 {
-  // * Tailwind CSS settings
+  // * Tailwind CSS settings to work with VSCode
   "files.associations": {
     "*.css": "tailwindcss"  // Associate .css files with Tailwind CSS for IntelliSense
   },
