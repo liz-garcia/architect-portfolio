@@ -1,4 +1,5 @@
 import { useState } from "react";
+import Nav from "../../components/Nav/Nav.jsx";
 import reactLogo from "../../assets/react.svg";
 import viteLogo from "/vite.svg";
 import "./Home.css";
@@ -8,6 +9,7 @@ function Home() {
 
   return (
     <>
+      <Nav />
       <div>
         <a href="https://vitejs.dev" target="_blank" rel="noopener noreferrer">
           <img src={viteLogo} className="logo" alt="Vite logo" />
