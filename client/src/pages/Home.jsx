@@ -7,7 +7,7 @@ function Home() {
 
   return (
     <>
-      <h1 className="text-3xl font-bold underline">Hello world!</h1>
+      <h1 className="text-3xl font-bold underline">Vite + React + Node</h1>
       <div>
         <a href="https://vitejs.dev" target="_blank" rel="noopener noreferrer">
           <img src={viteLogo} className="logo" alt="Vite logo" />
@@ -16,7 +16,6 @@ function Home() {
           <img src={reactLogo} className="logo react" alt="React logo" />
         </a>
       </div>
-      <h2>Vite + React + Node</h2>
       <div className="card">
         <button onClick={() => setCount((count) => count + 1)}>
           count is {count}

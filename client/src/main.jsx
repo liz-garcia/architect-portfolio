@@ -7,7 +7,8 @@ import "./index.css";
 // Get the root element
 // Add TailwindCSS utility classes if needed
 const rootElement = document.getElementById("root");
-rootElement.className = "min-h-screen bg-gray-400 p-4 text-center";
+rootElement.className =
+  "min-h-screen flex flex-col items-center justify-center text-center";
 
 // Render the React application
 ReactDOM.createRoot(rootElement).render(
