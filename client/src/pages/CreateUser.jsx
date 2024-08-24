@@ -1,9 +1,7 @@
 import { useEffect, useState } from "react";
+import Input from "../components/Input.jsx";
+import useFetch from "../hooks/useFetch.js";
 
-import Input from "../../components/Input/Input.jsx";
-import useFetch from "../../hooks/useFetch.js";
-
-// TODO Remember - All files related to CreateUser in client and server require extra work. This is just a basic setup.
 const CreateUser = () => {
   const [name, setName] = useState("");
   const [lastName, setLastName] = useState("");

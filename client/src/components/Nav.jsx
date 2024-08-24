@@ -1,6 +1,3 @@
-// * Remove Nav.css file
-// * so that we can test TailwindCSS
-// import "./Nav.css";
 import { Link } from "react-router-dom";
 
 const Nav = () => {

@@ -5,9 +5,9 @@ import App from "./App.jsx";
 import "./index.css";
 
 // Get the root element
-// Add TailwindCSS utility classes
+// Add TailwindCSS utility classes if needed
 const rootElement = document.getElementById("root");
-rootElement.className = "bg-gray-100 p-4 text-center";
+rootElement.className = "min-h-screen bg-gray-400 p-4 text-center";
 
 // Render the React application
 ReactDOM.createRoot(rootElement).render(

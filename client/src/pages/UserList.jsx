@@ -1,7 +1,6 @@
 import { useEffect, useState } from "react";
-// import { Link } from "react-router-dom";
-
-import useFetch from "../../hooks/useFetch.js";
+import { Link } from "react-router-dom";
+import useFetch from "../hooks/useFetch.js";
 
 const UserList = () => {
   const [users, setUsers] = useState(null);
@@ -48,9 +47,9 @@ const UserList = () => {
     <>
       <h1>These are the users</h1>
       <div>{content}</div>
-      {/* <Link to="/user/create">
+      <Link to="/user/create">
         <button>Create new user</button>
-      </Link> */}
+      </Link>
     </>
   );
 };

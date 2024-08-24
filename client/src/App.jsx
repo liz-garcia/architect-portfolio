@@ -1,5 +1,5 @@
 import AppRouter from "./AppRouter.jsx";
-import Nav from "./components/Nav/Nav.jsx";
+import Nav from "./components/Nav.jsx";
 
 const App = () => {
   return (

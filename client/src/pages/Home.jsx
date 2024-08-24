@@ -1,9 +1,6 @@
 import { useState } from "react";
-import reactLogo from "../../assets/react.svg";
+import reactLogo from "../assets/react.svg";
 import viteLogo from "/vite.svg";
-// * Remove Home.css file
-// * so that we can test TailwindCSS
-// import "./Home.css";
 
 function Home() {
   const [count, setCount] = useState(0);
