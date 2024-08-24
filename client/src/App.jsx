@@ -1,4 +1,3 @@
-import "./App.css";
 import AppRouter from "./AppRouter.jsx";
 import Nav from "./components/Nav/Nav.jsx";
 
