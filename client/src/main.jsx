@@ -6,7 +6,9 @@ import "./index.css";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
+    {/* AppWrapper for providers and contexts. */}
     <AppWrapper>
+      {/* App.jsx builds all our main layout elements: Nav, Main, Footer, etc. */}
       <App />
     </AppWrapper>
   </React.StrictMode>
