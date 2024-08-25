@@ -45,10 +45,12 @@ const UserList = () => {
 
   return (
     <>
-      <h1>These are the users</h1>
-      <div>{content}</div>
+      <h1 className="my-8 text-2xl font-bold">These are the users:</h1>
+      <div className="m-10">{content}</div>
       <Link to="/user/create">
-        <button>Create new user</button>
+        <button className="rounded-lg bg-indigo-500 px-4 py-3 hover:bg-indigo-800">
+          Create new user
+        </button>
       </Link>
     </>
   );

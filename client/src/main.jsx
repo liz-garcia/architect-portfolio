@@ -5,10 +5,11 @@ import App from "./App.jsx";
 import "./index.css";
 
 // Tailwind CSS utility classes
-const layout = "min-h-screen flex flex-col items-center justify-center";
-const text = "text-center";
-const darkMode = "dark:bg-slate-800 dark:text-white";
-const tailwindClasses = `${layout} ${text} ${darkMode}`;
+const dimensions = "min-h-screen";
+const layout = "p-24 flex flex-col items-center justify-center";
+const text = "text-center text-zinc";
+const darkMode = "dark:bg-zinc-900 dark:text-white";
+const tailwindClasses = `${dimensions} ${layout} ${text} ${darkMode}`;
 
 // Get the `root` element. Add TailwindCSS classes.
 const rootElement = document.getElementById("root");

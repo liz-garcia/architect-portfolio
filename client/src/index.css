@@ -2,6 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
+/* * Visualize area for each element */
+/* * {
+  border: 1px white solid;
+} */
+
 /* * Previously Index.css */
 /* :root {
   font-family: sans-serif;
