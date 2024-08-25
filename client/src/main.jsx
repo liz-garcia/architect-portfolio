@@ -4,11 +4,15 @@ import AppWrapper from "./AppWrapper.jsx";
 import App from "./App.jsx";
 import "./index.css";
 
-// Get the root element
-// Add TailwindCSS utility classes if needed
+// Tailwind CSS utility classes
+const layout = "min-h-screen flex flex-col items-center justify-center";
+const text = "text-center";
+const darkMode = "dark:bg-slate-800 dark:text-white";
+const tailwindClasses = `${layout} ${text} ${darkMode}`;
+
+// Get the `root` element. Add TailwindCSS classes.
 const rootElement = document.getElementById("root");
-rootElement.className =
-  "min-h-screen flex flex-col items-center justify-center text-center";
+rootElement.className = tailwindClasses;
 
 // Render the React application
 // * AppWrapper.jsx for providers and contexts.
