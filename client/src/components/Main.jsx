@@ -1,7 +1,7 @@
 import PropTypes from "prop-types";
 
 // Tailwind CSS utility classes
-const mainStyle = "p-8";
+const mainStyle = "p-10";
 
 // Main Component
 const Main = ({ children }) => {

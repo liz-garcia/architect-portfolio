@@ -3,6 +3,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
 /* Import Jura family */
 @import url("https://fonts.googleapis.com/css2?family=Jura:wght@300..700&display=swap");
+/* Import Judson family */
+@import url("https://fonts.googleapis.com/css2?family=Judson:ital,wght@0,400;0,700;1,400&display=swap");
 
 @tailwind base;
 @tailwind components;
