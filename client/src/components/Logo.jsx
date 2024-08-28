@@ -1,9 +1,9 @@
 // Tailwind CSS utility classes
-const logoStyle = "p-4";
+const h1Style = "flex items-center justify-center p-8";
 
 // Header Component
 const Logo = () => {
-  return <h1 className={logoStyle}>Rhina Aragón</h1>;
+  return <h1 className={h1Style}>Rhina Aragón</h1>;
 };
 
 export default Logo;

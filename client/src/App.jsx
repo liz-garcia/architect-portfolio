@@ -1,9 +1,6 @@
 import AppRouter from "./AppRouter.jsx";
 import Header from "./components/Header.jsx";
-
-// const headerProps = "";
-// const mainProps = "";
-// const footerProps = "";
+import Main from "./components/Main.jsx";
 
 // * App.jsx builds all our main layout elements:
 // * Nav, Main, Footer, Pages content (AppRouter), etc.
@@ -12,9 +9,9 @@ const App = () => {
   return (
     <>
       <Header />
-      <main>
+      <Main>
         <AppRouter />
-      </main>
+      </Main>
     </>
   );
 };
