@@ -12,6 +12,9 @@ const App = () => {
       <Main>
         <AppRouter />
       </Main>
+      <footer className="p-10">
+        <h2>Footer</h2>
+      </footer>
     </>
   );
 };
