@@ -15,12 +15,12 @@
   border: 1px red solid;
 }
 
-.h-20-vh {
-  height: 20vh;
+.h-16dvh {
+  height: 16dvh;
 }
 
-.h-70-vh {
-  height: 70vh;
+.h-84dvh {
+  height: 84dvh;
 }
 
 /* * Previously Index.css */

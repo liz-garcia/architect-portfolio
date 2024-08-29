@@ -6,7 +6,7 @@ import "./index.css";
 
 // Tailwind CSS utility classes
 const dimensions = "";
-const layout = "flex flex-col p-8";
+const layout = "flex flex-col";
 const text = "";
 const darkMode = "";
 const tailwindClasses = `${dimensions} ${layout} ${text} ${darkMode}`;

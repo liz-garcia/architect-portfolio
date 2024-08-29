@@ -3,12 +3,14 @@
 // import viteLogo from "/vite.svg";
 
 // Tailwind CSS utility classes
-const heroSectionStyle = "h-70-vh";
+const heroSectionStyle = "h-84dvh p-8";
 
 function HeroSection() {
   return (
     <>
-      <section className={heroSectionStyle}></section>
+      <section className={heroSectionStyle}>
+        <h1>Architect Portfolio</h1>
+      </section>
     </>
   );
 }
