@@ -12,6 +12,7 @@ export default {
         // --> Extend/change the default fonts for our project
         // --> Extending the `sans` font family: by default Tailwind CSS sets the font family on the html element to match your configured sans font. So customizing `sans` will change the default font for your project.
         sans: ["Jura", "sans-serif", ...defaultTheme.fontFamily.sans],
+        serif: ["Judson", "serif", ...defaultTheme.fontFamily.serif],
       },
     },
   },
