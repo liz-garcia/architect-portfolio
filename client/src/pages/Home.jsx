@@ -6,6 +6,7 @@ import HeroSection from "../components/HeroSection.jsx";
 // Tailwind CSS utility classes
 // const homeStyle = "";
 
+// Homepage
 function Home() {
   return (
     <>
