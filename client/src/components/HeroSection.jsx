@@ -3,13 +3,21 @@
 // import viteLogo from "/vite.svg";
 
 // Tailwind CSS utility classes
-const heroSectionStyle = "h-84dvh p-8";
+const heroSectionStyle = "h-85dvh p-12";
+const h1Style = "font-serif font-bold text-3xl";
+const h2Style = "";
 
 function HeroSection() {
   return (
     <>
-      <section className={heroSectionStyle}>
-        <h1>Architect Portfolio</h1>
+      <section id="heroSection" className={heroSectionStyle}>
+        <div>
+          <h1 className={h1Style}>Architect Portfolio</h1>
+          <h2 className={h2Style}>
+            Rhina Aragón, senior architect based in Minnesota.
+          </h2>
+        </div>
+        <div></div>
       </section>
     </>
   );

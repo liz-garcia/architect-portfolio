@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 
 // Tailwind CSS utility classes
-const logoStyle = "flex items-center justify-center";
+const logoStyle = "p-1 flex items-center justify-center";
 const linkStyle =
   "p-3 py-5 size-full text-center flex items-center justify-center font-serif font-black text-2xl leading-5";
 
