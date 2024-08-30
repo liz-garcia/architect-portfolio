@@ -1,12 +1,14 @@
 import styled from "styled-components";
 import PrimaryLink from "./Buttons/PrimaryLink.jsx";
+import heroImage1 from "/architectural-plan-1.png";
+import heroImage2 from "/architectural-plan-2.png";
 
 // Tailwind CSS utility classes
 const heroSectionStyle = "h-85dvh";
 const heroTitleStyle = "pl-12 pb-12";
 const h1Style = "w-fit font-serif font-bold text-5xl";
 const h2Style = "w-fit text-lg/5 py-2";
-const heroImagesStyle = "";
+const heroImagesStyle = "object-cover h-full w-full";
 const heroImage1Style = "";
 const heroImage2Style = "";
 
@@ -18,7 +20,7 @@ const GridContainer = styled.div`
     "image1 image2"
     "title image2";
   grid-template-columns: 2fr 1fr;
-  grid-template-rows: 1fr auto;
+  grid-template-rows: 1fr 1fr;
   gap: 1rem;
 `;
 const HeroImage1 = styled.div`
@@ -39,7 +41,7 @@ function HeroSection() {
         <GridContainer>
           {/* First image area */}
           <HeroImage1 className={heroImage1Style}>
-            <img className={heroImagesStyle} src="" alt="" />
+            <img className={heroImagesStyle} src={heroImage1} alt="" />
           </HeroImage1>
 
           {/* Title text area */}
@@ -53,7 +55,7 @@ function HeroSection() {
 
           {/* Second image area */}
           <HeroImage2 className={heroImage2Style}>
-            <img className={heroImagesStyle} src="" alt="" />
+            <img className={heroImagesStyle} src={heroImage2} alt="" />
           </HeroImage2>
         </GridContainer>
       </section>

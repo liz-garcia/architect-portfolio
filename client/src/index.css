@@ -11,10 +11,11 @@
 @tailwind utilities;
 
 /* ! Visualize area for each element */
-* {
+/* * {
   border: 1px red solid;
-}
+} */
 
+/* ! Extra Responsive sizes for the layout */
 .h-15dvh {
   height: 15dvh;
 }
