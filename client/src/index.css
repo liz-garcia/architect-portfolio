@@ -11,16 +11,17 @@
 @tailwind utilities;
 
 /* ! Visualize area for each element */
-* {
+/* * {
   border: 1px red solid;
+} */
+
+/* ! Extra Responsive sizes for the layout */
+.h-20dvh {
+  height: 20dvh;
 }
 
-.h-16dvh {
-  height: 16dvh;
-}
-
-.h-84dvh {
-  height: 84dvh;
+.h-80dvh {
+  height: 80dvh;
 }
 
 /* * Previously Index.css */
