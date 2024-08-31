@@ -16,12 +16,12 @@
 } */
 
 /* ! Extra Responsive sizes for the layout */
-.h-15dvh {
-  height: 15dvh;
+.h-20dvh {
+  height: 20dvh;
 }
 
-.h-85dvh {
-  height: 85dvh;
+.h-80dvh {
+  height: 80dvh;
 }
 
 /* * Previously Index.css */

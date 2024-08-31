@@ -2,8 +2,13 @@ import PropTypes from "prop-types";
 import { Link } from "react-router-dom";
 
 // Tailwind CSS utility classes
-const primaryLinkStyle =
-  "block px-5 py-4 w-fit bg-lime-200 hover:bg-lime-300 rounded-lg";
+const size = "w-fit";
+const text = "font-medium text-white";
+const layout = "block px-5 py-3 m-auto rounded-lg";
+const color = "bg-slate-950";
+const transition =
+  "transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover:bg-sky-500 duration-300";
+const primaryLinkStyle = `${size} ${text} ${layout} ${color} ${transition}`;
 
 // PrimaryLink Component
 const PrimaryLink = ({ to, children }) => {
