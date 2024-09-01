@@ -14,9 +14,9 @@ const h1Style =
   "font-serif font-bold mb-4 lg:text-5xl/[2.5rem] xl:text-6xl/[3rem] 2xl:text-7xl/[3.5rem] md:mb-2 sm:mb-1";
 const h2Style = "text-lg/5 py-2 mb-4 md:mb-2";
 // Image div
-const heroImgContainerStyle = "w-2/3 h-full md:w-full md:h-2/3";
+const heroImgContainerStyle = "w-2/3 h-full md:h-2/3 md:w-full";
 const heroImgStyle =
-  "size-full object-cover transition-opacity duration-1000 ease-in-out";
+  "size-full object-cover transition-opacity duration-1000 ease-in-out p-0";
 
 // HeroSection component
 function HeroSection() {
