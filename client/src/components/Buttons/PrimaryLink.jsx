@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 // Tailwind CSS utility classes
 const size = "w-fit";
 const text = "font-medium text-white";
-const layout = "block px-5 py-3 m-auto rounded-lg";
+const layout = "block px-5 py-3 rounded-lg";
 const color = "bg-slate-950";
 const transition =
   "transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover:bg-sky-500 duration-300";

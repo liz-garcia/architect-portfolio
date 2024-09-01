@@ -7,6 +7,7 @@ export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     screens: {
+      // ! defaultTheme sizes rewritten to work with max-width
       "2xl": { max: "1535px" },
       // => @media (max-width: 1535px) { ... }
 

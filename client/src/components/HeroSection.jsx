@@ -5,13 +5,18 @@ import heroImage2 from "/architectural-plan-2.png";
 import heroImage3 from "/architectural-plan-3.png";
 
 // Tailwind CSS utility classes
-const heroSectionStyle = "h-[85dvh] flex pl-16 items-center gap-8 sm:flex-col";
-const heroTitleStyle = "w-1/3 text-center";
-const h1Style = "font-serif font-bold text-5xl/none lg:text-7xl/[3.5rem] mb-4";
-const h2Style = "text-lg/5 py-2 mb-4";
-const heroImgContainerStyle = "m-auto w-2/3 h-full bg-no-repeat bg-left-top";
+const heroSectionStyle =
+  "w-[100dvw] h-[85dvh] flex pl-16 items-center justify-center gap-8 md:flex-col-reverse md:p-0 md:gap-2";
+// Text div
+const heroTitleStyle =
+  "w-1/3 text-center flex flex-col md:w-full md:h-1/3 items-center justify-center md:pb-4 sm:pb-8";
+const h1Style =
+  "font-serif font-bold mb-4 lg:text-5xl/[2.5rem] xl:text-6xl/[3rem] 2xl:text-7xl/[3.5rem] md:mb-2 sm:mb-1";
+const h2Style = "text-lg/5 py-2 mb-4 md:mb-2";
+// Image div
+const heroImgContainerStyle = "w-2/3 h-full md:w-full md:h-2/3";
 const heroImgStyle =
-  "w-full h-full object-cover transition-opacity duration-1000 ease-in-out";
+  "size-full object-cover transition-opacity duration-1000 ease-in-out";
 
 // HeroSection component
 function HeroSection() {
