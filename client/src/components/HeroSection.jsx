@@ -5,13 +5,18 @@ import heroImage2 from "/architectural-plan-2.png";
 import heroImage3 from "/architectural-plan-3.png";
 
 // Tailwind CSS utility classes
-const heroSectionStyle = "h-80dvh flex pl-16 items-center gap-8";
-const heroTitleStyle = "w-1/3 text-center";
-const h1Style = "font-serif font-bold text-5xl/none lg:text-7xl/[3.5rem] mb-4";
-const h2Style = "text-lg/5 py-2 mb-4";
-const heroImgContainerStyle = "m-auto w-2/3 h-full bg-no-repeat bg-left-top";
+const heroSectionStyle =
+  "w-[100dvw] h-[88dvh] flex pl-16 items-center justify-center gap-8 md:flex-col-reverse md:p-0 md:gap-2";
+// Text div
+const heroTitleStyle =
+  "w-1/3 text-center flex flex-col md:w-full md:h-1/3 items-center justify-center md:pb-4 sm:pb-8";
+const h1Style =
+  "font-serif font-bold mb-4 lg:text-5xl/[2.5rem] xl:text-6xl/[3rem] 2xl:text-7xl/[3.5rem] md:mb-2 sm:mb-1";
+const h2Style = "text-lg/5 py-2 mb-4 md:mb-2";
+// Image div
+const heroImgContainerStyle = "w-2/3 h-full md:h-2/3 md:w-full";
 const heroImgStyle =
-  "w-full h-full object-contain transition-opacity duration-1000 ease-in-out";
+  "size-full object-cover transition-opacity duration-1000 ease-in-out p-0";
 
 // HeroSection component
 function HeroSection() {
@@ -35,7 +40,7 @@ function HeroSection() {
   return (
     <>
       <section id="heroSection" className={heroSectionStyle}>
-        <div id="hero-title" className={heroTitleStyle}>
+        <div id="heroTitle" className={heroTitleStyle}>
           <h1 className={h1Style}>Architect Portfolio</h1>
           <h2 className={h2Style}>
             Rhina Aragón, senior architect based in Minnesota.
@@ -44,7 +49,7 @@ function HeroSection() {
         </div>
         <div id="hero-image-container" className={heroImgContainerStyle}>
           <img
-            id="hero-image"
+            id="heroImage"
             src={images[currentImageIndex]}
             alt={`Architectural Plan ${currentImageIndex + 1}`}
             className={`${heroImgStyle} ${fade ? "opacity-100" : "opacity-0"}`}
