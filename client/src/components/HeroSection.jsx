@@ -9,7 +9,7 @@ const heroSectionStyle =
   "w-[100dvw] h-[88dvh] flex pl-16 md:p-0 2xl:pl-16 3xl:pl-28 items-center justify-center md:flex-col-reverse gap-8 md:gap-3 2xl:gap-12 3xl:gap-24";
 // Text div
 const heroTitleStyle =
-  "w-1/3 text-center flex flex-col md:w-full md:h-1/3 items-center justify-center md:pb-4 sm:pb-8";
+  "w-1/3 text-center flex flex-col md:w-full md:h-1/3 items-center justify-center md:pb-4 sm:pb-5";
 const h1Style =
   "font-serif font-bold mb-4 lg:text-5xl/[3rem] xl:text-6xl/[3.5rem] 2xl:text-7xl/[4rem] 3xl:text-8xl/[5.5rem] md:mb-1";
 const h2Style =
