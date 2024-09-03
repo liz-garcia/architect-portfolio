@@ -3,7 +3,7 @@ import Nav from "./Nav.jsx";
 
 // Tailwind CSS utility classes
 const headerStyle =
-  "h-[12dvh] p-12 pb-6 border-b-8 border-black flex justify-between items-stretch sm:p-10 sm:pb-9";
+  "h-[12dvh] p-12 pb-8 sm:p-10 sm:pb-9 3xl:pb-10 border-b-8 border-black flex justify-between items-stretch";
 
 // Header Component
 const Header = () => {
