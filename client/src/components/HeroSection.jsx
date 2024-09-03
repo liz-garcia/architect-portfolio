@@ -6,13 +6,14 @@ import heroImage3 from "/architectural-plan-3.png";
 
 // Tailwind CSS utility classes
 const heroSectionStyle =
-  "w-[100dvw] h-[88dvh] flex pl-16 md:p-0 2xl:pl-16 3xl:pl-28 items-center justify-center gap-8 md:flex-col-reverse md:gap-2 3xl:gap-12";
+  "w-[100dvw] h-[88dvh] flex pl-16 md:p-0 2xl:pl-16 3xl:pl-28 items-center justify-center md:flex-col-reverse gap-8 md:gap-2 2xl:gap-12 3xl:gap-24";
 // Text div
 const heroTitleStyle =
   "w-1/3 text-center flex flex-col md:w-full md:h-1/3 items-center justify-center md:pb-4 sm:pb-8";
 const h1Style =
   "font-serif font-bold mb-4 lg:text-5xl/[2.5rem] xl:text-6xl/[3rem] 2xl:text-7xl/[3.5rem] 3xl:text-8xl/[4.75rem] md:mb-2 sm:mb-1";
-const h2Style = "text-lg/5 py-2 mb-4 md:mb-2 2xl:text-2xl 3xl:text-3xl";
+const h2Style =
+  "py-2 mb-4 md:mb-2 sm:text-lg/5 xl:text-xl/6 2xl:text-2xl 3xl:text-3xl";
 // Image div
 const heroImgContainerStyle = "w-2/3 h-full md:h-2/3 md:w-full";
 const heroImgStyle =
