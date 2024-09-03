@@ -8,6 +8,8 @@ export default {
   theme: {
     screens: {
       // ! defaultTheme sizes rewritten to work with max-width
+      "3xl": "1536px", //Use min-width for bigger screen sizes
+      // => @media (min-width: 1536px) { ... }
       "2xl": { max: "1535px" },
       // => @media (max-width: 1535px) { ... }
 

@@ -2,10 +2,10 @@ import { Link } from "react-router-dom";
 
 // Tailwind CSS utility classes
 const navStyle = "p-1";
-const ulStyle = "h-full flex space-x-2";
+const ulStyle = "h-full flex space-x-2 sm:space-x-1";
 const liStyle = "h-full w-20";
 const linkStyle =
-  "size-full flex items-center justify-center text-center hover:underline underline-offset-8";
+  "size-full flex items-center justify-center text-center hover:underline underline-offset-8 md:text-lg";
 
 const Nav = () => {
   return (
