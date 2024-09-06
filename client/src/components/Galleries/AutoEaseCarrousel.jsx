@@ -1,6 +1,8 @@
 import PropTypes from "prop-types";
 import { useState, useEffect } from "react";
 
+// * AutoEaseCarrousel component renders an automated carrousel with a smooth fade transition effect between images.
+
 // Tailwind CSS styles
 const carrouselContainerStyle = "relative size-full overflow-hidden";
 const imgStyle =
@@ -46,9 +48,9 @@ const AutoEaseCarrousel = ({
 
 // PropTypes validation
 AutoEaseCarrousel.propTypes = {
-  images: PropTypes.arrayOf(PropTypes.string).isRequired, // Array of image URLs
-  displayTime: PropTypes.number, // Time in milliseconds for each image display
-  altText: PropTypes.string, // Alt text for all our images
+  images: PropTypes.arrayOf(PropTypes.string).isRequired, // * Required - Array of image URLs
+  displayTime: PropTypes.number, // * Optional - Time in milliseconds for each image display
+  altText: PropTypes.string, // * Optional - Alt text for all our images
 };
 
 export default AutoEaseCarrousel;

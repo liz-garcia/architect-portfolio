@@ -1,5 +1,5 @@
-import PrimaryLink from "./Buttons/PrimaryLink.jsx";
-import AutoEaseCarrousel from "./AutoEaseCarrousel.jsx";
+import PrimaryLink from "../Buttons/PrimaryLink.jsx";
+import AutoEaseCarrousel from "../Galleries/AutoEaseCarrousel.jsx";
 import heroImage1 from "/architectural-plan-1.png";
 import heroImage2 from "/architectural-plan-2.png";
 import heroImage3 from "/architectural-plan-3.png";
