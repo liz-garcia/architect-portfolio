@@ -1,4 +1,4 @@
-import HeroSection from "../components/HeroSection.jsx";
+import HeroSection from "../components/Home/HeroSection.jsx";
 // import { useState } from "react";
 // import reactLogo from "../assets/react.svg";
 // import viteLogo from "/vite.svg";
