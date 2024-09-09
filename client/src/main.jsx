@@ -23,6 +23,7 @@ ReactDOM.createRoot(rootElement).render(
   <React.StrictMode>
     <AppWrapper>
       <App />
+      {/* `App` contains `main` */}
     </AppWrapper>
   </React.StrictMode>
 );

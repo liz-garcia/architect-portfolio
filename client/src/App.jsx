@@ -9,8 +9,10 @@ const App = () => {
   return (
     <>
       <Header />
+      {/* `Header` component contains our `Nav` */}
       <Main>
         <AppRouter />
+        {/* Every page from our `AppRouter` is rendered inside `Main` */}
       </Main>
       <footer className="p-10">
         <h2>Footer</h2>
