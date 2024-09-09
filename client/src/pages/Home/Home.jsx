@@ -1,4 +1,5 @@
-import HeroSection from "../components/Home/HeroSection.jsx";
+import HeroSection from "./HeroSection.jsx";
+import About from "../About/About.jsx"; // * Import About page
 // import { useState } from "react";
 // import reactLogo from "../assets/react.svg";
 // import viteLogo from "/vite.svg";
@@ -6,11 +7,12 @@ import HeroSection from "../components/Home/HeroSection.jsx";
 // Tailwind CSS utility classes
 // const homeStyle = "";
 
-// Homepage
+// Home page
 function Home() {
   return (
     <>
       <HeroSection />
+      <About />
       <h1>Homepage</h1>
     </>
   );
