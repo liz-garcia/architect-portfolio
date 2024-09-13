@@ -3,15 +3,19 @@ import { Link } from "react-router-dom";
 
 // Tailwind CSS utility classes
 const size = "w-fit";
-const text = "font-medium text-white";
+const text = "font-medium text-white text-center";
 const layout = "block px-5 py-3 rounded-lg";
-const color = "bg-slate-950";
-// const transitionColor = "hover:bg-gradient-to-r hover:from-sky-500 hover:via-teal-500 hover:to-emerald-500";
+const color = "bg-slate-950"; // Initial color before hover
+
+// Transition from solid slate to gradient, with smooth color movement
 const transitionColor =
-  "hover:bg-gradient-to-r hover:from-sky-600 hover:to-emerald-500";
+  "hover:bg-gradient-to-r hover:from-sky-500 hover:to-emerald-500";
+const bgTransition = "bg-slate-950 transition-all duration-500 ease-in-out";
 const transition =
-  "transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300";
-const primaryLinkStyle = `${size} ${text} ${layout} ${color} ${transitionColor} ${transition}`;
+  "hover:scale-105 transform transition ease-in-out duration-500 hover:translate-y-1";
+
+// Final PrimaryLink style
+const primaryLinkStyle = `${size} ${text} ${layout} ${color} ${transitionColor} ${bgTransition} ${transition}`;
 
 // PrimaryLink Component
 const PrimaryLink = ({ to, children }) => {
