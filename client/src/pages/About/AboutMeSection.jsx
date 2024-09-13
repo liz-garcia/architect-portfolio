@@ -1,20 +1,24 @@
 import PrimaryLink from "../../components/Buttons/PrimaryLink.jsx";
 
-// Tailwind CSS utility classes
-const aboutMeStyle = "flex-1";
-// const aboutSectionStyle =
-//   "w-[100dvw] h-[100dvh] flex pl-16 md:p-0 2xl:pl-16 3xl:pl-28 items-center justify-center md:flex-col-reverse gap-8 md:gap-3 2xl:gap-12 3xl:gap-24";
-const h2Style = "";
-const aboutTextStyle = "";
-const h3Style = "";
-const elevatorPitchStyle = "";
+// * Tailwind CSS utility classes
+const aboutMeStyle =
+  "px-24 py-16 md:pb-8 sm:pb-16 flex md:flex-col lg:flex-row gap-4 md:gap-2 sm:gap-4 justify-center sm:h-screen";
+// * aboutMeTitle
+const aboutMeTitleStyle = "md:flex-none flex-1 w-1/3 md:w-auto";
+const h2Style = "font-black font-serif text-4xl";
+// * aboutMeText
+const aboutMeTextStyle = "md:flex-none flex flex-col gap-1 w-2/3 md:w-auto";
+const h3Style = "font-bold text-xl";
+const elevatorPitchStyle = "mb-2";
 
-// AboutSection component
+// AboutMeSection component
 const AboutMeSection = () => {
   return (
     <section id="aboutMe" className={aboutMeStyle}>
-      <h2 className={h2Style}>About my passion</h2>
-      <div id="aboutMeText" className={aboutTextStyle}>
+      <div id="aboutMeTitle" className={aboutMeTitleStyle}>
+        <h2 className={h2Style}>About my passion</h2>
+      </div>
+      <div id="aboutMeText" className={aboutMeTextStyle}>
         <h3 className={h3Style}>Architect, Estimator, Design & Drafting</h3>
         <p id="elevatorPitch" className={elevatorPitchStyle}>
           Elevator pitch goes here. Talk about skills, accomplishments and work

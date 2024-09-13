@@ -6,9 +6,12 @@ const size = "w-fit";
 const text = "font-medium text-white";
 const layout = "block px-5 py-3 rounded-lg";
 const color = "bg-slate-950";
+// const transitionColor = "hover:bg-gradient-to-r hover:from-sky-500 hover:via-teal-500 hover:to-emerald-500";
+const transitionColor =
+  "hover:bg-gradient-to-r hover:from-sky-600 hover:to-emerald-500";
 const transition =
-  "transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover:bg-sky-500 duration-300";
-const primaryLinkStyle = `${size} ${text} ${layout} ${color} ${transition}`;
+  "transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300";
+const primaryLinkStyle = `${size} ${text} ${layout} ${color} ${transitionColor} ${transition}`;
 
 // PrimaryLink Component
 const PrimaryLink = ({ to, children }) => {
