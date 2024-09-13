@@ -3,19 +3,19 @@ import FeaturedProjectsSection from "./FeaturedProjectsSection.jsx";
 
 // Tailwind CSS utility classes
 const aboutStyle = "w-screen";
-const presentationStyle = "h-screen p-12 flex flex-col";
+const presentationStyle = "h-screen flex flex-col sm:h-fit";
 
-// About page
+// About section
 function About() {
   return (
-    <div id="about" className={aboutStyle}>
+    <section id="about" className={aboutStyle}>
       <section id="presentation" className={presentationStyle}>
         <AboutMeSection />
         <FeaturedProjectsSection />
       </section>
       <section id="resume"></section>
       <section id="contact"></section>
-    </div>
+    </section>
   );
 }
 
