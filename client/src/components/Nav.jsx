@@ -12,9 +12,9 @@ const Nav = () => {
     <nav className={navStyle}>
       <ul className={ulStyle}>
         <li className={liStyle}>
-          <Link to="/#about" className={linkStyle}>
+          <a href="#about" className={linkStyle}>
             About
-          </Link>
+          </a>
         </li>
         <li className={liStyle}>
           <Link to="/portfolio" className={linkStyle}>
