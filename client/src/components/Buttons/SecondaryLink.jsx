@@ -13,20 +13,20 @@ const transition =
   "hover:scale-105 transform transition ease-in-out duration-500";
 const transitionFont = "hover:font-normal hover:text-sm/loose";
 
-// Final PrimaryLink style
-const primaryLinkStyle = `${size} ${text} ${layout} ${color} ${transition} ${transitionFont} ${transitionColor}`;
+// Final SecondaryLink style
+const secondaryLinkStyle = `${size} ${text} ${layout} ${color} ${transition} ${transitionFont} ${transitionColor}`;
 
-// PrimaryLink Component
-const PrimaryLink = ({ to, children }) => {
+// SecondaryLink Component
+const SecondaryLink = ({ to, children }) => {
   return (
-    <Link to={to} className={primaryLinkStyle}>
+    <Link to={to} className={secondaryLinkStyle}>
       {children}
     </Link>
   );
 };
 
 // PropTypes
-PrimaryLink.propTypes = {
+SecondaryLink.propTypes = {
   // Set children to 'PropTypes.node.isRequired', to allow for any renderable content
   children: PropTypes.string.isRequired,
   to: PropTypes.oneOfType([
@@ -35,4 +35,4 @@ PrimaryLink.propTypes = {
   ]).isRequired,
 };
 
-export default PrimaryLink;
+export default SecondaryLink;
