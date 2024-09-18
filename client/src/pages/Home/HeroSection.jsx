@@ -30,8 +30,8 @@ function HeroSection() {
             Rhina Aragón, senior architect based in Minnesota.
           </h2>
           <div id="heroButtons" className={heroButtonsStyle}>
-            <PrimaryLink to="/#about">About Me</PrimaryLink>
-            <SecondaryLink to="/#contact">Contact</SecondaryLink>
+            <PrimaryLink href="/#about">About me</PrimaryLink>
+            <SecondaryLink href="/#contact">Contact</SecondaryLink>
           </div>
         </div>
         <div id="heroImagesContainer" className={heroImagesContainerStyle}>
