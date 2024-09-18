@@ -7,7 +7,7 @@ import "./index.css";
 // Tailwind CSS utility classes
 const dimensions = "";
 const layout = "flex flex-col bg-[#FFFFFF]";
-const text = "text-base/loose text-zinc-800 font-sans";
+const text = "text-base text-zinc-800 font-sans";
 const darkMode = "";
 const tailwindClasses = `${dimensions} ${layout} ${text} ${darkMode}`;
 
