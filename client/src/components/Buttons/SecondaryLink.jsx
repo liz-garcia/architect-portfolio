@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 const size = "w-fit";
 const text = "font-medium text-zinc-800 text-center uppercase text-sm/loose";
 const layout = "block px-5 py-3 rounded-lg";
-const color = "bg-lime-200 border-2 border-lime-300 drop-shadow-md"; // Initial color before hover
+const color = "bg-[#FFFFFF] border-2 border-lime-300 drop-shadow-md"; // Initial color before hover
 
 // Transition from solid slate to gradient, with smooth color movement
 const transitionColor = "hover:bg-green-300 hover:border-green-400";
@@ -13,22 +13,22 @@ const transition =
   "hover:scale-105 transform transition ease-in-out duration-500";
 const transitionFont = "hover:font-medium hover:text-sm/loose";
 
-// Final PrimaryLink style
-const primaryLinkStyle = `${size} ${text} ${layout} ${color} ${transition} ${transitionFont} ${transitionColor}`;
+// Final SecondaryLink style
+const secondaryLinkStyle = `${size} ${text} ${layout} ${color} ${transition} ${transitionFont} ${transitionColor}`;
 
-// PrimaryLink component
-const PrimaryLink = ({ to, href, children }) => {
+// SecondaryLink Component
+const SecondaryLink = ({ to, href, children }) => {
   if (href) {
     // If 'href' is provided, render an <a> element
     return (
-      <a href={href} className={primaryLinkStyle}>
+      <a href={href} className={secondaryLinkStyle}>
         {children}
       </a>
     );
   } else if (to) {
     // If 'to' is provided, render a <Link> element
     return (
-      <Link to={to} className={primaryLinkStyle}>
+      <Link to={to} className={secondaryLinkStyle}>
         {children}
       </Link>
     );
@@ -39,7 +39,7 @@ const PrimaryLink = ({ to, href, children }) => {
 };
 
 // PropTypes
-PrimaryLink.propTypes = {
+SecondaryLink.propTypes = {
   children: PropTypes.node.isRequired, // Allows any renderable content
   to: PropTypes.oneOfType([
     PropTypes.string, // e.g., "/about"
@@ -61,4 +61,4 @@ PrimaryLink.propTypes = {
   },
 };
 
-export default PrimaryLink;
+export default SecondaryLink;

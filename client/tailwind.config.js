@@ -8,7 +8,7 @@ export default {
   theme: {
     screens: {
       // ! defaultTheme sizes rewritten to work with max-width
-      "3xl": "1536px", //Use min-width for bigger screen sizes
+      "3xl": "1536px", // Use min-width for bigger screen sizes
       // => @media (min-width: 1536px) { ... }
       "2xl": { max: "1535px" },
       // => @media (max-width: 1535px) { ... }
@@ -30,7 +30,7 @@ export default {
       fontFamily: {
         // --> Extend/change the default fonts for our project
         // --> Extending the `sans` font family: by default Tailwind CSS sets the font family on the html element to match your configured sans font. So customizing `sans` will change the default font for your project.
-        sans: ["Jura", "sans-serif", ...defaultTheme.fontFamily.sans],
+        sans: ["Inter", "sans-serif", ...defaultTheme.fontFamily.sans],
         serif: ["Judson", "serif", ...defaultTheme.fontFamily.serif],
       },
     },
