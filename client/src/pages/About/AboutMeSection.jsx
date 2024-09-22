@@ -21,11 +21,15 @@ const AboutMeSection = () => {
       <div id="aboutMeText" className={aboutMeTextStyle}>
         <h3 className={h3Style}>Architect, Estimator, Design & Drafting</h3>
         <p id="elevatorPitch" className={elevatorPitchStyle}>
-          Elevator pitch goes here. Talk about skills, accomplishments and work
-          expertise. Torem ipsum dolor sit amet, consectetur adipiscing elit.
-          Etiam eu turpis molestie, dictum est a, mattis tellus. Sed dignissim,
-          metus nec fringilla accumsan, risus sem sollicitudin lacus, ut
-          interdum tellus elit sed risus.
+          As a versatile architect with a strong focus on residential,
+          commercial, and remodeling projects, I have a proven track record of
+          balancing creativity with technical precision. With over 10 years of
+          experience, including 7 years as an estimator, I bring a deep
+          understanding of both design and construction to each project. My
+          design philosophy is guided by rhythm, simplicity, and contrast,
+          ensuring that every space is functional, beautiful, and aligned with
+          my clients&apos; needs. I thrive on being involved in the entire
+          project lifecycle, from concept to completion.
         </p>
         <PrimaryLink to="/portfolio">View all projects</PrimaryLink>
       </div>

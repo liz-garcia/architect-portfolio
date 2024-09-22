@@ -27,7 +27,7 @@ function HeroSection() {
         <div id="heroTitle" className={heroTitleStyle}>
           <h1 className={h1Style}>Architect Portfolio</h1>
           <h2 className={h2Style}>
-            Rhina Aragón, senior architect based in Minnesota.
+            Rhina Aragón, senior architect based in Minneapolis, Minnesota.
           </h2>
           <div id="heroButtons" className={heroButtonsStyle}>
             <PrimaryLink href="/#about">About me</PrimaryLink>
