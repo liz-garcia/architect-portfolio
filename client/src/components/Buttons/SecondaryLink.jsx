@@ -8,10 +8,11 @@ const layout = "block px-5 py-3 rounded-lg";
 const color = "bg-[#FFFFFF] border border-lime-300 drop-shadow-md"; // Initial color before hover
 
 // Transition from solid slate to gradient, with smooth color movement
-const transitionColor = "hover:bg-green-300 hover:border-green-400";
+const transitionColor = "hover:bg-lime-300 hover:border-lime-400";
 const transition =
   "hover:scale-105 transform transition ease-in-out duration-500";
-const transitionFont = "hover:font-normal hover:text-sm/loose";
+const transitionFont =
+  "hover:text-zinc-800 hover:font-normal hover:text-sm/loose";
 
 // Final SecondaryLink style
 const secondaryLinkStyle = `${size} ${text} ${layout} ${color} ${transition} ${transitionFont} ${transitionColor}`;
