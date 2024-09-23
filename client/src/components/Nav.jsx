@@ -5,7 +5,7 @@ const navStyle = "p-1";
 const ulStyle = "h-full flex space-x-4 sm:space-x-1";
 const liStyle = "h-full w-20";
 const linkStyle =
-  "uppercase font-medium size-full flex items-center justify-center text-center hover:underline underline-offset-8 text-sm";
+  "uppercase font-regular size-full flex items-center justify-center text-center hover:underline underline-offset-8 text-sm";
 
 const Nav = () => {
   return (
