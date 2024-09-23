@@ -2,7 +2,7 @@ import AboutMeSection from "./AboutMeSection.jsx";
 import FeaturedProjectsSection from "./FeaturedProjectsSection.jsx";
 
 // Tailwind CSS utility classes
-const aboutStyle = "w-screen";
+const aboutStyle = "w-screen relative overflow-hidden";
 const presentationStyle = "h-screen flex flex-col sm:h-fit";
 
 // About section
