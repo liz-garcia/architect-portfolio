@@ -11,11 +11,6 @@ const Nav = () => {
   return (
     <nav className={navStyle}>
       <ul className={ulStyle}>
-        {/* <li className={liStyle}>
-          <a href="#about" className={linkStyle}>
-            ABOUT
-          </a>
-        </li> */}
         <li className={liStyle}>
           <Link to="/about" className={linkStyle}>
             About
