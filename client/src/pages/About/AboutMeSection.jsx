@@ -10,11 +10,11 @@ const h2Style = "font-black font-serif text-4xl";
 const aboutMeTextStyle =
   "md:flex-none flex flex-col gap-1 w-2/3 md:w-auto pt-2 pl-10 pr-18";
 const h3Style = "font-light text-2xl text-zinc-800 italic";
-const elevatorPitchStyle = "";
+const elevatorPitchStyle = "text-justify my-1";
 const dividerStyle1 =
   "absolute -right-[72px] w-2/3 h-12 border-b border-zinc-300";
-const dividerStyle2 = "w-[72%] h-1/2 border-b border-zinc-300";
-const buttonContainerStyle = "flex justify-between";
+const buttonContainerStyle = "flex justify-between gap-4";
+const dividerStyle2 = "flex-1 h-1/2 border-b border-zinc-300";
 
 // AboutMeSection component
 const AboutMeSection = () => {

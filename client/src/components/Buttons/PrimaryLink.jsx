@@ -2,17 +2,17 @@ import PropTypes from "prop-types";
 import { Link } from "react-router-dom";
 
 // Tailwind CSS utility classes
-const size = "w-fit";
-const text = "font-normal text-zinc-800 text-center uppercase text-sm/loose";
-const layout = "block px-5 py-3 rounded-lg";
-const color = "bg-lime-200 border border-lime-300 drop-shadow-md"; // Initial color before hover
+const size = "w-fit min-w-fit";
+const text = "font-normal text-zinc-700 text-center uppercase text-sm/loose";
+const layout = "block px-5 py-3 rounded-2xl";
+const color = "bg-lime-200 border border-lime-300 drop-shadow-sm"; // Initial color before hover
 
 // Transition from solid slate to gradient, with smooth color movement
 const transitionColor = "hover:bg-lime-300 hover:border-lime-400";
 const transition =
   "hover:scale-105 transform transition ease-in-out duration-500";
 const transitionFont =
-  "hover:text-zinc-800 hover:font-normal hover:text-sm/loose";
+  "hover:text-zinc-700 hover:font-normal hover:text-sm/loose";
 
 // Final PrimaryLink style
 const primaryLinkStyle = `${size} ${text} ${layout} ${color} ${transition} ${transitionFont} ${transitionColor}`;
