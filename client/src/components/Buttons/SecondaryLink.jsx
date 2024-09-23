@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 // Tailwind CSS utility classes
 const size = "w-fit min-w-fit";
 const text = "font-normal text-zinc-700 text-center uppercase text-sm";
-const layout = "block px-5 py-3 rounded-2xl";
+const layout = "block px-5 py-3 rounded-lg";
 const color = "bg-[#FFFFFF] border border-lime-300 drop-shadow-sm"; // Initial color before hover
 
 // Transition from solid slate to gradient, with smooth color movement

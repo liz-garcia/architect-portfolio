@@ -7,14 +7,15 @@ import heroImage3 from "/architectural-plan-3.png";
 
 // Tailwind CSS utility classes
 const heroSectionStyle =
-  "w-[100dvw] h-[88dvh] flex pl-16 md:p-0 2xl:pl-16 3xl:pl-28 items-center justify-center md:flex-col-reverse gap-8 md:gap-3 2xl:gap-12 3xl:gap-24";
+  "w-[100dvw] h-[88dvh] flex pl-16 md:p-0 2xl:pl-16 3xl:pl-28 items-center justify-center md:flex-col-reverse gap-8 md:gap-3 2xl:gap-12 3xl:gap-24 xs:gap-0 xs:h-[85dvh]";
 const heroTitleStyle =
-  "w-1/3 text-center flex flex-col md:w-full md:h-1/3 sm:h-2/5 items-center justify-center md:pb-8 sm:pb-12";
+  "w-1/3 text-center flex flex-col md:w-full md:h-1/3 sm:h-2/5 items-center justify-center md:pb-8 sm:pb-12 xs:pb-0 xs:h-[40%]";
 const h1Style =
-  "font-serif font-bold mb-4 sm:text-5xl/[2.5rem] lg:text-5xl/[3rem] xl:text-6xl/[3.5rem] 2xl:text-7xl/[4rem] 3xl:text-8xl/[5.5rem] md:mb-2 sm:pb-0 sm:pt-2";
+  "font-serif font-bold mb-4 sm:text-5xl/[2.5rem] lg:text-5xl/[3rem] xl:text-6xl/[3.5rem] 2xl:text-7xl/[4rem] 3xl:text-8xl/[5.5rem] md:mb-2 sm:pb-0 sm:pt-2 xs:text-4xl/[2rem]";
 const h2Style =
-  "font-serif font-normal pb-2 lg:px-0 2xl:px-4 3xl:px-4 mb-4 md:mb-2 2xl:text-2xl lg:text-2xl/6 sm:text-xl/6 3xl:text-3xl mx-8";
-const heroImagesContainerStyle = "w-2/3 h-full md:h-2/3 sm:h-3/5 md:w-full";
+  "font-serif font-normal pb-2 lg:px-0 2xl:px-4 3xl:px-4 mb-4 md:mb-2 2xl:text-2xl lg:text-2xl/6 sm:text-xl/[1.5rem] xs:text-xl/[1.35rem] 3xl:text-3xl mx-8";
+const heroImagesContainerStyle =
+  "w-2/3 h-full md:h-2/3 sm:h-3/5 md:w-full xs:h-[60%]";
 const heroButtonsStyle = "flex gap-2";
 
 // HeroSection component
