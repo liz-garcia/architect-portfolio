@@ -2,19 +2,19 @@ import PrimaryLink from "../../components/Buttons/PrimaryLink.jsx";
 
 // * Tailwind CSS utility classes
 const aboutMeStyle =
-  "px-28 pt-16 pb-10 md:pb-8 sm:pb-16 flex md:flex-col lg:flex-row gap-4 md:gap-2 sm:gap-4 justify-center sm:h-screen";
+  "px-28 pt-16 pb-10 md:pb-8 sm:pb-16 flex md:flex-col lg:flex-row gap-4 md:gap-2 sm:gap-4 justify-center sm:h-screen sm:px-16 sm:mx-2";
 // * aboutMeTitle
 const aboutMeTitleStyle = "md:flex-none flex-1 w-1/3 md:w-auto";
 const h2Style = "font-black font-serif text-4xl";
 // * aboutMeText
 const aboutMeTextStyle =
-  "md:flex-none flex flex-col gap-1 w-2/3 md:w-auto pt-2 pl-10 pr-18";
-const h3Style = "font-light text-2xl text-zinc-800 italic";
-const elevatorPitchStyle = "";
+  "md:flex-none flex flex-col gap-1 w-2/3 md:w-auto pt-2 pl-10 pr-18 md:pl-0 sm:pt-0";
+const h3Style = "font-light text-2xl text-zinc-800 italic md:text-xl";
+const elevatorPitchStyle = "text-justify my-1 sm:mb-4";
 const dividerStyle1 =
-  "absolute -right-[72px] w-2/3 h-12 border-b border-zinc-300";
-const dividerStyle2 = "w-[72%] h-1/2 border-b border-zinc-300";
-const buttonContainerStyle = "flex justify-between";
+  "absolute -right-[72px] w-2/3 h-12 border-b border-zinc-300 md:hidden";
+const buttonContainerStyle = "flex justify-between gap-4";
+const dividerStyle2 = "flex-1 h-1/2 border-b border-zinc-300";
 
 // AboutMeSection component
 const AboutMeSection = () => {
