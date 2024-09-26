@@ -7,7 +7,7 @@
 ## System Overview
 
 - **Client:** Vite, React, JavaScript, Tailwind CSS
-- **Server:** NodeJS, Express, WebSockets
+- **Server:** NodeJS, ExpressJS
 - **Database:** MongoDB, Mongoose
 - **Testing:** `🚧 pending task`
 - **Deployment:** Heroku
