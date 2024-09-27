@@ -8,23 +8,23 @@ export default {
   theme: {
     screens: {
       // ! defaultTheme sizes rewritten to work with max-width
-      "3xl": "1536px", // Use min-width for bigger screen sizes
+      "3xl": "1537px", // Use min-width for bigger screen sizes
       // => @media (min-width: 1536px) { ... }
 
-      "2xl": { max: "1535px" },
-      // => @media (max-width: 1535px) { ... }
+      "2xl": { max: "1536px" },
+      // => @media (max-width: 1536px) { ... }
 
-      xl: { max: "1279px" },
-      // => @media (max-width: 1279px) { ... }
+      xl: { max: "1280px" },
+      // => @media (max-width: 1280px) { ... }
 
-      lg: { max: "1023px" },
-      // => @media (max-width: 1023px) { ... }
+      lg: { max: "1024px" },
+      // => @media (max-width: 1024px) { ... }
 
-      md: { max: "767px" },
-      // => @media (max-width: 767px) { ... }
+      md: { max: "768px" },
+      // => @media (max-width: 768px) { ... }
 
-      sm: { max: "639px" },
-      // => @media (max-width: 639px) { ... }
+      sm: { max: "640px" },
+      // => @media (max-width: 640px) { ... }
 
       xs: { max: "450px" },
       // => @media (max-width: 450px) { ... }
