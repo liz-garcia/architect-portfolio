@@ -2,7 +2,7 @@ import PrimaryLink from "../../components/Buttons/PrimaryLink.jsx";
 
 // * Tailwind CSS utility classes
 const aboutMeStyle =
-  "px-28 pt-16 pb-10 md:pb-8 sm:pb-16 flex md:flex-col lg:flex-row gap-4 md:gap-2 sm:gap-4 justify-center sm:h-screen sm:px-16 sm:mx-2 xs:h-dvh xs:px-8";
+  "px-28 pt-16 pb-10 md:pb-8 sm:pb-16 flex md:flex-col lg:flex-row gap-4 md:gap-2 sm:gap-4 justify-center sm:h-screen sm:px-16 sm:mx-2 xs:h-dvh xs:px-10 md:mb-4";
 // * aboutMeTitle
 const aboutMeTitleStyle = "md:flex-none flex-1 w-1/3 md:w-auto";
 const h2Style = "font-black font-serif text-4xl";
