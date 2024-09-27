@@ -29,7 +29,7 @@ const AboutMeSection = () => {
         </div>
         <div id="aboutMeText" className={aboutMeTextStyle}>
           <h3 className={h3Style}>
-            Architect, Estimator, Design <br className={brStyle} />& Drafting
+            Architect, Estimator, <br className={brStyle} />Design & Drafting
           </h3>
           <p id="elevatorPitch" className={elevatorPitchStyle}>
             As a versatile architect with a strong focus on residential,
