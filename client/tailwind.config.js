@@ -40,6 +40,10 @@ export default {
         sans: ["Inter", "sans-serif", ...defaultTheme.fontFamily.sans],
         serif: ["Judson", "serif", ...defaultTheme.fontFamily.serif],
       },
+      // ! Extend to add specific tag for specific screen size (max-values)
+      screens: {
+        "h-667-w-375": { raw: "(max-height: 667px) and (max-width: 375px)" },
+      },
     },
   },
   plugins: [],

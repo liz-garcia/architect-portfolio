@@ -10,9 +10,10 @@ const h2Style = "font-black font-serif text-4xl xs:text-[2.1rem]";
 const aboutMeTextStyle =
   "md:flex-none flex flex-col gap-1 w-2/3 md:w-auto pt-2 pl-10 pr-18 md:pl-0 sm:pt-0";
 const h3Style =
-  "font-light text-2xl text-zinc-800 italic md:text-xl xs:text-2xl sm:mb-1";
+  "font-light text-2xl text-zinc-800 italic md:text-xl xs:text-2xl sm:mb-1 h-667-w-375:text-xl";
 // const brStyle = "3xl:hidden 2xl:hidden xs:block";
-const elevatorPitchStyle = "text-justify my-1 sm:mb-4 2xs:text-base";
+const elevatorPitchStyle =
+  "text-justify my-1 sm:mb-4 h-667-w-375:mb-2 h-667-w-375:text-base 2xs:text-base";
 const dividerStyle1 =
   "absolute -right-[72px] w-2/3 h-12 border-b border-zinc-300 md:hidden";
 const buttonContainerStyle = "flex justify-between gap-4";
