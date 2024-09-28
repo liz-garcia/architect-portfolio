@@ -28,6 +28,9 @@ export default {
 
       xs: { max: "450px" },
       // => @media (max-width: 450px) { ... }
+
+      "2xs": { max: "360px" },
+      // => @media (max-width: 360px) { ... }
     },
     extend: {
       // ! Extend Tailwind CSS default theme configuration
@@ -36,6 +39,17 @@ export default {
         // --> Extending the `sans` font family: by default Tailwind CSS sets the font family on the html element to match your configured sans font. So customizing `sans` will change the default font for your project.
         sans: ["Inter", "sans-serif", ...defaultTheme.fontFamily.sans],
         serif: ["Judson", "serif", ...defaultTheme.fontFamily.serif],
+      },
+      // ! Extend to add specific tag for specific screen size (max-values)
+      screens: {
+        "h-667-w-375": { raw: "(max-height: 667px) and (max-width: 375px)" },
+        // ! Specific for 'xs' screens with portrait/landscape orientation
+        "xs-portrait": {
+          raw: "(max-width: 450px) and (orientation: portrait)",
+        },
+        "xs-landscape": {
+          raw: "(max-height: 450px) and (orientation: landscape)",
+        },
       },
     },
   },

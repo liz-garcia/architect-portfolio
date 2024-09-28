@@ -25,9 +25,11 @@ function Home() {
 
   return (
     <>
-      <HeroSection />
-      <About />
-      <h1>Homepage</h1>
+      <div id="homepage">
+        <HeroSection />
+        <About />
+        <h1>Homepage</h1>
+      </div>
     </>
   );
 }
