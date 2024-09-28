@@ -43,6 +43,13 @@ export default {
       // ! Extend to add specific tag for specific screen size (max-values)
       screens: {
         "h-667-w-375": { raw: "(max-height: 667px) and (max-width: 375px)" },
+        // ! Specific for small screens with portrait/landscape orientation
+        "xs-portrait": {
+          raw: "(max-width: 450px) and (orientation: portrait)",
+        },
+        "xs-landscape": {
+          raw: "(max-height: 450px) and (orientation: landscape)",
+        },
       },
     },
   },
