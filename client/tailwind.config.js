@@ -28,6 +28,9 @@ export default {
 
       xs: { max: "450px" },
       // => @media (max-width: 450px) { ... }
+
+      "2xs": { max: "360px" },
+      // => @media (max-width: 360px) { ... }
     },
     extend: {
       // ! Extend Tailwind CSS default theme configuration
