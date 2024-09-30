@@ -7,7 +7,7 @@ import heroImage3 from "/architectural-plan-3.png";
 
 // Tailwind CSS utility classes
 const heroSectionStyle =
-  "w-[100dvw] h-[88dvh] flex pl-16 md:p-0 2xl:pl-16 3xl:pl-28 items-center justify-center md:flex-col-reverse gap-8 md:gap-3 2xl:gap-12 3xl:gap-24 xs:gap-0 xs:h-[84vh]";
+  "w-[100dvw] h-[88dvh] flex pl-16 md:p-0 2xl:pl-16 3xl:pl-28 items-center justify-center md:flex-col-reverse gap-8 md:gap-3 2xl:gap-12 3xl:gap-24 xs:gap-0 xs:h-[84svh]";
 const heroTitleStyle =
   "w-1/3 text-center flex flex-col md:w-full md:h-1/3 sm:h-2/5 items-center justify-center md:pb-8 sm:pb-6 xs:pb-4 xs:h-[40%] xs:pl-1";
 const h1Style =
