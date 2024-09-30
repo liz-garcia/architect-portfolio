@@ -1,8 +1,17 @@
 import PropTypes from "prop-types";
 
 // Tailwind CSS utility classes
-const primaryButtonStyle =
-  "px-5 py-4 w-fit bg-emerald-100 hover:bg-emerald-200 rounded-lg";
+const size = "w-fit min-w-fit";
+const text = "font-normal text-zinc-700 text-center uppercase text-sm";
+const layout = "block px-5 py-3 rounded-lg";
+const color = "bg-lime-200 border border-lime-300 drop-shadow-sm";
+const hoverColor = "hover:bg-lime-300 hover:border-lime-400";
+const hoverFont = "hover:text-zinc-700 hover:font-normal hover:text-sm";
+const transition =
+  "hover:scale-105 transform transition ease-in-out duration-500";
+
+// Final PrimaryButton style
+const primaryButtonStyle = `${size} ${text} ${layout} ${color} ${transition} ${hoverFont} ${hoverColor}`;
 
 // PrimaryButton Component
 const PrimaryButton = ({ onClick, children }) => {
