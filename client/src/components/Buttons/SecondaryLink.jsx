@@ -3,11 +3,13 @@ import { Link } from "react-router-dom";
 
 // Tailwind CSS utility classes
 const size = "w-fit min-w-fit";
-const text = "font-normal text-zinc-800 text-center uppercase text-sm";
+const text =
+  "font-normal text-zinc-800 text-center uppercase text-sm 3xl:text-lg";
 const layout = "block px-5 py-3 rounded-lg";
-const color = "bg-[#FFFFFF] border border-zinc-800 drop-shadow-sm";
+const color = "bg-[#FFFFFF] border border-zinc-800 drop-shadow";
 const hoverColor = "hover:bg-lime-300 hover:border-lime-400";
-const hoverFont = "hover:text-zinc-800 hover:font-normal hover:text-sm";
+const hoverFont =
+  "hover:text-zinc-800 hover:font-normal hover:text-sm 3xl:hover:text-lg";
 const transition =
   "hover:scale-105 transform transition ease-in-out duration-500";
 

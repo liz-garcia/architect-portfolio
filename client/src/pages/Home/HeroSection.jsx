@@ -16,7 +16,7 @@ const h2Style =
   "font-serif font-normal pb-2 md:px-4 2xl:px-2 mb-4 md:mb-2 2xl:text-2xl/7 lg:text-[1.25rem]/6 lg:px-0 lg:mx-0 md:text-[1.35rem]/[1.75rem] sm:text-[1.45rem]/[1.75rem] sm:py-2 sm:px-8 xs:text-[1.45rem]/[1.75rem] 2xs:text-xl/[1.55rem] 3xl:text-4xl mx-8 xl:mx-2 3xl:mx-2 3xl:px-0 3xl:py-2 3xl:pb-4 xs:pt-3";
 const heroImagesContainerStyle =
   "w-2/3 h-full md:h-2/3 sm:h-3/5 md:w-full xs:h-[60%]";
-const heroButtonsStyle = "flex gap-2";
+const heroButtonsStyle = "flex gap-2 3xl:gap-4";
 
 // HeroSection component
 function HeroSection() {

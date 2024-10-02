@@ -5,7 +5,7 @@ import project3 from "../../assets/projects/project3.png";
 
 // Tailwind CSS utility classes
 const featuredProjectsStyle =
-  "flex-1 p-12 bg-zinc-900 text-white h-2/3 md:h-auto sm:flex-none sm:h-screen flex justify-center gap-8";
+  "flex-1 p-12 bg-zinc-900 text-white h-2/3 md:h-auto sm:flex-none sm:h-screen flex justify-center gap-8 3xl:h-1/2";
 const projectContainerStyle = "w-3/12";
 
 // FeaturedProjectsSection component
