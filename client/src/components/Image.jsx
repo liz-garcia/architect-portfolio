@@ -1,9 +1,10 @@
+// Default Basic Image Component
+import PropTypes from "prop-types";
+
 // Tailwind CSS styles
 const imgContainerStyle = "relative size-full overflow-hidden";
 const imgStyle = "absolute inset-0 size-full object-cover";
-
-// Default Basic Image Component
-import PropTypes from "prop-types";
+// * When using the `Image` component, it must be contained inside another parent `div`. This parent `div` must always be set to 'overflow-hidden' and provides the corresponding width/height settings, borders or any other styles.
 
 const Image = ({ src, altText = "Image", objectFit = "contain" }) => {
   // Available options for objectFit argument are only: contain, cover, none, scale-down.

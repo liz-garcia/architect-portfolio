@@ -7,7 +7,7 @@ const aboutMeStyle =
   "px-28 pt-16 pb-10 md:pb-8 sm:pb-16 flex md:flex-col lg:flex-row gap-4 md:gap-2 sm:gap-4 justify-center sm:h-dvh sm:px-16 sm:mx-2 xs:h-svh xs:px-10 xs:gap-2 md:mb-4 2xs:px-8";
 // * aboutMeTitle
 const aboutMeTitleStyle = "md:flex-none flex-1 w-1/3 md:w-auto";
-const h2Style = "font-black font-serif text-4xl xs:text-[2.1rem] 3xl:text-6xl";
+const h2Style = "font-bold font-serif text-4xl xs:text-[2.1rem] 3xl:text-6xl";
 // * aboutMeText
 const aboutMeTextStyle =
   "md:flex-none flex flex-col gap-1 w-2/3 md:w-auto pt-2 pl-10 pr-18 md:pl-0 sm:pt-0 3xl:pl-16";
