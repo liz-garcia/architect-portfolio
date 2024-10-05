@@ -7,7 +7,7 @@ const font =
   "font-normal text-zinc-800 text-center uppercase text-sm 3xl:text-base";
 const layout = "block px-5 py-3";
 const hoverFont =
-  "hover:text-zinc-800 hover:font-normal hover:text-sm 3xl:hover:text-base hover:underline underline-offset-8";
+  "hover:scale-105 hover:text-zinc-800 hover:font-normal hover:text-sm 3xl:hover:text-base hover:underline underline-offset-8";
 
 // Final TertiaryLink style
 const tertiaryLinkStyle = `${size} ${font} ${layout} ${hoverFont}`;
