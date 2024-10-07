@@ -10,24 +10,31 @@ const homeStyle = "flex flex-col";
 function Home() {
   const location = useLocation();
 
-  // TODO Explanatory comment here
+  // * If a hash is present in the URL, scroll to the corresponding id. After the transition, reset the URL to "/".
   useEffect(() => {
-    if (location.pathname === "/about") {
-      const aboutSection = document.getElementById("about");
-      if (aboutSection) {
-        aboutSection.scrollIntoView({ behavior: "smooth" });
+    if (location.hash) {
+      try {
+        // Get the element by its id, which corresponds to the hash (without the #)
+        const section = document.getElementById(location.hash.substring(1));
+        if (section) {
+          section.scrollIntoView({ behavior: "smooth" });
+        } else {
+          // Notify the user that the section could not be found
+          alert("Sorry, the section you are trying to view is not available.");
+          // Fallback: scroll to top of the page if section is not found
+          window.scrollTo({ top: 0, behavior: "smooth" });
+        }
+      } catch (error) {
+        // Show a friendly message
+        alert("Sorry, an error occurred. Please try again.");
+        // Fallback: scroll to top of the page
+        window.scrollTo({ top: 0, behavior: "smooth" });
+      } finally {
+        // Use history.replaceState to change the URL to "/" without reloading
+        window.history.replaceState({}, "", "/");
       }
     }
   }, [location]);
-
-  // TODO Explanatory comment here
-  useEffect(() => {
-    // Check if the user is on the homepage and the URL is not already "/"
-    if (location.pathname === "/home" || location.pathname === "/about") {
-      // Use history.replaceState to change the URL to "/" without reloading
-      window.history.replaceState({}, "", "/");
-    }
-  }, [location]); // This will run whenever the location changes
 
   return (
     <>
