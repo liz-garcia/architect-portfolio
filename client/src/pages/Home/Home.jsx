@@ -10,7 +10,7 @@ const homeStyle = "flex flex-col";
 function Home() {
   const location = useLocation();
 
-  // TODO Explanatory comment here
+  // * Transition smoothly into the #about id when the the URL includes "/about"
   useEffect(() => {
     if (location.pathname === "/about") {
       const aboutSection = document.getElementById("about");
@@ -20,7 +20,7 @@ function Home() {
     }
   }, [location]);
 
-  // TODO Explanatory comment here
+  // * Always return URL to "/", even after loading "/about"
   useEffect(() => {
     // Check if the user is on the homepage and the URL is not already "/"
     if (location.pathname === "/home" || location.pathname === "/about") {
