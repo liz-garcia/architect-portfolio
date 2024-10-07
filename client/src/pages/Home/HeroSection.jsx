@@ -31,7 +31,7 @@ function HeroSection() {
             Rhina Aragón, senior architect based in Minneapolis, Minnesota.
           </h2>
           <div id="heroButtons" className={heroButtonsStyle}>
-            <PrimaryLink to="/about">About me</PrimaryLink>
+            <PrimaryLink href="/#about">About me</PrimaryLink>
             <SecondaryLink href="/#contact">Contact</SecondaryLink>
           </div>
         </div>
