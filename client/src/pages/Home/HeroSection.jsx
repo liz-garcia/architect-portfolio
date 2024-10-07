@@ -38,7 +38,7 @@ function HeroSection() {
         <div id="heroImagesContainer" className={heroImagesContainerStyle}>
           <AutoEaseCarrousel
             images={images}
-            displayTime={4000}
+            displayTime={5000}
             altText="Gallery Image"
           />
         </div>

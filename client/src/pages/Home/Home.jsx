@@ -12,7 +12,7 @@ function Home() {
 
   // * Transition smoothly into the #about id when the the URL includes "/about"
   useEffect(() => {
-    if (location.pathname === "/about") {
+    if (location.hash === "#about") {
       const aboutSection = document.getElementById("about");
       if (aboutSection) {
         aboutSection.scrollIntoView({ behavior: "smooth" });
@@ -20,10 +20,9 @@ function Home() {
     }
   }, [location]);
 
-  // * Always return URL to "/", even after loading "/about"
+  // * Always return URL to "/"
   useEffect(() => {
-    // Check if the user is on the homepage and the URL is not already "/"
-    if (location.pathname === "/home" || location.pathname === "/about") {
+    if (location.hash === "#about") {
       // Use history.replaceState to change the URL to "/" without reloading
       window.history.replaceState({}, "", "/");
     }
