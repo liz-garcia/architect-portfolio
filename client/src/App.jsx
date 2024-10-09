@@ -14,7 +14,7 @@ const App = () => {
         <AppRouter />
         {/* Every page from our `AppRouter` is rendered inside `Main` */}
       </Main>
-      <footer className="h-[16vh] bg-lime-100 p-10">
+      <footer className="h-[16vh] bg-zinc-900 p-10">
         <h2>Footer</h2>
       </footer>
     </>
