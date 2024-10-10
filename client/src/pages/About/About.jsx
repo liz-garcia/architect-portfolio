@@ -1,5 +1,6 @@
 import AboutMeSection from "./AboutMeSection.jsx";
 import FeaturedProjectsSection from "./FeaturedProjectsSection.jsx";
+import ResumeSection from "./ResumeSection.jsx";
 
 // Tailwind CSS utility classes
 const aboutStyle = "w-screen relative overflow-hidden";
@@ -13,7 +14,7 @@ function About() {
         <AboutMeSection />
         <FeaturedProjectsSection />
       </section>
-      <section id="resume"></section>
+      <ResumeSection />
       <section id="contact"></section>
     </section>
   );
