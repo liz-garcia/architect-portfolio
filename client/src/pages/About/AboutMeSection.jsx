@@ -16,9 +16,9 @@ const aboutMeTextStyle =
 const h3Style =
   "font-light text-2xl text-zinc-800 italic lg:text-xl xs:text-2xl sm:mb-1 h-667-w-375:text-xl 3xl:text-4xl 3xl:mt-2";
 const elevatorPitchStyle =
-  "text-justify my-1 sm:mb-4 h-667-w-375:text-base 2xs:text-base 3xl:text-2xl/loose 3xl:pt-4";
+  "text-justify my-1 sm:mb-4 lg:pb-0 2xl:pb-1 h-667-w-375:text-base 2xs:text-base 3xl:text-2xl/loose 3xl:pt-4";
 const dividerStyle1 =
-  "absolute -right-[72px] w-2/3 h-12 border-b border-zinc-300 lg:hidden 3xl:hidden";
+  "absolute -right-[56px] w-2/3 h-12 border-b border-zinc-300 lg:hidden 3xl:hidden";
 const buttonContainerStyle =
   "flex justify-between gap-4 sm:py-0 md:py-2 xl:py-1 2xl:py-0 3xl:py-4 3xl:gap-8 items-center";
 const dividerStyle2 = "flex-1 border-b border-zinc-300";
