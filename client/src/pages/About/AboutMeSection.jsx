@@ -1,3 +1,4 @@
+import { useState, useEffect } from "react";
 import PrimaryLink from "../../components/Buttons/PrimaryLink.jsx";
 
 // * ***** Tailwind CSS utility classes *****
@@ -24,6 +25,22 @@ const dividerStyle2 = "flex-1 border-b border-zinc-300";
 
 // AboutMeSection component
 const AboutMeSection = () => {
+  const [isSmallScreen, setIsSmallScreen] = useState(
+    window.matchMedia("(max-width: 640px)").matches
+  );
+
+  useEffect(() => {
+    const mediaQuery = window.matchMedia("(max-width: 640px)");
+
+    const handleMediaChange = (e) => setIsSmallScreen(e.matches);
+
+    // Use `addEventListener` for better compatibility and performance
+    mediaQuery.addEventListener("change", handleMediaChange);
+
+    // Cleanup the listener on component unmount
+    return () => mediaQuery.removeEventListener("change", handleMediaChange);
+  }, []);
+
   return (
     <>
       <div id="aboutMeContainer" className={aboutMeContainer}>
@@ -45,9 +62,23 @@ const AboutMeSection = () => {
               aligned with my clients&apos; needs. I thrive on being involved in
               the entire project lifecycle, from concept to completion.
             </p>
-            <div className={buttonContainerStyle}>
-              <div id="divider2" className={dividerStyle2}></div>
-              <PrimaryLink to="/portfolio">View all projects</PrimaryLink>
+            <div
+              className={
+                isSmallScreen
+                  ? "flex flex-wrap-reverse gap-2 xs:place-content-center h-667-w-375:scale-[0.8] h-667-w-375:flex-nowrap"
+                  : buttonContainerStyle
+              }
+            >
+              <div
+                id="divider2"
+                className={isSmallScreen ? "hidden" : dividerStyle2}
+              ></div>
+              <PrimaryLink to="/#resume">CV Highlights</PrimaryLink>
+              <PrimaryLink
+                to={isSmallScreen ? "/#featuredProjects" : "/portfolio"}
+              >
+                {isSmallScreen ? "Featured projects" : "View all projects"}
+              </PrimaryLink>
             </div>
           </div>
         </section>
