@@ -5,10 +5,10 @@ import project3 from "../../assets/projects/project3.png";
 
 // Tailwind CSS utility classes
 const featuredProjectsStyle =
-  "flex-1 p-12 bg-zinc-900 text-white h-2/3 lg:h-1/2 lg:py-10 lg:px-0 lg:gap-4 md:h-auto sm:flex-none sm:h-screen flex justify-center gap-8 sm:flex-col 3xl:h-1/2 3xl:py-16 sm:p-16";
+  "flex-1 p-12 bg-zinc-900 text-white h-2/3 lg:h-1/2 xl:py-10 lg:px-0 lg:gap-4 md:h-auto sm:flex-none sm:h-screen flex justify-center gap-8 sm:flex-col 3xl:h-1/2 3xl:gap-12 3xl:py-16 sm:p-16 md:py-8 md:px-0";
 // Project container style
 const imageContainerStyle =
-  "w-3/12 mb-2 rounded-xl overflow-hidden sm:size-full";
+  "3xl:w-3/12 lg:w-3/12 2xl:w-4/12 mb-2 rounded-xl overflow-hidden sm:size-full";
 const transition =
   "hover:cursor-pointer hover:scale-105 transform transition ease-in-out duration-500";
 
