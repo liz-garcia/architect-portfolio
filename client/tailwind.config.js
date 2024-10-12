@@ -44,6 +44,7 @@ export default {
       screens: {
         "h-667-w-375": { raw: "(max-height: 667px) and (max-width: 375px)" },
         "h-658-w-320": { raw: "(max-height: 658px) and (max-width: 320px)" },
+        "h-568-w-320": { raw: "(max-height: 568px) and (max-width: 320px)" },
         // ! Specific for 'xs' screens with portrait/landscape orientation
         "xs-portrait": {
           raw: "(max-width: 450px) and (orientation: portrait)",
