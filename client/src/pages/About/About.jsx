@@ -3,8 +3,9 @@ import FeaturedProjectsSection from "./FeaturedProjectsSection.jsx";
 import ResumeSection from "./ResumeSection.jsx";
 
 // Tailwind CSS utility classes
-const aboutStyle = "w-screen relative overflow-hidden";
-const presentationStyle = "h-screen flex flex-col sm:h-fit";
+const aboutStyle = "w-screen relative overflow-hidden xs-landscape:block";
+const presentationStyle =
+  "h-screen flex flex-col sm:h-fit xs-landscape:min-h-fit";
 
 // About section
 function About() {

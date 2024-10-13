@@ -43,8 +43,11 @@ export default {
       // ! Extend to add specific tag for specific screen size (max-values)
       screens: {
         "h-667-w-375": { raw: "(max-height: 667px) and (max-width: 375px)" },
+        "h-667-w-375-landscape": { raw: "(max-height: 375px) and (max-width: 667px) and (orientation: landscape)" },
         "h-658-w-320": { raw: "(max-height: 658px) and (max-width: 320px)" },
+        "h-658-w-320-landscape": { raw: "(max-height: 320px) and (max-width: 658px) and (orientation: landscape)" },
         "h-568-w-320": { raw: "(max-height: 568px) and (max-width: 320px)" },
+        "h-568-w-320-landscape": { raw: "(max-height: 320px) and (max-width: 568px) and (orientation: landscape)" },
         // ! Specific for 'lg' to 'md' screens on portrait orientation
         "lg-md-portrait": {
           raw: "(max-width: 1025px) and (min-height: 1024px) and (max-height: 1368px) and (orientation: portrait)",
@@ -55,7 +58,7 @@ export default {
         },
         // ! Specific for 'xs' screens with portrait/landscape orientation
         "xs-portrait": {
-          raw: "(max-width: 450px) and (orientation: portrait)",
+          raw: "(max-width: 885px) and (orientation: portrait)",
         },
         "xs-landscape": {
           raw: "(max-height: 450px) and (orientation: landscape)",
