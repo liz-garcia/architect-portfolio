@@ -3,7 +3,7 @@ import PrimaryLink from "../../components/Buttons/PrimaryLink.jsx";
 
 // * ***** Tailwind CSS utility classes *****
 const aboutMeContainer =
-  "2xl:h-fit 3xl:h-1/2 3xl:flex 3xl:flex-col 3xl:items-center 3xl:justify-center min-h-fit";
+  "2xl:h-fit 3xl:h-1/2 3xl:flex 3xl:flex-col 3xl:items-center 3xl:justify-center min-h-fit h-1180-1550:h-1/3 h-1180-1550:place-content-center";
 // * aboutMe Section element
 const aboutMeStyle =
   "h-fit px-28 lg:px-18 md:px-12 xl:px-16 pt-16 sm:pt-12 md:pt-8 lg:pt-10 pb-10 lg:px-12 2xl:px-16 md:pb-4 xl:pb-4 2xl:pb-5 sm:pb-16 flex lg:flex-col 2xl:flex-row gap-4 lg:gap-0 lg:gap-2 sm:gap-2 justify-center sm:h-dvh sm:px-16 sm:mx-2 xs:h-svh xs:px-10 xs:gap-2 2xs:px-8 3xl:px-32 h-658-w-320:gap-1";
