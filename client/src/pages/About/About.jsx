@@ -8,7 +8,7 @@ const presentationStyle =
   "h-screen flex flex-col sm:h-fit xs-landscape:min-h-fit";
 
 // About section
-function About() {
+function AboutSection() {
   return (
     <section id="about" className={aboutStyle}>
       <section id="presentation" className={presentationStyle}>
@@ -21,4 +21,4 @@ function About() {
   );
 }
 
-export default About;
+export default AboutSection;

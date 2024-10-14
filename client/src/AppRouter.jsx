@@ -5,6 +5,7 @@ import NotFoundPage from "./pages/NotFoundPage.jsx";
 const AppRouter = () => {
   return (
     <Routes>
+      {/* Home component includes the AboutSection */}
       <Route path="/" element={<Home />} />
       <Route path="*" element={<NotFoundPage />} />
     </Routes>
