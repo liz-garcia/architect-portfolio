@@ -9,9 +9,9 @@
 @tailwind utilities;
 
 /* ! Visualize area for each element */
-* {
+/* * {
   border: 1px red solid;
-}
+} */
 
 /* * Previously Index.css */
 /* :root {

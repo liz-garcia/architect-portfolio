@@ -1,17 +1,21 @@
 import resumePicture1 from "../../assets/resumePictures/resumePicture1.png";
 import resumePicture2 from "../../assets/resumePictures/resumePicture2.png";
 import Image from "../../components/Image.jsx";
+import PrimaryLink from "../../components/Buttons/PrimaryLink.jsx";
 
 const resumeSectionStyle =
-  "h-screen grid grid-cols-3 grid-rows-[1fr_2fr] gap-2 p-12";
-const resumeSubsection = "bg-zinc-200 p-4 flex flex-col";
-const h1Style = "font-serif font-bold text-3xl pb-2";
-const infoContainer = "flex gap-4 pb-1";
-const h2Style = "font-bold w-1/3";
-const itemTitle = "";
-const itemDetail = "text-sm";
+  "h-screen grid grid-cols-3 grid-rows-[1fr_2fr] gap-2 p-12 3xl:p-20";
+const resumeSubsection = "p-2 flex flex-col gap-2 3xl:p-8 3xl:gap-4";
+const h1Style = "font-serif font-bold text-3xl pb-2 3xl:text-5xl";
+const infoContainer = "grid grid-rows-1 grid-cols-[1fr_2fr] gap-2";
+const h2Style = "font-bold leading-tight 3xl:text-2xl";
+const itemTitle = "leading-tight 3xl:text-2xl";
+const itemDetail = "text-base italic leading-tight 3xl:text-xl";
 const resumePictures = "";
 const largePicture = "col-span-2";
+const softwareList =
+  "grid grid-cols-3 gap-2 text-center leading-tight 3xl:text-2xl 3xl:gap-4";
+const buttonContainer = "m-auto";
 
 const ResumeSection = () => {
   return (
@@ -54,6 +58,18 @@ const ResumeSection = () => {
         </div>
         <div id="softwareSkills" className={resumeSubsection}>
           <h1 className={h1Style}>Software skills</h1>
+          <ul className={softwareList}>
+            <li>AutoCAD</li>
+            <li>Revit</li>
+            <li>SketchUp</li>
+            <li>Planswift</li>
+            <li>Lumion</li>
+            <li>Project</li>
+            <li>Adobe Photoshop</li>
+          </ul>
+          <div className={buttonContainer}>
+            <PrimaryLink to="/resume">View Full Resume PDF</PrimaryLink>
+          </div>
         </div>
         {/* Pictures for ResumeSection */}
         <div id="resumePicture1" className={resumePictures}>
