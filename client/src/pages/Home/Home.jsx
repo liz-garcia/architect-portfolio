@@ -1,7 +1,7 @@
 import { useEffect } from "react";
 import { useLocation } from "react-router-dom";
 import HeroSection from "./HeroSection.jsx";
-import About from "../About/About.jsx"; // * Import About page
+import AboutSection from "../About/About.jsx"; // * Import About section component
 
 // Tailwind CSS utility classes
 const homeStyle = "flex flex-col";
@@ -40,7 +40,7 @@ function Home() {
     <>
       <div id="homepage" className={homeStyle}>
         <HeroSection />
-        <About />
+        <AboutSection />
         <h1>Homepage</h1>
       </div>
     </>

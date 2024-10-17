@@ -19,13 +19,13 @@ const FeaturedProjectsSection = () => {
   return (
     <section id="featuredProjects" className={featuredProjectsStyle}>
       <div className={projectContainerStyle}>
-        <Image src={project1} altText="Project 1" />
+        <Image src={project1} altText="Project 1" objectFit="cover" />
       </div>
       <div className={projectContainerStyle}>
-        <Image src={project2} altText="Project 2" />
+        <Image src={project2} altText="Project 2" objectFit="cover" />
       </div>
       <div className={projectContainerStyle}>
-        <Image src={project3} altText="Project 3" />
+        <Image src={project3} altText="Project 3" objectFit="cover" />
       </div>
     </section>
   );

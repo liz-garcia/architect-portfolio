@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 
 // Tailwind CSS styles
 const imgContainerStyle = "relative size-full overflow-hidden";
-const imgStyle = "absolute inset-0 size-full object-cover";
+const imgStyle = "absolute inset-0 size-full object-contain";
 // * When using the `Image` component, it must be contained inside another parent `div`. This parent `div` must always be set to 'overflow-hidden' and provides the corresponding width/height settings, borders or any other styles.
 
 const Image = ({ src, altText = "Image", objectFit = "contain" }) => {
@@ -15,7 +15,7 @@ const Image = ({ src, altText = "Image", objectFit = "contain" }) => {
       <img
         src={src}
         alt={altText}
-        className={`${objectFitStyle} ${imgStyle}`}
+        className={`${imgStyle} ${objectFitStyle}`}
       />
     </div>
   );
