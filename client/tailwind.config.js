@@ -48,6 +48,14 @@ export default {
         "h-658-w-320-landscape": { raw: "(max-height: 320px) and (max-width: 658px) and (orientation: landscape)" },
         "h-568-w-320": { raw: "(max-height: 568px) and (max-width: 320px)" },
         "h-568-w-320-landscape": { raw: "(max-height: 320px) and (max-width: 568px) and (orientation: landscape)" },
+        // ! Specific for 'iPhone 12 Pro' screens on portrait orientation
+        "h-844-w-390": { raw: "(max-height: 844px) and (max-width: 390px) and (orientation: portrait)" },
+        // ! Specific for 'Galaxy Z Fold 5' screens on portrait orientation
+        "h-882-w-344": { raw: "(max-height: 882px) and (max-width: 344px) and (orientation: portrait)" },
+        // ! Specific for 'iPad Pro' and 'iPad Air' screens on portrait orientation
+        "h-1366-w-1024": {
+          raw: "(max-width: 1024px) and (min-width: 820px) and (max-height: 1368px) and (orientation: portrait)",
+        },
         // ! Specific for 'lg' to 'md' screens on portrait orientation
         "lg-md-portrait": {
           raw: "(max-width: 1025px) and (min-height: 1024px) and (max-height: 1368px) and (orientation: portrait)",
@@ -55,6 +63,10 @@ export default {
         // ! Specific for heights between 1024 and 1480 pixels on large widths
         "h-1180-1550": {
           raw: "(min-width: 1024px) and (min-height: 1180px) and (max-height: 1480px)",
+        },
+        // ! Specific for 'md' screens with portrait orientation, excluding sm and smallers
+        "md-portrait": {
+          raw: "(max-width: 768px) and (min-width: 641px) and (orientation: portrait)",
         },
         // ! Specific for 'xs' screens with portrait/landscape orientation
         "xs-portrait": {
