@@ -64,14 +64,15 @@ export default {
         "h-1180-1550": {
           raw: "(min-width: 1024px) and (min-height: 1180px) and (max-height: 1480px)",
         },
-        // ! Specific for 'md' screens with portrait orientation, excluding sm and smallers
+        // ! Specific for 'md' screens with portrait orientation, excluding sm and smaller
         "md-portrait": {
           raw: "(max-width: 768px) and (min-width: 641px) and (orientation: portrait)",
         },
-        // ! Specific for 'xs' screens with portrait/landscape orientation
+        // ! Specific for 'xs' (really up until 'md') screens with portrait orientation
         "xs-portrait": {
           raw: "(max-width: 885px) and (orientation: portrait)",
         },
+        // ! Specific for 'xs' (really up until 'md') screens with portrait orientation
         "xs-landscape": {
           raw: "(max-height: 450px) and (orientation: landscape)",
         },
