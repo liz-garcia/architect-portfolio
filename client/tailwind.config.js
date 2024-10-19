@@ -42,6 +42,8 @@ export default {
       },
       // ! Extend to add specific tag for specific screen size (max-values)
       screens: {
+        "h-430-w-932-landscape": { raw: "(max-height: 430px) and (min-height: 429px) and (max-width: 932px) and (min-width: 931px)" },
+        "h-320-w-658-landscape": { raw: "(max-height: 320px) and (min-height: 319px) and (max-width: 658px) and (min-width: 657px)" },
         "h-667-w-375": { raw: "(max-height: 667px) and (max-width: 375px)" },
         "h-667-w-375-landscape": { raw: "(max-height: 375px) and (max-width: 667px) and (orientation: landscape)" },
         "h-658-w-320": { raw: "(max-height: 658px) and (max-width: 320px)" },
@@ -69,12 +71,21 @@ export default {
         "lg-portrait": {
           raw: "(max-width: 1024px) and (min-width: 769px) and (orientation: portrait)",
         },
+        "lg-portrait-h-1138": {
+          raw: "(max-width: 1024px) and (min-width: 712px) and (min-height: 1138px) and (max-height: 1139px) and (orientation: portrait)",
+        },
         "lg-landscape": {
           raw: "(max-width: 1024px) and (min-width: 769px) and (max-height: 412px) and (orientation: landscape)",
         },
-        // ! Specific for 'md' screens with portrait orientation, excluding sm and smaller
+        "lg-landscape-932": {
+          raw: "(max-width: 1024px) and (min-width: 932px) and (max-height: 430px) and (orientation: landscape)",
+        },
+        // ! Specific for 'md' screens with portrait/landscape orientation, excluding sm and smaller
         "md-portrait": {
           raw: "(max-width: 768px) and (min-width: 641px) and (orientation: portrait)",
+        },
+        "md-landscape": {
+          raw: "(max-width: 768px) and (min-height: 451px) and (max-height: 535px) and (orientation: landscape)",
         },
         // ! Specific for 'xs' (really up until 'md') screens with portrait orientation
         "xs-portrait": {
@@ -82,11 +93,11 @@ export default {
         },
         // ! Specific for 'xs' (really up until 'md') screens with portrait orientation
         "xs-landscape": {
-          raw: "(max-height: 450px) and (orientation: landscape)",
+          raw: "(max-width: 932px) and (max-height: 450px) and (orientation: landscape)",
         },
         // ! Specific for 'iPhone XR' screen size
         "h-414-w-896-landscape": {
-          raw: "(max-width: 896px) and (min-width: 890px) and (min-height: 414px) and (orientation: landscape)",
+          raw: "(max-width: 896px) and (min-width: 890px) and (min-height: 412px) and (max-height: 414px) and (orientation: landscape)",
         },
       },
     },
