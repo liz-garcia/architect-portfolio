@@ -42,8 +42,9 @@ export default {
       },
       // ! Extend to add specific tag for specific screen size (max-values)
       screens: {
-        // ! Specific for 'Surface Duo' screens on portrait orientation
+        // ! Specific for 'Surface Duo' screens on landscape orientation
         "h-540-w-720-landscape": { raw: "(max-height: 540px) and (min-height: 538px) and (max-width: 720px) and (min-width: 718px)" },
+        // ! Other screens for custom styles
         "h-430-w-932-landscape": { raw: "(max-height: 430px) and (min-height: 429px) and (max-width: 932px) and (min-width: 931px)" },
         "h-320-w-658-landscape": { raw: "(max-height: 320px) and (min-height: 319px) and (max-width: 658px) and (min-width: 657px)" },
         "h-667-w-375": { raw: "(max-height: 667px) and (max-width: 375px)" },
