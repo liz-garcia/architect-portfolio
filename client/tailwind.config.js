@@ -56,8 +56,9 @@ export default {
         // ! Specific for 'iPhone 12 Pro' screens on portrait orientation
         "h-844-w-390": { raw: "(max-height: 844px) and (max-width: 390px) and (orientation: portrait)" },
         "h-844-w-390-landscape": { raw: "(max-height: 390px) and (max-width: 844px) and (min-width: 840px) and (orientation: landscape)" },
-        // ! Specific for 'Galaxy Z Fold 5' screens on portrait orientation
+        // ! Specific for 'Galaxy Z Fold 5' screens on portrait/landscape orientation
         "h-882-w-344": { raw: "(max-height: 882px) and (max-width: 344px) and (orientation: portrait)" },
+        "h-882-w-344-landscape": { raw: "(max-height: 344px) and (max-width: 882px) and (orientation: landscape)" },
         // ! Specific for 'iPad Pro' and 'iPad Air' screens on portrait orientation
         "h-1366-w-1024": {
           raw: "(max-width: 1024px) and (min-width: 820px) and (max-height: 1368px) and (orientation: portrait)",
