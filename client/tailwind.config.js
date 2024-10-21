@@ -67,7 +67,7 @@ export default {
         "lg-md-portrait": {
           raw: "(max-width: 1025px) and (min-height: 1024px) and (max-height: 1368px) and (orientation: portrait)",
         },
-        // ! Specific for heights between 1024 and 1480 pixels on large widths
+        // ! Specific for heights between 1024 and 1480 pixels on large widths. This screen size affects also iMac Retina  4.5K 24"
         "h-1180-1550": {
           raw: "(min-width: 1024px) and (min-height: 1180px) and (max-height: 1480px)",
         },
