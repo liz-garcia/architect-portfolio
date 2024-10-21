@@ -103,6 +103,10 @@ export default {
         "h-414-w-896-landscape": {
           raw: "(max-width: 896px) and (min-width: 890px) and (min-height: 412px) and (max-height: 414px) and (orientation: landscape)",
         },
+        // ! Specific for 'Facebook on Android' screen size
+        "h-412-w-892-landscape": {
+          raw: "(max-width: 892px) and (min-width: 892px) and (min-height: 412px) and (max-height: 412px) and (orientation: landscape)",
+        },
       },
     },
   },
