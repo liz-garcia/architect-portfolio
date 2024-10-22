@@ -100,6 +100,9 @@ export default {
           raw: "(max-width: 932px) and (max-height: 450px) and (orientation: landscape)",
         },
         // ! Specific for 'iPhone XR' screen size
+        "h-414-w-896": {
+          raw: "(max-height: 896px) and (min-height: 890px) and (min-width: 412px) and (max-width: 414px)",
+        },
         "h-414-w-896-landscape": {
           raw: "(max-width: 896px) and (min-width: 890px) and (min-height: 412px) and (max-height: 414px) and (orientation: landscape)",
         },
