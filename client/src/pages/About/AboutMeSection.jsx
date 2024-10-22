@@ -7,7 +7,7 @@ const aboutMeContainer =
 // * aboutMe Section element
 // lg:px-18 to lg:px-20, deleted xl:pb-4, 2xl:pb-5 to 6 for aboutMeStyle
 const aboutMeStyle =
-  "h-fit px-28 lg:px-20 md:px-12 xl:px-16 pt-16 sm:pt-12 md:pt-8 lg:pt-10 pb-10 lg:px-12 2xl:px-16 md:pb-4 2xl:pb-6 sm:pb-16 flex lg:flex-col 2xl:flex-row gap-4 lg:gap-0 lg:gap-2 sm:gap-2 justify-center sm:h-dvh sm:px-16 sm:mx-2 xs:h-svh xs:px-10 xs:gap-2 2xs:px-8 3xl:px-32 h-658-w-320:gap-1 xs-landscape:min-h-fit xs-landscape:px-10 xs-landscape:py-4 xs-landscape:h-svh md-portrait:px-16 md-portrait:mt-4 md-portrait:mb-2 h-568-w-320:bg-emerald-200 h-568-w-320:px-6 h-658-w-320:px-6 h-1180-1550:mt-2 h-1180-1550:mx-6 xs-landscape:gap-1 h-658-w-320-landscape:landscape:gap-0 h-658-w-320-landscape:landscape:px-8 h-414-w-896-landscape:landscape:mx-4 h-430-w-932-landscape:landscape:px-16";
+  "h-fit px-28 lg:px-20 md:px-12 xl:px-16 pt-16 sm:pt-12 md:pt-8 lg:pt-10 pb-10 lg:px-12 2xl:px-16 md:pb-4 2xl:pb-6 sm:pb-16 flex lg:flex-col 2xl:flex-row gap-4 lg:gap-0 lg:gap-2 sm:gap-2 justify-center sm:h-dvh sm:px-16 sm:mx-2 xs:h-svh xs:px-10 xs:gap-2 2xs:px-8 3xl:px-32 h-658-w-320:gap-1 xs-landscape:min-h-fit xs-landscape:px-10 xs-landscape:py-4 xs-landscape:h-svh md-portrait:px-16 md-portrait:mt-4 md-portrait:mb-2 h-568-w-320:bg-emerald-200 h-568-w-320:px-6 h-658-w-320:px-6 h-1180-1550:mt-2 h-1180-1550:mx-6 xs-landscape:gap-1 h-658-w-320-landscape:landscape:gap-0 h-658-w-320-landscape:landscape:px-8 h-414-w-896-landscape:landscape:mx-4 h-430-w-932-landscape:landscape:px-20";
 // * aboutMeTitle
 const aboutMeTitleStyle = "lg:flex-none flex-1 w-1/3 lg:w-auto xl:w-1/5";
 const h2Style =
