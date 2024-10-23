@@ -53,7 +53,7 @@ export default {
         "h-658-w-320": { raw: "(max-height: 658px) and (max-width: 320px)" },
         "h-658-w-320-landscape": { raw: "(max-height: 320px) and (max-width: 658px) and (orientation: landscape)" },
         "h-568-w-320": { raw: "(max-height: 568px) and (max-width: 320px)" },
-        "h-568-w-320-landscape": { raw: "(max-height: 320px) and (max-width: 568px) and (orientation: landscape)" },
+        "h-568-w-320-landscape": { raw: "(max-height: 320px) and (min-height: 319px) and (max-width: 568px) and (min-width: 567px) and (orientation: landscape)" },
         // ! Specific for 'iPhone 12 Pro' screens on portrait orientation
         "h-844-w-390": { raw: "(max-height: 844px) and (max-width: 390px) and (orientation: portrait)" },
         "h-844-w-390-landscape": { raw: "(max-height: 390px) and (max-width: 844px) and (min-width: 840px) and (orientation: landscape)" },
