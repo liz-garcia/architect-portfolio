@@ -42,6 +42,13 @@ export default {
       },
       // ! Extend to add specific tag for specific screen size (max-values)
       screens: {
+        // ! Specific for 'iPhone X' screen size
+        "h-375-w-812": {
+          raw: "(max-width: 375px) and (min-width: 374px) and (max-height: 812px) and (min-height: 811px)",
+        },
+        "h-375-w-812-landscape": {
+          raw: "(max-width: 812px) and (min-width: 811px) and (max-height: 375px) and (min-height: 374px) and (orientation: landscape)",
+        },
         // ! Specific for 'Surface Duo' screens on landscape orientation
         "h-540-w-720-landscape": { raw: "(max-height: 540px) and (min-height: 538px) and (max-width: 720px) and (min-width: 718px)" },
         // ! Other screens for custom styles
