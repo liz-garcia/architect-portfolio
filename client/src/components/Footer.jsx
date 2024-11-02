@@ -1,7 +1,4 @@
 import { Link } from "react-router-dom";
-// import Logo from "./Logo.jsx";
-// import Nav from "./Nav.jsx";
-// import TertiaryLink from "./Buttons/TertiaryLink.jsx";
 
 // Tailwind CSS utility classes
 const footerStyle =
@@ -46,7 +43,6 @@ const Footer = () => {
           </li>
         </ul>
       </div>
-      {/* <TertiaryLink to="/admin">Admin access</TertiaryLink> */}
     </footer>
   );
 };
