@@ -54,15 +54,15 @@ const AboutMeSection = () => {
           <div id="aboutMeText" className={aboutMeTextStyle}>
             <h3 className={h3Style}>Architect, Estimator, Drafting & Design</h3>
             <p id="elevatorPitch" className={elevatorPitchStyle}>
-              As a versatile architect with a strong focus on residential,
-              commercial, and remodeling projects, I have a proven track record
-              of balancing creativity with technical precision. With over 10
-              years of experience, including 7 years as an estimator, I bring a
-              deep understanding of both design and construction to each
-              project. My design philosophy is guided by rhythm, simplicity, and
-              contrast, ensuring that every space is functional, beautiful, and
-              aligned with my clients&apos; needs. I thrive on being involved in
-              the entire project lifecycle, from concept to completion.
+              It all started with a blank sheet of paper and a love for creating
+              spaces where people truly feel at home. Over the years, I&apos;ve
+              designed everything from cozy residences in Nicaragua to managing
+              complex estimates for large-scale projects in Utah and Puget
+              Sound. Now, having recently moved to Minneapolis, I&apos;m excited
+              to bring my blend of creative design and practical construction
+              expertise to new challenges. With a strong focus on precision,
+              efficiency, and quality results, I&apos;m committed to turning
+              every vision into a successful project.
             </p>
             <div
               className={
