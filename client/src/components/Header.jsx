@@ -10,7 +10,6 @@ const Header = () => {
   return (
     <header className={headerStyle}>
       <Logo />
-      <nav></nav>
       <Nav />
     </header>
   );
