@@ -5,8 +5,8 @@ import App from "./App.jsx";
 import "./index.css";
 
 // Tailwind CSS utility classes
-const dimensions = "";
-const layout = "flex flex-col bg-[#FFFFFF]";
+const dimensions = "min-h-screen";
+const layout = "bg-[#FFFFFF] grid content-between";
 const text = "text-[1.1rem]/relaxed text-zinc-800 font-sans font-light";
 const darkMode = "";
 const tailwindClasses = `${dimensions} ${layout} ${text} ${darkMode}`;
