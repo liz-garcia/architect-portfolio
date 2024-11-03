@@ -2,7 +2,7 @@ import PropTypes from "prop-types";
 
 // Tailwind CSS classes
 const inputStyle =
-  "drop-shadow rounded-lg p-3 3xl:text-xl focus:outline-lime-300";
+  "drop-shadow rounded-lg p-2 3xl:text-xl focus:outline-lime-300";
 
 const Input = ({ name, value, onChange, ...rest }) => {
   return (
