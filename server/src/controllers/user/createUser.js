@@ -2,6 +2,9 @@ import User, { validateUser } from "../../models/User.js";
 import validationErrorMessage from "../../utils/validationErrorMessage.js";
 import { logError } from "../../utils/logging.js";
 
+import dotenv from "dotenv";
+dotenv.config();
+
 // TODO Remember - All files related to CreateUser in client and server require extra work. This is just a basic setup.
 const createUser = async (req, res) => {
   try {

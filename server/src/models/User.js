@@ -2,17 +2,17 @@ import mongoose from "mongoose";
 import validateAllowedFields from "../utils/validateAllowedFields.js";
 
 const userSchema = new mongoose.Schema({
-  name: { type: String, required: true },
-  lastName: { type: String, required: true },
+  username: { type: String, required: true, unique: true },
   password: { type: String, required: true },
-  email: { type: String, required: true, unique: true },
+  authCode: { type: String, required: true },
 });
 
 const User = mongoose.model("users", userSchema);
 
 export const validateUser = (userObject) => {
   const errorList = [];
-  const allowedKeys = ["name", "lastName", "password", "email"];
+  const allowedKeys = ["username", "password", "authCode"];
+  const auth = process.env.AUTH_CODE;
 
   const validatedKeysMessage = validateAllowedFields(userObject, allowedKeys);
 
@@ -20,20 +20,20 @@ export const validateUser = (userObject) => {
     errorList.push(validatedKeysMessage);
   }
 
-  if (userObject.name == null) {
-    errorList.push("name is a required field");
-  }
-
-  if (userObject.lastName == null) {
-    errorList.push("lastName is a required field");
+  if (userObject.username == null) {
+    errorList.push("username is a required field");
   }
 
   if (userObject.password == null) {
     errorList.push("password is a required field");
   }
 
-  if (userObject.email == null) {
-    errorList.push("email is a required field");
+  if (userObject.authCode == null) {
+    errorList.push("authorization code is a required field");
+  }
+
+  if (userObject.authCode !== auth) {
+    errorList.push("authorization code not valid");
   }
 
   return errorList;
