@@ -5,23 +5,25 @@ import PrimaryButton from "../../components/Buttons/PrimaryButton.jsx";
 import useFetch from "../../hooks/useFetch.js";
 
 const createUserStyle =
-  "flex flex-col text-center items-center justify-center gap-1 p-8 w-fit justify-self-center border border-zinc-800 rounded-2xl text-base m-8";
+  "flex flex-col text-center items-center justify-center gap-1 p-8 w-fit justify-self-center border border-zinc-800 rounded-2xl text-base m-8 3xl:text-lg/relaxed";
 const headerStyle = "pb-4 mb-4 border-b border-zinc-800";
-const h1Style = "text-xl/tight font-bold 3xl:text-5xl";
-const h2Style = "text-base 3xl:text-3xl";
+const h1Style = "text-xl/tight font-bold 3xl:text-3xl/relaxed";
+const h2Style = "text-base 3xl:text-xl/relaxed";
 const formStyle = "flex flex-col gap-4 items-stretch w-full";
-const containerStyle = "flex flex-col justify-between gap-2";
-const labelStyle = "text-left 3xl:text-3xl";
-const buttonContainer = "w-full flex place-content-center mt-2";
+const containerStyle = "flex flex-col justify-between gap-1";
+const labelStyle = "text-left";
+const buttonContainer = "w-full flex place-content-center mt-1";
 
 // TODO Remember - All files related to CreateUser in client and server require extra work. This is just a very basic setup.
 const CreateUser = () => {
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
+  const [authCode, setAuthCode] = useState("");
 
   const onSuccess = () => {
     setUsername("");
     setPassword("");
+    setAuthCode("");
   };
   const { isLoading, error, performFetch, cancelFetch } = useFetch(
     "/user/create",
@@ -40,7 +42,7 @@ const CreateUser = () => {
       headers: {
         "content-type": "application/json",
       },
-      body: JSON.stringify({ user: { username, password } }),
+      body: JSON.stringify({ user: { username, password, authCode } }),
     });
   };
 
@@ -69,6 +71,7 @@ const CreateUser = () => {
             name="username"
             value={username}
             onChange={(value) => setUsername(value)}
+            required
           />
         </div>
         <div className={containerStyle}>
@@ -76,9 +79,23 @@ const CreateUser = () => {
             Enter password:
           </label>
           <Input
+            type="password"
             name="password"
             value={password}
             onChange={(value) => setPassword(value)}
+            required
+          />
+        </div>
+        <div className={containerStyle}>
+          <label htmlFor="authCode" className={labelStyle}>
+            Enter authorization code:
+          </label>
+          <Input
+            type="password"
+            name="authCode"
+            value={authCode}
+            onChange={(value) => setAuthCode(value)}
+            required
           />
         </div>
         <div className={buttonContainer}>

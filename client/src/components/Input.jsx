@@ -10,6 +10,7 @@ const Input = ({ name, value, onChange, ...rest }) => {
       {...rest}
       name={name}
       value={value}
+      autoComplete="off"
       onChange={(e) => onChange(e.target.value)}
       className={inputStyle}
     />
