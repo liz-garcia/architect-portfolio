@@ -50,10 +50,12 @@ const CreateUser = () => {
 
   if (error != null) {
     statusComponent = (
-      <div>Error while trying to create user: {error.toString()}</div>
+      <div className="pt-2">
+        Error while trying to create user: {error.toString()}
+      </div>
     );
   } else if (isLoading) {
-    statusComponent = <div>Creating user....</div>;
+    statusComponent = <div className="pt-2">Creating user....</div>;
   }
 
   return (
