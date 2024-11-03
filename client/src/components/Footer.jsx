@@ -15,7 +15,6 @@ const linkStyle =
 const Footer = () => {
   return (
     <footer className={footerStyle}>
-      {/* <Logo /> */}
       <div className={copyrightStyle}>
         <p>&copy; Copyright Rhina Aragón, 2024.</p>
       </div>
@@ -37,7 +36,7 @@ const Footer = () => {
             </Link>
           </li>
           <li className={liStyle}>
-            <Link to="/#" className={linkStyle}>
+            <Link to="/admin" className={linkStyle}>
               Admin
             </Link>
           </li>
