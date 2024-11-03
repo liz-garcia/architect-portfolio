@@ -70,7 +70,9 @@ const CreateUser = () => {
             Enter new username:
           </label>
           <Input
+            id="username"
             name="username"
+            type="text"
             value={username}
             onChange={(value) => setUsername(value)}
             required
@@ -81,8 +83,9 @@ const CreateUser = () => {
             Enter password:
           </label>
           <Input
-            type="password"
+            id="password"
             name="password"
+            type="password"
             value={password}
             onChange={(value) => setPassword(value)}
             required
@@ -93,8 +96,9 @@ const CreateUser = () => {
             Enter authorization code:
           </label>
           <Input
-            type="password"
+            id="authCode"
             name="authCode"
+            type="password"
             value={authCode}
             onChange={(value) => setAuthCode(value)}
             required
