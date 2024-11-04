@@ -10,6 +10,8 @@ export default {
       // ! defaultTheme sizes rewritten to work with max-width
       "3xl": "1537px", // Use min-width for bigger screen sizes
       // => @media (min-width: 1536px) { ... }
+      // * Always also test for screens slightly bigger
+      // * than iMac Retina 4.5K 24", like 2500px x 1500px
 
       "2xl": { max: "1536px" },
       // => @media (max-width: 1536px) { ... }
@@ -62,6 +64,9 @@ export default {
         "h-568-w-320": { raw: "(max-height: 568px) and (max-width: 320px)" },
         "h-568-w-320-landscape": { raw: "(max-height: 320px) and (min-height: 319px) and (max-width: 568px) and (min-width: 567px) and (orientation: landscape)" },
         // ! Specific for 'iPhone 6/7/8 Plus' screen size
+        "h-414-w-736": {
+          raw: "(max-height: 736px) and (min-height: 735px) and (max-width: 414px) and (min-width: 413px) and (orientation: portrait)",
+        },
         "h-414-w-736-landscape": {
           raw: "(max-width: 736px) and (min-width: 735px) and (max-height: 414px) and (min-height: 413px) and (orientation: landscape)",
         },
@@ -81,7 +86,10 @@ export default {
         },
         // ! Specific for heights between 1024 and 1480 pixels on large widths. This screen size affects also iMac Retina  4.5K 24"
         "h-1180-1550": {
-          raw: "(min-width: 1024px) and (min-height: 1180px) and (max-height: 1480px)",
+          raw: "(min-width: 1536px) and (max-width: 2240px) and (min-height: 1180px) and (max-height: 1260px)",
+        },
+        "h-1260-w-1024": {
+          raw: "(min-width: 1024px) and (max-width: 1536px) and (min-height: 1081px) and (max-height: 1370px)",
         },
         // ! Specific for 'lg' screens, excluding md and smaller
         "lg-portrait": {
