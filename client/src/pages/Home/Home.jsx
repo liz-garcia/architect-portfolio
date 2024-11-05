@@ -41,7 +41,9 @@ function Home() {
       <div id="homepage" className={homeStyle}>
         <HeroSection />
         <AboutSection />
-        <h1>Homepage</h1>
+        <section id="contact" className="h-dvh">
+          Contact
+        </section>
       </div>
     </>
   );
