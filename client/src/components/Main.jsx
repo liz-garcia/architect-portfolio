@@ -1,7 +1,7 @@
 import PropTypes from "prop-types";
 
 // Tailwind CSS utility classes
-const mainStyle = "w-dvw";
+const mainStyle = "w-dvw overflow-hidden";
 
 // Main Component
 const Main = ({ children }) => {

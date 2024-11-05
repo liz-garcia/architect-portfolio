@@ -4,7 +4,7 @@ import Image from "../../components/Image.jsx";
 import PrimaryLink from "../../components/Buttons/PrimaryLink.jsx";
 
 const resumeSectionStyle =
-  "h-screen grid grid-cols-3 xl:grid-cols-[1fr_2fr_2fr] grid-rows-[1fr_2fr] lg:grid-rows-[2fr_1fr_3fr] lg:grid-cols-[1fr_1fr_1fr] gap-4 xl:gap-2 px-16 py-12 pb-4 lg:px-12 lg:pt-8 lg:pb-2 3xl:p-20 md:bg-zinc-200 sm:bg-red-100";
+  "min-h-fit h-screen grid grid-cols-3 xl:grid-cols-[1fr_2fr_2fr] grid-rows-[1fr_2fr] lg:grid-rows-[2fr_1fr_3fr] lg:grid-cols-[1fr_1fr_1fr] gap-4 xl:gap-2 px-16 py-12 pb-4 lg:px-12 lg:pt-8 lg:pb-2 3xl:p-20 md:gap-1 md:px-8 xs:bg-red-200";
 const resumeSubsection =
   "p-2 pt-0 flex flex-col gap-2 3xl:p-8 3xl:gap-4 lg:gap-2 lg:pb-2 2xl:text-[1.09rem] xl:text-[1.05rem] lg:text-base";
 const h1Style =
@@ -15,11 +15,11 @@ const dateStyle = "3xl:text-2xl";
 const itemTitle = "font-semibold 3xl:text-2xl";
 const itemDetail = "text-sm lg:text-base italic 3xl:text-xl";
 const education =
-  "lg:col-start-1 lg:col-span-2 lg:row-start-2 lg:row-span-1 lg:pr-8";
+  "lg:col-start-1 lg:col-span-2 lg:row-start-2 lg:row-span-1 lg:pr-8 md:pr-4";
 const educationInfo =
   "lg:grid lg:grid-rows-1 lg:grid-cols-[1fr_2fr] xl:flex xl:flex-col xl:gap-1";
 const workExperience =
-  "lg:col-start-1 lg:col-span-2 lg:row-start-1 lg:row-span-1 lg:pr-8";
+  "lg:col-start-1 lg:col-span-2 lg:row-start-1 lg:row-span-1 lg:pr-8 md:pr-4";
 const workExperienceInfo = "";
 const softwareSkills =
   "lg:col-start-3 lg:row-start-1 lg:col-span-1 lg:row-span-1 lg:px-1 lg:pb-1 lg:text-[0.95rem]";
@@ -28,11 +28,12 @@ const softwareList =
 const dotStyle =
   "w-1 h-1 bg-lime-400 rounded place-self-center mx-2 last:hidden lg:mx-1";
 const buttonContainer = "mx-auto my-auto xl:scale-95 lg:scale-[0.85]";
-const pictures = "xl:pt-2 lg:px-2";
+// const pictures = "py-4 xl:pt-2 lg:px-2";
+const pictures = "xl:pt-2 lg:px-2 md:px-1";
 const smallPicture =
   "lg:col-start-3 lg:col-span-1 lg:row-start-2 lg:row-span-2 lg:pt-0";
 const largePicture =
-  "col-span-2 lg:row-start-3 lg:col-start-1 lg:col-span-2 lg:pr-8 lg:mb-4";
+  "col-span-2 lg:row-start-3 lg:col-start-1 lg:col-span-2 lg:pr-8 md:pr-4 lg:mb-4";
 
 const ResumeSection = () => {
   return (

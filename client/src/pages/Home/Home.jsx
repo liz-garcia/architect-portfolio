@@ -42,6 +42,9 @@ function Home() {
         <HeroSection />
         <AboutSection />
         <h1>Homepage</h1>
+        <div id="contact" className="h-vh">
+          Contact
+        </div>
       </div>
     </>
   );
