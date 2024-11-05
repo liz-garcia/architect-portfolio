@@ -41,10 +41,9 @@ function Home() {
       <div id="homepage" className={homeStyle}>
         <HeroSection />
         <AboutSection />
-        <h1>Homepage</h1>
-        <div id="contact" className="h-vh">
+        <section id="contact" className="h-dvh">
           Contact
-        </div>
+        </section>
       </div>
     </>
   );

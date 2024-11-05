@@ -17,7 +17,6 @@ function AboutSection() {
         <FeaturedProjectsSection />
       </section>
       <ResumeSection />
-      <section id="contact"></section>
     </section>
   );
 }
