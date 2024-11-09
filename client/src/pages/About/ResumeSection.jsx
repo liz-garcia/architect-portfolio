@@ -4,7 +4,7 @@ import Image from "../../components/Image.jsx";
 import PrimaryLink from "../../components/Buttons/PrimaryLink.jsx";
 
 const resumeSectionStyle =
-  "min-h-fit h-screen grid grid-cols-3 xl:grid-cols-[1fr_2fr_2fr] grid-rows-[1fr_2fr] lg:grid-rows-[2fr_1fr_3fr] lg:grid-cols-[1fr_1fr_1fr] gap-4 xl:gap-2 px-16 py-12 pb-4 lg:px-12 lg:pt-8 lg:pb-2 3xl:p-20 md:gap-1 md:px-8 xs:bg-red-200";
+  "min-h-fit h-screen grid grid-cols-3 xl:grid-cols-[1fr_2fr_2fr] grid-rows-[1fr_2fr] lg:grid-rows-[2fr_1fr_3fr] lg:grid-cols-[1fr_1fr_1fr] gap-4 xl:gap-2 px-16 py-12 pb-4 lg:px-12 lg:pt-8 lg:pb-2 3xl:p-20 md:gap-1 md:px-8 sm:bg-zinc-400 xs:bg-red-200";
 const resumeSubsection =
   "p-2 pt-0 flex flex-col gap-2 3xl:p-8 3xl:gap-4 lg:gap-2 lg:pb-2 2xl:text-[1.09rem] xl:text-[1.05rem] lg:text-base";
 const h1Style =
