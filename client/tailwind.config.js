@@ -58,9 +58,12 @@ export default {
         "h-430-w-932-landscape": { raw: "(max-height: 430px) and (min-height: 429px) and (max-width: 932px) and (min-width: 931px)" },
         "h-320-w-658-landscape": { raw: "(max-height: 320px) and (min-height: 319px) and (max-width: 658px) and (min-width: 657px)" },
         "h-667-w-375": { raw: "(max-height: 667px) and (max-width: 375px)" },
+        "h-667-w-375-extra": { raw: "(max-width: 375px) and (min-width: 374px) and (max-height: 667px) and (min-height: 665px) and (orientation: portrait)" },
         "h-667-w-375-landscape": { raw: "(max-height: 375px) and (max-width: 667px) and (orientation: landscape)" },
+        "h-667-w-375-landscape-extra": { raw: "(max-height: 375px) and (min-height: 374px) and (max-width: 667px) and (min-width: 665px) and (orientation: landscape)" },
         "h-658-w-320": { raw: "(max-height: 658px) and (max-width: 320px)" },
         "h-658-w-320-landscape": { raw: "(max-height: 320px) and (max-width: 658px) and (orientation: landscape)" },
+        "h-658-w-320-landscape-extra": { raw: "(max-height: 320px) and (min-height: 319px) and (max-width: 658px) and (min-width: 657px) and (orientation: landscape)" },
         "h-568-w-320": { raw: "(max-height: 568px) and (max-width: 320px)" },
         "h-568-w-320-landscape": { raw: "(max-height: 320px) and (min-height: 319px) and (max-width: 568px) and (min-width: 567px) and (orientation: landscape)" },
         // ! Specific for 'iPhone 6/7/8 Plus' screen size

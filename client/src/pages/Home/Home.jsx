@@ -41,7 +41,7 @@ function Home() {
       <div id="homepage" className={homeStyle}>
         <HeroSection />
         <AboutSection />
-        <section id="contact" className="h-dvh">
+        <section id="contact" className="h-screen h-1260-w-1024:h-[40vh]">
           Contact
         </section>
       </div>
