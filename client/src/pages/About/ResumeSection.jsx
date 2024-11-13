@@ -4,7 +4,7 @@ import Image from "../../components/Image.jsx";
 import PrimaryLink from "../../components/Buttons/PrimaryLink.jsx";
 
 const resumeSectionStyle =
-  "min-h-fit h-screen grid grid-cols-3 xl:grid-cols-[1fr_2fr_2fr] grid-rows-[1fr_2fr] lg:grid-rows-[2fr_1fr_3fr] lg:grid-cols-[1fr_1fr_1fr] gap-4 xl:gap-2 px-16 py-12 pb-4 lg:px-12 lg:pt-8 lg:pb-2 lg:portrait:grid-rows-[auto_auto_1fr] lg:portrait:px-16 lg:portrait:py-16 lg:portrait:gap-4 3xl:p-20 md:portrait:gap-4 md:portrait:px-12 md:portrait:pt-12 md:portrait:pb-0 sm:portrait:min-h-fit sm:portrait:h-screen sm:portrait:flex sm:portrait:flex-col sm:portrait:gap-4 xs:portrait:gap-4 sm:portrait:place-content-center sm:portrait:pt-8 sm:portrait:pb-8 xs:portrait:py-8 xs:portrait:px-8 xs-landscape:px-10 xs-landscape:pb-8 h-1260-w-1024:h-[60vh] h-568-w-320-landscape:grid-rows-[2fr_1fr] h-568-w-320-landscape:landscape:py-6 h-568-w-320-landscape:landscape:px-8 h-667-w-375-landscape-extra:gap-1 h-667-w-375-landscape-extra:py-6 h-667-w-375-landscape-extra:grid-rows-[2fr_1fr] 2xs:portrait:gap-2";
+  "min-h-fit h-screen grid grid-cols-3 xl:grid-cols-[1fr_2fr_2fr] grid-rows-[1fr_2fr] lg:grid-rows-[2fr_1fr_3fr] lg:grid-cols-[1fr_1fr_1fr] gap-4 xl:gap-2 px-16 py-12 pb-4 lg:px-12 lg:pt-8 lg:pb-2 lg:portrait:grid-rows-[auto_auto_1fr] lg:portrait:px-16 lg:portrait:py-16 lg:portrait:gap-4 3xl:p-20 md:portrait:gap-4 md:portrait:px-10 md:portrait:pt-10 md:portrait:pb-0 sm:portrait:min-h-fit sm:portrait:h-screen sm:flex sm:flex-col sm:portrait:flex sm:portrait:flex-col sm:portrait:px-12 sm:portrait:gap-4 xs:portrait:gap-4 sm:portrait:place-content-center sm:portrait:pt-8 sm:portrait:pb-8 xs:portrait:py-8 xs:portrait:px-8 xs-landscape:px-10 xs-landscape:pb-8 h-1260-w-1024:h-[60vh] h-568-w-320-landscape:grid-rows-[2fr_1fr] h-568-w-320-landscape:landscape:py-6 h-568-w-320-landscape:landscape:px-8 h-667-w-375-landscape-extra:gap-1 h-667-w-375-landscape-extra:py-6 h-667-w-375-landscape-extra:grid-rows-[2fr_1fr] 2xs:portrait:gap-2";
 const resumeSubsection =
   "p-2 pt-0 flex flex-col gap-2 3xl:p-8 3xl:gap-4 lg:gap-2 lg:pb-2 2xl:text-[1.09rem] xl:text-[1.05rem] lg:text-base sm:gap-2 sm:min-h-fit sm:pb-0 xs:gap-1 xs:pb-4 2xs:pb-0 h-568-w-320-landscape:gap-1";
 const h1Style =
@@ -26,19 +26,18 @@ const workExperience =
   "lg:col-start-1 lg:col-span-2 lg:row-start-1 lg:row-span-1 lg:pr-8 md:pr-4 sm:order-first sm:pr-0 sm:px-0";
 const workExperienceInfo = "xs:flex xs:flex-col";
 const softwareSkills =
-  "lg:col-start-3 lg:row-start-1 lg:col-span-1 lg:row-span-1 lg:px-1 lg:pb-1 lg:text-[0.95rem] lg:portrait:px-0 sm:portrait:order-3 sm:portrait:pr-0 sm:portrait:px-0";
+  "lg:col-start-3 lg:row-start-1 lg:col-span-1 lg:row-span-1 lg:px-1 lg:pb-1 lg:text-[0.95rem] lg:portrait:px-0 sm:order-3 sm:portrait:order-3 sm:portrait:pr-0 sm:portrait:px-0";
 const softwareList =
   "leading-tight flex flex-wrap gap-1 text-center justify-center lg:p-1 lg:pt-0 3xl:text-2xl 3xl:gap-4 sm:px-0 xs:pt-1 h-568-w-320-landscape:text-sm h-568-w-320-landscape:py-2 h-658-w-320-landscape-extra:text-sm h-667-w-375-landscape-extra:text-sm";
 const dotStyle =
   "w-1 h-1 bg-lime-400 rounded place-self-center mx-2 last:hidden lg:mx-1 sm:mx-1 xs:mx-1";
 const buttonContainer =
   "mx-auto my-auto xl:scale-95 lg:scale-[0.85] lg:portrait:mt-2 sm:portrait:mt-1 md:landscape:mt-2 xs-landscape:landscape:mt-0 sm:scale-95 2xs:scale-90 h-568-w-320-landscape:scale-90";
-// const pictures = "py-4 xl:pt-2 lg:px-2";
 const pictures = "2xl:pt-2 md:portrait:pt-0 lg:px-2";
 const smallPicture =
-  "lg:col-start-3 lg:col-span-1 lg:row-start-2 lg:row-span-2 lg:pt-0 lg:portrait:hidden sm:portrait:hidden h-568-w-320-landscape:hidden";
+  "lg:col-start-3 lg:col-span-1 lg:row-start-2 lg:row-span-2 lg:pt-0 lg:portrait:hidden sm:hidden sm:portrait:hidden h-568-w-320-landscape:hidden";
 const largePicture =
-  "col-span-2 lg:row-start-3 lg:col-start-1 lg:col-span-2 lg:pr-8 md:pr-4 lg:portrait:col-span-3 lg:portrait:pr-0 lg:portrait:px-0 lg:portrait:mb-0 lg:portrait:pt-8 md:portrait:pr-4 lg:portrait:mb-4 sm:portrait:hidden xs-landscape:hidden h-1260-w-1024:portrait:pt-4 h-1260-w-1024:portrait:mb-0 h-568-w-320-landscape:hidden";
+  "col-span-2 lg:row-start-3 lg:col-start-1 lg:col-span-2 lg:pr-8 md:pr-4 lg:portrait:col-span-3 lg:portrait:pr-0 lg:portrait:px-0 lg:portrait:mb-0 lg:portrait:pt-8 md:portrait:pr-4 lg:portrait:mb-4 sm:hidden sm:portrait:hidden xs-landscape:hidden h-1260-w-1024:portrait:pt-4 h-1260-w-1024:portrait:mb-0 h-568-w-320-landscape:hidden";
 
 const ResumeSection = () => {
   return (
