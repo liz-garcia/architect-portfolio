@@ -20,7 +20,12 @@ const SecondaryLink = ({ to, href, children }) => {
   if (href) {
     // If 'href' is provided, render an <a> element
     return (
-      <a href={href} className={secondaryLinkStyle}>
+      <a
+        href={href}
+        className={secondaryLinkStyle}
+        target="_blank"
+        rel="noopener noreferrer"
+      >
         {children}
       </a>
     );

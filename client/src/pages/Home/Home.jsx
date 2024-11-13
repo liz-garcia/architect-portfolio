@@ -1,7 +1,8 @@
 import { useEffect } from "react";
 import { useLocation } from "react-router-dom";
 import HeroSection from "./HeroSection.jsx";
-import AboutSection from "../About/About.jsx"; // * Import About section component
+import AboutSection from "../About/About.jsx";
+import ContactSection from "./ContactSection.jsx";
 
 // Tailwind CSS utility classes
 const homeStyle = "flex flex-col";
@@ -41,9 +42,7 @@ function Home() {
       <div id="homepage" className={homeStyle}>
         <HeroSection />
         <AboutSection />
-        <section id="contact" className="h-dvh">
-          Contact
-        </section>
+        <ContactSection />
       </div>
     </>
   );

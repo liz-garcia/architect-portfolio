@@ -19,7 +19,12 @@ const PrimaryLink = ({ to, href, children }) => {
   if (href) {
     // If 'href' is provided, render an <a> element
     return (
-      <a href={href} className={primaryLinkStyle}>
+      <a
+        href={href}
+        className={primaryLinkStyle}
+        target="_blank"
+        rel="noopener noreferrer"
+      >
         {children}
       </a>
     );
