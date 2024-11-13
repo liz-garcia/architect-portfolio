@@ -17,7 +17,12 @@ const TertiaryLink = ({ to, href, children }) => {
   if (href) {
     // If 'href' is provided, render an <a> element
     return (
-      <a href={href} className={tertiaryLinkStyle}>
+      <a
+        href={href}
+        className={tertiaryLinkStyle}
+        target="_blank"
+        rel="noopener noreferrer"
+      >
         {children}
       </a>
     );
