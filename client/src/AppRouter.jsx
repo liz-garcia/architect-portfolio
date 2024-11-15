@@ -1,5 +1,6 @@
 import { Routes, Route } from "react-router-dom";
 import Home from "./pages/Home/Home.jsx";
+import Projects from "./pages/Portfolio/Projects.jsx";
 import NotFoundPage from "./pages/NotFoundPage.jsx";
 
 // * Admin pages
@@ -11,6 +12,7 @@ const AppRouter = () => {
     <Routes>
       {/* Home page includes the About page as AboutSection */}
       <Route path="/" element={<Home />} />
+      <Route path="/portfolio" element={<Projects />} />
 
       {/* Admin routes */}
       <Route path="/admin" element={<Admin />} />
