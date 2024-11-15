@@ -87,6 +87,9 @@ export default {
         "ipad-surface-pro": {
           raw: "(max-width: 1025px) and (min-width: 900px) and (max-height: 1370px) and (min-height: 1360px) and (orientation: portrait)",
         },
+        "ipad-surface-pro-landscape": {
+          raw: "(max-height: 1025px) and (min-height: 900px) and (max-width: 1370px) and (min-width: 1360px) and (orientation: landscape)",
+        },
         // ! Specific for 'lg' to 'md' screens on portrait orientation
         "lg-md-portrait": {
           raw: "(max-width: 1025px) and (min-height: 1024px) and (max-height: 1368px) and (orientation: portrait)",
