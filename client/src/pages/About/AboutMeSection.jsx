@@ -78,7 +78,9 @@ const AboutMeSection = () => {
               ></div>
               <PrimaryLink to="/#resume">CV Highlights</PrimaryLink>
               <PrimaryLink
-                to={isSmallScreen ? "/#featuredProjects" : "/portfolio"}
+                to={
+                  isSmallScreen ? "/#featuredProjects" : "/portfolio/projects"
+                }
               >
                 {isSmallScreen ? "Featured projects" : "View all projects"}
               </PrimaryLink>

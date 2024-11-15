@@ -18,7 +18,7 @@ const Nav = () => {
           </Link>
         </li>
         <li className={liStyle}>
-          <Link to="/portfolio" className={linkStyle}>
+          <Link to="/portfolio/projects" className={linkStyle}>
             Portfolio
           </Link>
         </li>

@@ -12,7 +12,7 @@ const AppRouter = () => {
     <Routes>
       {/* Home page includes the About page as AboutSection */}
       <Route path="/" element={<Home />} />
-      <Route path="/portfolio" element={<Projects />} />
+      <Route path="/portfolio/projects" element={<Projects />} />
 
       {/* Admin routes */}
       <Route path="/admin" element={<Admin />} />
