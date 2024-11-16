@@ -5,7 +5,10 @@ import heroImage1 from "/architectural-plan-1.png";
 import heroImage2 from "/architectural-plan-2.png";
 import heroImage3 from "/architectural-plan-3.png";
 
-// Tailwind CSS utility classes
+import { useEffect, useState } from "react";
+import useFetch from "../../hooks/useFetch.js";
+
+// * Tailwind CSS utility classes //
 const heroSectionStyle =
   "w-[100dvw] h-[88dvh] flex pl-16 md:p-0 md:pb-1 md:landscape:pb-0 2xl:pl-16 3xl:pl-28 items-center justify-center md:flex-col-reverse gap-8 md:gap-3 2xl:gap-12 3xl:gap-24 xs:gap-0 xs:h-[84svh] xs-landscape:flex-row xs-landscape:h-[78svh] h-1366-w-1024:flex-col-reverse h-1366-w-1024:gap-3 h-1366-w-1024:p-0 h-1366-w-1024:pb-2 lg-landscape:pl-0 lg-landscape:gap-0 md-landscape:gap-0 h-540-w-720-landscape:landscape:gap-8";
 const heroTitleStyle =
@@ -22,15 +25,43 @@ const heroButtonsStyle =
 // HeroSection component
 function HeroSection() {
   const images = [heroImage1, heroImage2, heroImage3];
+  const [portfolio, setPortfolio] = useState(null);
+
+  const { isLoading, error, performFetch, cancelFetch } = useFetch(
+    "/portfolio",
+    (response) => {
+      setPortfolio(response.result[0]);
+    }
+  );
+
+  useEffect(() => {
+    performFetch();
+
+    return cancelFetch;
+
+    // performFetch and cancelFetch are stable functions provided by useFetch hook. They will not change, so no dependencies are needed.
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
+
+  let data = null;
+
+  if (isLoading) {
+    data = <div>Loading...</div>;
+  } else if (error) {
+    data = <div>Error: {error.toString()}</div>;
+  } else if (portfolio != null) {
+    data = portfolio.heroSection;
+  } else {
+    // Adding this condition due to React.StrictMode. For scenarios where double rendering of Effects make take place. We show the user we are attempting to load the data.
+    data = <div>Loading...</div>;
+  }
 
   return (
     <>
       <section id="heroSection" className={heroSectionStyle}>
         <div id="heroTitle" className={heroTitleStyle}>
-          <h1 className={h1Style}>Architect Portfolio</h1>
-          <h2 className={h2Style}>
-            Rhina Aragón, senior architect based in Minneapolis, Minnesota.
-          </h2>
+          <h1 className={h1Style}>{data.title}</h1>
+          <h2 className={h2Style}>{data.subtitle}</h2>
           <div id="heroButtons" className={heroButtonsStyle}>
             <PrimaryLink to="/#about">About me</PrimaryLink>
             <SecondaryLink to="/#contact">Contact</SecondaryLink>
