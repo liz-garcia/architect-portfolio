@@ -33,9 +33,9 @@ const dotStyle =
   "w-1 h-1 bg-lime-400 rounded place-self-center mx-2 last:hidden lg:mx-1 sm:mx-1 xs:mx-1";
 const buttonContainer =
   "mx-auto my-auto xl:scale-95 lg:scale-[0.85] lg:portrait:mt-2 sm:portrait:mt-1 md:landscape:mt-2 xs-landscape:landscape:mt-0 sm:scale-95 2xs:scale-90 h-568-w-320-landscape:scale-90";
-const pictures = "2xl:pt-2 md:portrait:pt-0 lg:px-2";
+const pictures = "2xl:pt-2 md:portrait:pt-0 px-2";
 const smallPicture =
-  "lg:col-start-3 lg:col-span-1 lg:row-start-2 lg:row-span-2 lg:pt-0 lg:portrait:hidden sm:hidden sm:portrait:hidden h-568-w-320-landscape:hidden";
+  "lg:col-start-3 lg:col-span-1 lg:row-start-2 lg:row-span-2 lg:pt-0 lg:portrait:hidden sm:hidden sm:portrait:hidden h-568-w-320-landscape:hidden xl:px-2";
 const largePicture =
   "col-span-2 lg:row-start-3 lg:col-start-1 lg:col-span-2 lg:pr-8 md:pr-4 lg:portrait:col-span-3 lg:portrait:pr-0 lg:portrait:px-0 lg:portrait:mb-0 lg:portrait:pt-8 md:portrait:pr-4 lg:portrait:mb-4 sm:hidden sm:portrait:hidden xs-landscape:hidden h-1260-w-1024:portrait:pt-4 h-1260-w-1024:portrait:mb-0 h-568-w-320-landscape:hidden";
 
@@ -112,15 +112,15 @@ const ResumeSection = () => {
             src={resumePicture2}
             altText="resumePicture"
             objectFit="cover"
-            objectExtra="object-left-bottom sm:object-center"
+            objectExtra="object-center"
           />
         </div>
         <div id="resumePicture1" className={`${pictures} ${smallPicture}`}>
           <Image
             src={resumePicture1}
             altText="resumePicture"
-            objectFit="contain"
-            objectExtra="object-bottom lg:object-cover h-1260-w-1024:object-cover"
+            objectFit="cover"
+            objectExtra="object-center lg:object-left-top"
           />
         </div>
       </section>
