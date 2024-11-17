@@ -50,20 +50,20 @@ export default {
           '100%': { opacity: '1', transform: 'translateY(0)' },
         },
         fromLeft: {
-          '0%': { opacity: '0', transform: 'translateX(-40px)' },
+          '0%': { opacity: '0', transform: 'translateX(-50px)' },
           '100%': { opacity: '1', transform: 'translateX(0)' },
         },
         fromRight: {
-          '0%': { opacity: '0', transform: 'translateX(40px)' },
+          '0%': { opacity: '0', transform: 'translateX(50px)' },
           '100%': { opacity: '1', transform: 'translateX(0)' },
         },
       },
       animation: {
-        fadeIn: 'fadeIn 1s ease-in',
-        fadeInUp: 'fadeInUp 1s ease-in',
-        fadeInDown: 'fadeInDown 1s ease-in',
-        fromLeft: 'fromLeft 1s ease-in',
-        fromRight: 'fromRight 1s ease-in',
+        fadeIn: 'fadeIn 0.5s ease-in',
+        fadeInUp: 'fadeInUp 0.5s ease-in',
+        fadeInDown: 'fadeInDown 0.5s ease-in',
+        fromLeft: 'fromLeft 0.5s ease-in',
+        fromRight: 'fromRight 0.5s ease-in',
       },
       // ! Extend Tailwind CSS default theme configuration
       fontFamily: {
