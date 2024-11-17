@@ -35,6 +35,31 @@ export default {
       // => @media (max-width: 360px) { ... }
     },
     extend: {
+      // ! Animations
+      keyframes: {
+        fadeIn: {
+          '0%': { opacity: '0' },
+          '100%': { opacity: '1' },
+        },
+        fadeInUp: {
+          '0%': { opacity: '0', transform: 'translateY(10px)' },
+          '100%': { opacity: '1', transform: 'translateY(0)' },
+        },
+        fadeInDown: {
+          '0%': { opacity: '0', transform: 'translateY(-10px)' },
+          '100%': { opacity: '1', transform: 'translateY(0)' },
+        },
+        fromLeft: {
+          '0%': { opacity: '0', transform: 'translateX(-50px)' },
+          '100%': { opacity: '1', transform: 'translateX(0)' },
+        },
+      },
+      animation: {
+        fadeIn: 'fadeIn 0.5s ease-in-out',
+        fadeInUp: 'fadeInUp 0.5s ease-in-out',
+        fadeInDown: 'fadeInDown 0.5s ease-in-out',
+        fromLeft: 'fromLeft 0.5s ease-in-out',
+      },
       // ! Extend Tailwind CSS default theme configuration
       fontFamily: {
         // --> Extend/change the default fonts for our project

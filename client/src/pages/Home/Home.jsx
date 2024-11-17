@@ -5,7 +5,7 @@ import AboutSection from "../About/About.jsx";
 import ContactSection from "./ContactSection.jsx";
 
 // Tailwind CSS utility classes
-const homeStyle = "flex flex-col";
+const homeStyle = "animate-fadeInUp flex flex-col";
 
 // Home page
 function Home() {
