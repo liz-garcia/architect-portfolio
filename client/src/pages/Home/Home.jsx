@@ -1,3 +1,5 @@
+import usePortfolio from "../../contexts/usePortfolio.js";
+
 import { useEffect } from "react";
 import { useLocation } from "react-router-dom";
 import HeroSection from "./HeroSection.jsx";
@@ -5,11 +7,12 @@ import AboutSection from "../About/About.jsx";
 import ContactSection from "./ContactSection.jsx";
 
 // Tailwind CSS utility classes
-const homeStyle = "animate-fadeInUp flex flex-col";
+const homeStyle = "animate-fadeInUp w-screen flex flex-col";
 
 // Home page
 function Home() {
   const location = useLocation();
+  const { portfolio, isLoading, error } = usePortfolio();
 
   // * If a hash is present in the URL, scroll to the corresponding id. After the transition, reset the URL to "/".
   useEffect(() => {
@@ -37,10 +40,29 @@ function Home() {
     }
   }, [location]);
 
+  // * Get Homepage data for HeroSection, About page, and ContactSection
+  const heroSectionData = portfolio ? portfolio.heroSection : null;
+
+  if (isLoading) {
+    return (
+      <div className="flex h-[90vh] w-[100vw] place-content-center">
+        <p className="mx-auto my-auto text-center italic">Loading...</p>
+      </div>
+    );
+  }
+
+  if (error) {
+    return (
+      <div className="py-auto px-auto flex h-screen w-screen">
+        Error: {error.toString()}
+      </div>
+    );
+  }
+
   return (
     <>
       <div id="homepage" className={homeStyle}>
-        <HeroSection />
+        <HeroSection data={heroSectionData} />
         <AboutSection />
         <ContactSection />
       </div>

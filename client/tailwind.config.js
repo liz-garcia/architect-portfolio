@@ -50,7 +50,11 @@ export default {
           '100%': { opacity: '1', transform: 'translateY(0)' },
         },
         fromLeft: {
-          '0%': { opacity: '0', transform: 'translateX(-50px)' },
+          '0%': { opacity: '0', transform: 'translateX(-40px)' },
+          '100%': { opacity: '1', transform: 'translateX(0)' },
+        },
+        fromRight: {
+          '0%': { opacity: '0', transform: 'translateX(40px)' },
           '100%': { opacity: '1', transform: 'translateX(0)' },
         },
       },
@@ -59,6 +63,7 @@ export default {
         fadeInUp: 'fadeInUp 0.5s ease-in-out',
         fadeInDown: 'fadeInDown 0.5s ease-in-out',
         fromLeft: 'fromLeft 0.5s ease-in-out',
+        fromRight: 'fromRight 0.5s ease-in-out',
       },
       // ! Extend Tailwind CSS default theme configuration
       fontFamily: {
