@@ -59,11 +59,11 @@ export default {
         },
       },
       animation: {
-        fadeIn: 'fadeIn 0.5s ease-in-out',
-        fadeInUp: 'fadeInUp 0.5s ease-in-out',
-        fadeInDown: 'fadeInDown 0.5s ease-in-out',
-        fromLeft: 'fromLeft 0.5s ease-in-out',
-        fromRight: 'fromRight 0.5s ease-in-out',
+        fadeIn: 'fadeIn 1s ease-in',
+        fadeInUp: 'fadeInUp 1s ease-in',
+        fadeInDown: 'fadeInDown 1s ease-in',
+        fromLeft: 'fromLeft 1s ease-in',
+        fromRight: 'fromRight 1s ease-in',
       },
       // ! Extend Tailwind CSS default theme configuration
       fontFamily: {
