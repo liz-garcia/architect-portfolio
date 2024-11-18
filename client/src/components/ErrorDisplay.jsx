@@ -1,6 +1,9 @@
 import PropTypes from "prop-types";
 
-const ErrorDisplay = (error, height = "h-full", width = "w-full") => {
+const ErrorDisplay = ({ error, height = "h-full", width = "w-full" }) => {
+  const message =
+    error?.message || "An unknown error occurred. Please try again later.";
+
   return (
     <div
       id="errorDisplay"
@@ -8,8 +11,7 @@ const ErrorDisplay = (error, height = "h-full", width = "w-full") => {
     >
       <div className="mx-auto my-auto">
         <p className="mx-auto my-auto text-center italic">
-          Unexpected error: {error?.toString() || "Unknown error"}. Please try
-          again later.
+          Unexpected error: {message}
         </p>
       </div>
     </div>

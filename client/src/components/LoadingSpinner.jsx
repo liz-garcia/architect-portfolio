@@ -1,6 +1,6 @@
 import PropTypes from "prop-types";
 
-const LoadingSpinner = (height = "h-full", width = "w-full") => {
+const LoadingSpinner = ({ height = "h-full", width = "w-full" }) => {
   return (
     <div
       id="loadingSpinner"
