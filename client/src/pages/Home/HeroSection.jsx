@@ -57,7 +57,7 @@ function HeroSection({ data }) {
 
 // Prop-types validation
 HeroSection.propTypes = {
-  data: PropTypes.object,
+  data: PropTypes.object.isRequired,
 };
 
 export default HeroSection;

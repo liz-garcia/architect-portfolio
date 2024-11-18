@@ -43,6 +43,7 @@ function Home() {
   // * Get Homepage data for HeroSection, About page, and ContactSection
   const heroSectionData = portfolio ? portfolio.heroSection : null;
 
+  // * Handle 'isLoading' state
   if (isLoading) {
     return (
       <div className="flex h-[90vh] w-[100vw] place-content-center">
@@ -51,6 +52,7 @@ function Home() {
     );
   }
 
+  // * Handle 'error' state
   if (error) {
     return (
       <div className="py-auto px-auto flex h-screen w-screen">
