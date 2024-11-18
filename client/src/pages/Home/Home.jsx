@@ -51,7 +51,7 @@ function Home() {
 
   // * Handle 'error' state
   if (error) {
-    return <ErrorDisplay error={error} height="h-[50vh]" width="w-full" />;
+    return <ErrorDisplay error={error.name} height="h-[50vh]" width="w-full" />;
   }
 
   return (
