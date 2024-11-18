@@ -1,6 +1,6 @@
 import PropTypes from "prop-types";
 
-const ErrorDisplay = (error, height = "h-full", width = "w-full") => {
+const ErrorDisplay = ({ error, height = "h-full", width = "w-full" }) => {
   return (
     <div
       id="errorDisplay"
