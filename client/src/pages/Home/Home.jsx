@@ -51,7 +51,13 @@ function Home() {
 
   // * Handle 'error' state
   if (error) {
-    return <ErrorDisplay error={error} height="h-[50vh]" width="w-full" />;
+    return (
+      <ErrorDisplay
+        error={new Error("Failed to load Portfolio data.")}
+        height="h-[50vh]"
+        width="w-full"
+      />
+    );
   }
 
   return (
