@@ -45,7 +45,7 @@ function Home() {
 
   if (isLoading) {
     return (
-      <div className="flex h-[90vh] w-[100vw] place-content-center">
+      <div className="flex h-[90vh] w-[100vw] place-content-center bg-red-400">
         <p className="mx-auto my-auto text-center italic">Loading...</p>
       </div>
     );
@@ -53,7 +53,7 @@ function Home() {
 
   if (error) {
     return (
-      <div className="py-auto px-auto flex h-screen w-screen">
+      <div className="py-auto px-auto flex h-screen w-screen bg-red-400">
         Error: {error.toString()}
       </div>
     );
