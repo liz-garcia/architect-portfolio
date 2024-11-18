@@ -26,7 +26,7 @@ function HeroSection({ data }) {
 
   if (!data) {
     return (
-      <div className="flex h-[90vh] w-[100vw] place-content-center bg-red-400">
+      <div className="flex h-[90vh] w-[100vw] place-content-center">
         <p className="mx-auto my-auto text-center italic">Loading...</p>
       </div>
     );
