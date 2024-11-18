@@ -8,8 +8,8 @@ const ErrorDisplay = ({ error, height = "h-full", width = "w-full" }) => {
     >
       <div className="mx-auto my-auto">
         <p className="mx-auto my-auto text-center italic">
-          Unexpected error: {error?.toString() || "Unknown error"}. Please try
-          again later.
+          Unexpected error: {error?.message.toString() || "Unknown error."}
+          Please try again later.
         </p>
       </div>
     </div>
