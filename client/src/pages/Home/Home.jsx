@@ -53,7 +53,7 @@ function Home() {
   if (error) {
     return (
       <ErrorDisplay
-        error={new Error("Failed to load Portfolio data.")}
+        error={new Error("Failed to load Portfolio data")}
         height="h-[50vh]"
         width="w-full"
       />
