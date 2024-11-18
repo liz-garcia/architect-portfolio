@@ -1,6 +1,11 @@
+import React, { Suspense } from "react";
 import { Routes, Route } from "react-router-dom";
-import Home from "./pages/Home/Home.jsx";
+import LoadingSpinner from "./components/LoadingSpinner.jsx";
 import NotFoundPage from "./pages/NotFoundPage.jsx";
+
+// * Lazy loading
+const Home = React.lazy(() => import("./pages/Home/Home.jsx"));
+const Projects = React.lazy(() => import("./pages/Portfolio/Projects.jsx"));
 
 // * Admin pages
 import Admin from "./pages/Admin/Admin.jsx";
@@ -8,16 +13,19 @@ import CreateUser from "./pages/Admin/CreateUser.jsx";
 
 const AppRouter = () => {
   return (
-    <Routes>
-      {/* Home page includes the About page as AboutSection */}
-      <Route path="/" element={<Home />} />
+    <Suspense fallback={<LoadingSpinner height="h-[50vh]" width="w-full" />}>
+      <Routes>
+        {/* Home page includes the About page as AboutSection */}
+        <Route path="/" element={<Home />} />
+        <Route path="/portfolio/projects" element={<Projects />} />
 
-      {/* Admin routes */}
-      <Route path="/admin" element={<Admin />} />
-      <Route path="/admin/create-user" element={<CreateUser />} />
+        {/* Admin routes */}
+        <Route path="/admin" element={<Admin />} />
+        <Route path="/admin/create-user" element={<CreateUser />} />
 
-      <Route path="*" element={<NotFoundPage />} />
-    </Routes>
+        <Route path="*" element={<NotFoundPage />} />
+      </Routes>
+    </Suspense>
   );
 };
 

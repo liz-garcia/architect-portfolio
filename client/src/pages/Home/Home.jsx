@@ -1,3 +1,6 @@
+import usePortfolio from "../../contexts/usePortfolio.js";
+import LoadingSpinner from "../../components/LoadingSpinner.jsx";
+import ErrorDisplay from "../../components/ErrorDisplay.jsx";
 import { useEffect } from "react";
 import { useLocation } from "react-router-dom";
 import HeroSection from "./HeroSection.jsx";
@@ -5,11 +8,12 @@ import AboutSection from "../About/About.jsx";
 import ContactSection from "./ContactSection.jsx";
 
 // Tailwind CSS utility classes
-const homeStyle = "flex flex-col";
+const homeStyle = "animate-fadeInUp w-screen flex flex-col";
 
 // Home page
 function Home() {
   const location = useLocation();
+  const { portfolio, isLoading, error } = usePortfolio();
 
   // * If a hash is present in the URL, scroll to the corresponding id. After the transition, reset the URL to "/".
   useEffect(() => {
@@ -37,10 +41,29 @@ function Home() {
     }
   }, [location]);
 
+  // * Set all necessary data
+  const heroSectionData = portfolio ? portfolio.heroSection : null;
+
+  // * Handle 'isLoading' state
+  if (isLoading) {
+    return <LoadingSpinner height="h-[50vh]" width="w-full" />;
+  }
+
+  // * Handle 'error' state
+  if (error) {
+    return (
+      <ErrorDisplay
+        error={new Error("Failed to load Portfolio data")}
+        height="h-[50vh]"
+        width="w-full"
+      />
+    );
+  }
+
   return (
     <>
       <div id="homepage" className={homeStyle}>
-        <HeroSection />
+        <HeroSection data={heroSectionData} />
         <AboutSection />
         <ContactSection />
       </div>

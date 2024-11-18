@@ -2,6 +2,7 @@ import express from "express";
 import cors from "cors";
 
 import userRouter from "./routes/user.js";
+import portfolioRouter from "./routes/portfolio.js";
 
 // Create an express server
 const app = express();
@@ -21,6 +22,7 @@ app.get("/api", (req, res) => {
 });
 
 app.use("/api/user", userRouter);
+app.use("/api/portfolio", portfolioRouter);
 
 // * Initial server setup - data example
 import dataRouter from "./routes/data.js";
