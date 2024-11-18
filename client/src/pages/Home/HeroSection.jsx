@@ -24,14 +24,6 @@ const heroButtonsStyle =
 function HeroSection({ data }) {
   const images = [heroImage1, heroImage2, heroImage3];
 
-  if (!data) {
-    return (
-      <div className="flex h-[90vh] w-[100vw] place-content-center">
-        <p className="mx-auto my-auto text-center italic">Loading...</p>
-      </div>
-    );
-  }
-
   return (
     <>
       <section id="heroSection" className={heroSectionStyle}>

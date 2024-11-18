@@ -1,5 +1,6 @@
 import usePortfolio from "../../contexts/usePortfolio.js";
-
+import LoadingSpinner from "../../components/LoadingSpinner.jsx";
+import ErrorDisplay from "../../components/ErrorDisplay.jsx";
 import { useEffect } from "react";
 import { useLocation } from "react-router-dom";
 import HeroSection from "./HeroSection.jsx";
@@ -40,25 +41,17 @@ function Home() {
     }
   }, [location]);
 
-  // * Get Homepage data for HeroSection, About page, and ContactSection
+  // * Set all necessary data
   const heroSectionData = portfolio ? portfolio.heroSection : null;
 
   // * Handle 'isLoading' state
   if (isLoading) {
-    return (
-      <div className="flex h-[90vh] w-[100vw] place-content-center">
-        <p className="mx-auto my-auto text-center italic">Loading...</p>
-      </div>
-    );
+    return <LoadingSpinner height="h-[50vh]" width="w-full" />;
   }
 
   // * Handle 'error' state
   if (error) {
-    return (
-      <div className="py-auto px-auto flex h-screen w-screen">
-        Error: {error.toString()}
-      </div>
-    );
+    return <ErrorDisplay error={error} height="h-[50vh]" width="w-full" />;
   }
 
   return (
