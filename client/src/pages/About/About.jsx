@@ -8,6 +8,7 @@ const aboutStyle =
 const presentationStyle =
   "min-h-fit h-screen flex flex-col sm:h-fit xs-landscape:min-h-fit";
 
+// About page is a section inside Homepage
 // About section
 function AboutSection() {
   return (
