@@ -3,6 +3,10 @@
   "version": "1.0.0",
   "description": "Architect Portfolio",
   "main": "index.js",
+  "engines": {
+    "node": "22.11.0",
+    "npm": "10.9.0"
+  },
   "scripts": {
     "start": "npm run start:server",
     "start:server": "cd server && npm run start && cd ..",

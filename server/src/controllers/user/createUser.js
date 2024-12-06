@@ -36,7 +36,7 @@ const createUser = async (req, res) => {
     logError(error);
     res
       .status(500)
-      .json({ success: false, msg: "Unable to create user, try again later" });
+      .json({ success: false, msg: "Unable to create user, try again later." });
   }
 };
 
