@@ -4,13 +4,13 @@ import Image from "../../components/Image.jsx";
 import PrimaryLink from "../../components/Buttons/PrimaryLink.jsx";
 
 const resumeSectionStyle =
-  "min-h-fit h-screen grid grid-cols-3 xl:grid-cols-[1fr_2fr_2fr] grid-rows-[1fr_2fr] lg:grid-rows-[2fr_1fr_3fr] lg:grid-cols-[1fr_1fr_1fr] gap-4 xl:gap-2 px-16 py-12 pb-4 lg:px-12 lg:pt-8 lg:pb-2 lg:portrait:grid-rows-[auto_auto_1fr] lg:portrait:px-16 lg:portrait:py-16 lg:portrait:gap-4 3xl:p-20 md:portrait:gap-4 md:portrait:px-10 md:portrait:pt-10 md:portrait:pb-0 sm:portrait:min-h-fit sm:portrait:h-screen sm:flex sm:flex-col sm:portrait:flex sm:portrait:flex-col sm:portrait:px-12 sm:portrait:gap-4 xs:portrait:gap-4 sm:portrait:place-content-center sm:portrait:pt-8 sm:portrait:pb-8 xs:portrait:py-8 xs:portrait:px-8 xs-landscape:px-10 xs-landscape:pb-8 h-1260-w-1024:h-[50vh] ipad-surface-pro:portrait:h-[50vh] ipad-surface-pro:portrait:gap-2 ipad-surface-pro:portrait:p-12 ipad-surface-pro:portrait:pb-2 h-568-w-320-landscape:grid-rows-[2fr_1fr] h-568-w-320-landscape:landscape:py-6 h-568-w-320-landscape:landscape:px-8 h-667-w-375-landscape-extra:gap-1 h-667-w-375-landscape-extra:py-6 h-667-w-375-landscape-extra:grid-rows-[2fr_1fr] 2xs:portrait:gap-2 ipad-surface-pro-landscape:pt-20 ipad-surface-pro-landscape:pb-12";
+  "min-h-fit h-screen grid grid-cols-3 xl:grid-cols-[1fr_1fr_1fr] grid-rows-[1fr_2fr] lg:grid-rows-[2fr_1fr_3fr] lg:grid-cols-[1fr_1fr_1fr] gap-4 xl:gap-2 px-16 py-12 pb-4 lg:px-12 lg:pt-8 lg:pb-2 lg:portrait:grid-rows-[auto_auto_1fr] lg:portrait:px-16 lg:portrait:py-16 lg:portrait:gap-4 3xl:p-20 md:portrait:gap-4 md:portrait:px-10 md:portrait:pt-10 md:portrait:pb-0 sm:portrait:min-h-fit sm:portrait:h-screen sm:flex sm:flex-col sm:portrait:flex sm:portrait:flex-col sm:portrait:px-12 sm:portrait:gap-4 xs:portrait:gap-4 sm:portrait:place-content-center sm:portrait:pt-8 sm:portrait:pb-8 xs:portrait:py-8 xs:portrait:px-8 xs-landscape:px-10 xs-landscape:pb-8 h-1260-w-1024:h-[50vh] ipad-surface-pro:portrait:h-[50vh] ipad-surface-pro:portrait:gap-2 ipad-surface-pro:portrait:p-12 ipad-surface-pro:portrait:pb-2 h-568-w-320-landscape:grid-rows-[2fr_1fr] h-568-w-320-landscape:landscape:py-6 h-568-w-320-landscape:landscape:px-8 h-667-w-375-landscape-extra:gap-1 h-667-w-375-landscape-extra:py-6 h-667-w-375-landscape-extra:grid-rows-[2fr_1fr] 2xs:portrait:gap-2 ipad-surface-pro-landscape:pt-20 ipad-surface-pro-landscape:pb-12";
 const resumeSubsection =
   "p-2 pt-0 flex flex-col gap-2 3xl:p-8 3xl:gap-4 lg:gap-2 lg:pb-2 2xl:text-[1.09rem] xl:text-[1.05rem] lg:text-base sm:gap-2 sm:min-h-fit sm:pb-0 xs:gap-1 xs:pb-4 2xs:pb-0 h-568-w-320-landscape:gap-1";
 const h1Style =
   "font-serif font-bold text-3xl xl:text-[1.85rem] pb-2 3xl:text-5xl border-b mb-2 lg:text-[1.75rem] md:text-2xl md:landscape:text-[1.35rem] sm:text-2xl sm:pb-2 sm:mb-2 xs:text-2xl xs:pb-1 xs:mb-1 2xs:text-[1.35rem] 2xs:pb-0 2xs:mb-1 h-568-w-320-landscape:pb-1 h-568-w-320-landscape:mb-0 h-568-w-320-landscape:text-xl h-667-w-375-landscape-extra:pb-0 h-667-w-375-landscape-extra:mb-0";
 const infoContainer =
-  "leading-tight grid grid-rows-1 grid-cols-[1fr_2fr] gap-4 xl:gap-2 sm:gap-1 sm:pb-2 xs:pb-1 xs:gap-0 2xs:pb-1 h-568-w-320-landscape:pb-0";
+  "leading-tight grid grid-rows-1 grid-cols-[1fr_2fr] gap-4 xl:gap-1 sm:gap-1 sm:pb-2 xs:pb-1 xs:gap-0 2xs:pb-1 h-568-w-320-landscape:pb-0";
 const dateStyle =
   "mt-1 ml-1 3xl:text-2xl lg:portrait:text-lg sm:portrait:text-base 2xs:portrait:text-sm h-568-w-320-landscape:text-sm h-568-w-320-landscape:mt-1";
 const dataItems = "my-1";
@@ -24,7 +24,8 @@ const educationInfo =
   "lg:grid lg:grid-rows-1 lg:grid-cols-[1fr_2fr] xl:flex xl:flex-col xl:gap-1 xs:flex xs:flex-col";
 const workExperience =
   "lg:col-start-1 lg:col-span-2 lg:row-start-1 lg:row-span-1 lg:pr-8 md:pr-4 sm:order-first sm:pr-0 sm:px-0";
-const workExperienceInfo = "xs:flex xs:flex-col";
+const workExperienceInfo =
+  "lg:grid lg:grid-rows-1 lg:grid-cols-[1fr_2fr] xl:flex xl:flex-col xl:gap-1 xs:flex xs:flex-col";
 const softwareSkills =
   "lg:col-start-3 lg:row-start-1 lg:col-span-1 lg:row-span-1 lg:px-1 lg:pb-1 lg:text-[0.95rem] lg:portrait:px-0 sm:order-3 sm:portrait:order-3 sm:portrait:pr-0 sm:portrait:px-0";
 const softwareList =
@@ -46,6 +47,20 @@ const ResumeSection = () => {
         {/* Texts for ResumeSection */}
         <div id="education" className={`${resumeSubsection} ${education}`}>
           <h1 className={h1Style}>Education</h1>
+          <div className={`${infoContainer} ${educationInfo}`}>
+            <p className={dateStyle}>2010 - 2015</p>
+            <div className={dataItems}>
+              <p className={itemTitle}>Bachelor of Architecture</p>
+              <p className={itemDetail}>Universidad Centroamericana UCA</p>
+            </div>
+          </div>
+          <div className={`${infoContainer} ${educationInfo}`}>
+            <p className={dateStyle}>2010 - 2015</p>
+            <div className={dataItems}>
+              <p className={itemTitle}>Bachelor of Architecture</p>
+              <p className={itemDetail}>Universidad Centroamericana UCA</p>
+            </div>
+          </div>
           <div className={`${infoContainer} ${educationInfo}`}>
             <p className={dateStyle}>2010 - 2015</p>
             <div className={dataItems}>

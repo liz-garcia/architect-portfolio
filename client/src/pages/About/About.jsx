@@ -1,3 +1,4 @@
+import PropTypes from "prop-types";
 import AboutMeSection from "./AboutMeSection.jsx";
 import FeaturedProjectsSection from "./FeaturedProjectsSection.jsx";
 import ResumeSection from "./ResumeSection.jsx";
@@ -10,16 +11,24 @@ const presentationStyle =
 
 // About page is a section inside Homepage
 // About section
-function AboutSection() {
+function AboutSection({ data }) {
+  // * Set all necessary data
+  const aboutMeSectionData = data ? data.aboutMeSection : null;
+
   return (
     <section id="about" className={aboutStyle}>
       <section id="presentation" className={presentationStyle}>
-        <AboutMeSection />
+        <AboutMeSection data={aboutMeSectionData} />
         <FeaturedProjectsSection />
       </section>
       <ResumeSection />
     </section>
   );
 }
+
+// Prop-types validation
+AboutSection.propTypes = {
+  data: PropTypes.object.isRequired,
+};
 
 export default AboutSection;
