@@ -1,3 +1,4 @@
+import PropTypes from "prop-types";
 import { useState, useEffect } from "react";
 import PrimaryLink from "../../components/Buttons/PrimaryLink.jsx";
 
@@ -27,7 +28,7 @@ const dividerStyle2 =
   "flex-1 border-b border-zinc-300 h-658-w-320-landscape:landscape:scale-x-[2.5] h-658-w-320-landscape:landscape:mr-20 h-375-w-812-landscape:landscape:mr-10 h-375-w-812-landscape:landscape:scale-x-[1.2]";
 
 // AboutMeSection component
-const AboutMeSection = () => {
+const AboutMeSection = ({ data }) => {
   const [isSmallScreen, setIsSmallScreen] = useState(
     window.matchMedia("(max-width: 640px)").matches
   );
@@ -50,20 +51,12 @@ const AboutMeSection = () => {
         <div id="divider1" className={dividerStyle1}></div>
         <section id="aboutMe" className={aboutMeStyle}>
           <div id="aboutMeTitle" className={aboutMeTitleStyle}>
-            <h2 className={h2Style}>About my passion</h2>
+            <h2 className={h2Style}>{data?.title}</h2>
           </div>
           <div id="aboutMeText" className={aboutMeTextStyle}>
-            <h3 className={h3Style}>Architect, Estimator, Drafting & Design</h3>
+            <h3 className={h3Style}>{data?.subtitle}</h3>
             <p id="elevatorPitch" className={elevatorPitchStyle}>
-              It all started with a blank sheet of paper and a love for creating
-              spaces where people truly feel at home. Over the years, I&apos;ve
-              designed everything from cozy residences in Nicaragua to managing
-              complex estimates for large-scale projects in Utah and Puget
-              Sound. Now, having recently moved to Minneapolis, I&apos;m excited
-              to bring my blend of creative design and practical construction
-              expertise to new challenges. With a strong focus on precision,
-              efficiency, and quality results, I&apos;m committed to turning
-              every vision into a successful project.
+              {data?.elevatorPitch}
             </p>
             <div
               className={
@@ -90,6 +83,11 @@ const AboutMeSection = () => {
       </div>
     </>
   );
+};
+
+// Prop-types validation
+AboutMeSection.propTypes = {
+  data: PropTypes.object.isRequired,
 };
 
 export default AboutMeSection;
