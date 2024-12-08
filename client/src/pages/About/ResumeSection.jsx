@@ -10,14 +10,14 @@ const resumeSubsection =
 const h1Style =
   "font-serif font-bold text-3xl xl:text-[1.85rem] pb-2 3xl:text-5xl border-b mb-2 lg:text-[1.75rem] md:text-2xl md:landscape:text-[1.35rem] sm:text-2xl sm:pb-2 sm:mb-2 xs:text-2xl xs:pb-1 xs:mb-1 2xs:text-[1.35rem] 2xs:pb-0 2xs:mb-1 h-568-w-320-landscape:pb-1 h-568-w-320-landscape:mb-0 h-568-w-320-landscape:text-xl h-667-w-375-landscape-extra:pb-0 h-667-w-375-landscape-extra:mb-0";
 const infoContainer =
-  "leading-tight grid grid-rows-1 grid-cols-[1fr_2fr] gap-4 xl:gap-1 sm:gap-1 sm:pb-2 xs:pb-1 xs:gap-0 2xs:pb-1 h-568-w-320-landscape:pb-0";
+  "leading-tight grid grid-rows-1 grid-cols-[1fr_2fr] gap-4 xl:gap-0 sm:gap-1 sm:pb-2 xs:pb-1 xs:gap-0 2xs:pb-1 h-568-w-320-landscape:pb-0";
 const dateStyle =
-  "mt-1 ml-1 3xl:text-2xl lg:portrait:text-lg sm:portrait:text-base 2xs:portrait:text-sm h-568-w-320-landscape:text-sm h-568-w-320-landscape:mt-1";
+  "mt-1 ml-1 3xl:text-2xl 2xl:text-sm lg:text-base lg:portrait:text-lg md:portrait:text-base sm:portrait:text-base 2xs:portrait:text-sm h-568-w-320-landscape:text-sm h-568-w-320-landscape:mt-1";
 const dataItems = "my-1";
 const itemTitle =
-  "inline bg-lime-200 w-fit px-1 py-0 font-semibold 3xl:text-2xl lg:portrait:text-lg sm:portrait:text-base xs:portrait:text-lg 2xs:portrait:text-base h-568-w-320-landscape:text-sm";
+  "inline bg-lime-200 w-fit px-1 py-0 font-semibold 3xl:text-2xl lg:portrait:text-lg md:portrait:text-base xs:portrait:text-lg 2xs:portrait:text-base h-568-w-320-landscape:text-sm";
 const itemDetail =
-  "mt-1 xs:mt-0 ml-1 text-sm lg:text-base italic 3xl:text-xl xs:text-base 2xs:text-sm h-540-w-720-landscape:landscape:text-sm h-568-w-320-landscape:text-xs h-667-w-375-landscape-extra:text-sm h-658-w-320-landscape-extra:text-xs";
+  "mt-1 xs:mt-0 ml-1 text-sm xl:text-base italic 3xl:text-xl 2md:text-[0.845rem]/[1.15rem] sm:text-base 2sm:text-[0.87rem]/[1.15rem] xs:text-base 2xs:text-sm h-540-w-720-landscape:landscape:text-sm h-568-w-320-landscape:text-xs h-667-w-375-landscape-extra:text-sm h-658-w-320-landscape-extra:text-xs";
 const education =
   "lg:col-start-1 lg:col-span-2 lg:row-start-2 lg:row-span-1 lg:pr-8 md:pr-4 sm:order-2 sm:pr-0 sm:px-0";
 const educationInfo =

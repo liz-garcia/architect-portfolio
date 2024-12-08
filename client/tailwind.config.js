@@ -25,7 +25,13 @@ export default {
       md: { max: "768px" },
       // => @media (max-width: 768px) { ... }
 
+      "2md": { max: "723px" },
+      // => @media (max-width: 700px) { ... }
+
       sm: { max: "640px" },
+      // => @media (max-width: 640px) { ... }
+
+      "2sm": { max: "500px" },
       // => @media (max-width: 640px) { ... }
 
       xs: { max: "450px" },
