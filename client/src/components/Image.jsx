@@ -1,4 +1,4 @@
-// Default Basic Image Component
+// * Default Basic Image Component
 import PropTypes from "prop-types";
 
 // Tailwind CSS styles

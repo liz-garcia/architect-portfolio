@@ -14,6 +14,7 @@ const presentationStyle =
 function AboutSection({ data }) {
   // * Set all necessary data
   const aboutMeSectionData = data ? data.aboutMeSection : null;
+  const resumeSectionData = data ? data.resumeSection : null;
 
   return (
     <section id="about" className={aboutStyle}>
@@ -21,7 +22,7 @@ function AboutSection({ data }) {
         <AboutMeSection data={aboutMeSectionData} />
         <FeaturedProjectsSection />
       </section>
-      <ResumeSection />
+      <ResumeSection data={resumeSectionData} />
     </section>
   );
 }
