@@ -69,7 +69,7 @@ const ResumeSection = ({ data }) => {
         >
           <h1 className={h1Style}>Software skills</h1>
           {/* Render InlineDotList with the array 'skillsItems' */}
-          <InlineDotList data={skillsItems} />
+          <InlineDotList array={skillsItems} />
 
           {/* Button for accessing Full Resume */}
           <div className={buttonContainer}>

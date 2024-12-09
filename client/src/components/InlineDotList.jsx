@@ -7,13 +7,13 @@ const softwareList =
 const dotStyle = "w-1 h-1 bg-lime-400 rounded place-self-center ml-2";
 
 // InlineDotList component
-const InlineDotList = ({ data }) => {
+const InlineDotList = ({ array }) => {
   return (
     <ul className={softwareList}>
-      {data.map((item, index) => (
+      {array.map((item, index) => (
         <li key={item} className="flex items-center">
           <span>{item}</span>
-          {index < data.length - 1 && <div className={dotStyle} />}{" "}
+          {index < array.length - 1 && <div className={dotStyle} />}{" "}
           {/* Render dot only if not the last item */}
         </li>
       ))}
@@ -23,7 +23,7 @@ const InlineDotList = ({ data }) => {
 
 // Prop-types validation
 InlineDotList.propTypes = {
-  data: PropTypes.arrayOf(PropTypes.string).isRequired,
+  array: PropTypes.arrayOf(PropTypes.string).isRequired,
 };
 
 export default InlineDotList;
