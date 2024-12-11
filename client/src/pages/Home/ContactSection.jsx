@@ -4,7 +4,7 @@ import SecondaryLink from "../../components/Buttons/SecondaryLink.jsx";
 
 // Tailwind utility classes
 const contactStyle =
-  "h-screen min-h-fit p-24 xl:p-20 lg:p-16 mt-4 flex items-center border-b-8 border-lime-200 bg-zinc-900 place-content-center portrait:h-fit 3xl:h-[50vh] h-1260-w-1024:h-[50vh] h-1260-w-1024:max-h-fit ipad-surface-pro:portrait:h-fit xs:portrait:py-8 xs:portrait:px-6 md:landscape:h-fit";
+  "h-screen min-h-fit p-24 xl:p-20 lg:p-16 mt-4 flex items-center border-y-8 border-lime-200 bg-zinc-900 place-content-center portrait:h-fit 3xl:h-[50vh] h-1260-w-1024:h-[50vh] h-1260-w-1024:max-h-fit ipad-surface-pro:portrait:h-fit xs:portrait:py-8 xs:portrait:px-6 md:landscape:h-fit";
 const containerStyle =
   "box-content mx-auto my-auto flex flex-col place-content-stretch gap-8 md:landscape:gap-4 3xl:gap-8 portrait:h-5/6 portrait:w-7/8 xs:portrait:w-full landscape:h-4/6 landscape:w-6/8 landscape:flex-row md:landscape:flex-col min-h-fit portrait:place-content-center ipad-surface-pro:portrait:h-[80vh] ipad-surface-pro:portrait:h-fit";
 const contactImageStyle =
