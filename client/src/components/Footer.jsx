@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 // Tailwind CSS utility classes
 const footerStyle =
-  "h-[12dvh] w-full text-xs text-zinc-500 bg-zinc-900 p-12 px-16 pb-16 flex justify-between items-stretch md:flex-col-reverse md:px-8 md:py-14 md:gap-4 md:items-center md:place-content-center xs:h-[16dvh] xs:py-16 3xl:text-lg 3xl:px-20";
+  "h-[12dvh] w-full text-xs text-zinc-500 bg-zinc-900 p-12 px-16 pb-16 flex justify-between items-stretch md:flex-col-reverse md:px-8 md:py-14 md:gap-4 md:items-center md:place-content-center xs:h-[16dvh] xs:py-16 3xl:text-lg 3xl:px-20 border-t-4 border-lime-200";
 const copyrightStyle = "";
 const linksListStyle = "";
 const ulStyle =
