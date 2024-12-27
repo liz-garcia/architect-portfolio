@@ -35,7 +35,7 @@ const ResumeSection = ({ data }) => {
   return (
     <>
       <section id="resume" className={resumeSectionStyle}>
-        {/* Texts for ResumeSection */}
+        {/* ********** Education section ********** */}
         <div id="education" className={`${resumeSubsection} ${education}`}>
           <h1 className={h1Style}>Education</h1>
           {/* Render an InfoContainer per item in educationHighlights */}
@@ -48,6 +48,8 @@ const ResumeSection = ({ data }) => {
             />
           ))}
         </div>
+
+        {/* ********** Work experience section ********** */}
         <div
           id="workExperience"
           className={`${resumeSubsection} ${workExperience}`}
@@ -63,6 +65,8 @@ const ResumeSection = ({ data }) => {
             />
           ))}
         </div>
+
+        {/* ********** Software Skills section ********** */}
         <div
           id="softwareSkills"
           className={`${resumeSubsection} ${softwareSkills}`}
@@ -70,13 +74,13 @@ const ResumeSection = ({ data }) => {
           <h1 className={h1Style}>Software skills</h1>
           {/* Render InlineDotList with the array 'skillsItems' */}
           <InlineDotList array={skillsItems} />
-
           {/* Button for accessing Full Resume */}
           <div className={buttonContainer}>
             <PrimaryLink to="/resume">View Full Resume</PrimaryLink>
           </div>
         </div>
-        {/* Pictures for ResumeSection */}
+
+        {/* ********** Pictures for ResumeSection ********** */}
         <div id="resumePicture2" className={`${pictures} ${largePicture}`}>
           <Image
             src={resumePicture2}
