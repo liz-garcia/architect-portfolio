@@ -1,3 +1,4 @@
+import PropTypes from "prop-types";
 import contactImg from "/architectural-plan-4.png";
 import Image from "../../components/Image.jsx";
 import SecondaryLink from "../../components/Buttons/SecondaryLink.jsx";
@@ -17,7 +18,10 @@ const textStyle = "sm:text-base md:py-2";
 const buttonContainerStyle =
   "2xs:portrait:scale-90 2xs:portrait:flex 2xs:portrait:place-content-center";
 
-const ContactSection = () => {
+const ContactSection = ({ data }) => {
+  const emailSubsection = data ? data.emailSubsection : null;
+  const socialSubsection = data ? data.socialSubsection : null;
+
   return (
     <>
       <section id="contact" className={contactStyle}>
@@ -27,16 +31,11 @@ const ContactSection = () => {
           </div>
           <div className={textContainerStyle}>
             <div className={textBoxStyle}>
-              <h3 className={titleStyle}>Let&apos;s work together</h3>
-              <p className={textStyle}>
-                Have a vision for your space? From concept to detailed
-                estimates, I provide comprehensive design and planning services
-                to make your vision a reality. Let&apos;s collaborate to build
-                something exceptional!
-              </p>
+              <h3 className={titleStyle}>{emailSubsection.title}</h3>
+              <p className={textStyle}>{emailSubsection.text}</p>
               <div className={buttonContainerStyle}>
-                <SecondaryLink href="mailto:arqaragonf@hotmail.com">
-                  arqaragonf@hotmail.com
+                <SecondaryLink href={`mailto:${emailSubsection.email}`}>
+                  {emailSubsection.email}
                 </SecondaryLink>
               </div>
             </div>
@@ -47,8 +46,10 @@ const ContactSection = () => {
                 professional insights, and get in touch directly.
               </p>
               <div className={buttonContainerStyle}>
-                <SecondaryLink href="https://www.linkedin.com/in/rhina-aragon/">
-                  linkedin.com/in/rhina-aragon
+                <SecondaryLink
+                  href={`https://www.linkedin.com/in/${socialSubsection.linkedIn}`}
+                >
+                  linkedin.com/in/{socialSubsection.linkedIn}
                 </SecondaryLink>
               </div>
             </div>
@@ -57,6 +58,11 @@ const ContactSection = () => {
       </section>
     </>
   );
+};
+
+// Prop-types validation
+ContactSection.propTypes = {
+  data: PropTypes.object.isRequired,
 };
 
 export default ContactSection;

@@ -28,6 +28,7 @@ const largePicture =
 
 const ResumeSection = ({ data }) => {
   // * Get an array of objects for every subsection
+  const subsections = data ? data.subsections : null; // titles for every subsection
   const educationItems = data ? data.educationHighlights : null; // array of objects
   const workExperienceItems = data ? data.workExperienceHighlights : null; // array of objects
   const skillsItems = data ? data.skillsHighlights : null; // array of strings
@@ -35,9 +36,11 @@ const ResumeSection = ({ data }) => {
   return (
     <>
       <section id="resume" className={resumeSectionStyle}>
-        {/* Texts for ResumeSection */}
+        {/* ********** SUBSECTIONS ********** */}
+
+        {/* ********** Education section ********** */}
         <div id="education" className={`${resumeSubsection} ${education}`}>
-          <h1 className={h1Style}>Education</h1>
+          <h1 className={h1Style}>{subsections[0]}</h1>
           {/* Render an InfoContainer per item in educationHighlights */}
           {educationItems.map((item, index) => (
             <InfoContainer
@@ -48,11 +51,13 @@ const ResumeSection = ({ data }) => {
             />
           ))}
         </div>
+
+        {/* ********** Work experience section ********** */}
         <div
           id="workExperience"
           className={`${resumeSubsection} ${workExperience}`}
         >
-          <h1 className={h1Style}>Work experience</h1>
+          <h1 className={h1Style}>{subsections[1]}</h1>
           {/* Render an InfoContainer per item in workExperienceHighlights */}
           {workExperienceItems.map((item, index) => (
             <InfoContainer
@@ -63,20 +68,22 @@ const ResumeSection = ({ data }) => {
             />
           ))}
         </div>
+
+        {/* ********** Software Skills section ********** */}
         <div
           id="softwareSkills"
           className={`${resumeSubsection} ${softwareSkills}`}
         >
-          <h1 className={h1Style}>Software skills</h1>
+          <h1 className={h1Style}>{subsections[2]}</h1>
           {/* Render InlineDotList with the array 'skillsItems' */}
           <InlineDotList array={skillsItems} />
-
           {/* Button for accessing Full Resume */}
           <div className={buttonContainer}>
             <PrimaryLink to="/resume">View Full Resume</PrimaryLink>
           </div>
         </div>
-        {/* Pictures for ResumeSection */}
+
+        {/* ********** Pictures for ResumeSection ********** */}
         <div id="resumePicture2" className={`${pictures} ${largePicture}`}>
           <Image
             src={resumePicture2}
