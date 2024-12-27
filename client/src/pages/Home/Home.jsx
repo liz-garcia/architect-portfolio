@@ -44,6 +44,7 @@ function Home() {
   // * Set all necessary data
   const heroSectionData = portfolio ? portfolio.heroSection : null;
   const aboutSectionData = portfolio ? portfolio.aboutSection : null;
+  const contactSectionData = portfolio ? portfolio.contactSection : null;
 
   // * Handle 'isLoading' state
   if (isLoading) {
@@ -66,7 +67,7 @@ function Home() {
       <div id="homepage" className={homeStyle}>
         <HeroSection data={heroSectionData} />
         <AboutSection data={aboutSectionData} />
-        <ContactSection />
+        <ContactSection data={contactSectionData} />
       </div>
     </>
   );
