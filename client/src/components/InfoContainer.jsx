@@ -8,7 +8,7 @@ const dateStyle =
   "mt-1 ml-1 3xl:text-2xl 2xl:text-sm lg:text-base lg:portrait:text-lg md:portrait:text-base sm:portrait:text-base 2xs:portrait:text-sm h-568-w-320-landscape:text-sm h-568-w-320-landscape:mt-1";
 const dataItems = "my-1";
 const itemTitle =
-  "inline bg-lime-200 w-fit px-1 py-0 font-semibold 3xl:text-2xl lg:portrait:text-lg md:portrait:text-base xs:portrait:text-lg 2xs:portrait:text-base h-568-w-320-landscape:text-sm";
+  "inline bg-sky-200 w-fit px-1 py-0 font-semibold 3xl:text-2xl lg:portrait:text-lg md:portrait:text-base xs:portrait:text-lg 2xs:portrait:text-base h-568-w-320-landscape:text-sm";
 const itemDetail =
   "mt-1 xs:mt-0 ml-1 text-sm xl:text-base italic 3xl:text-xl 2md:text-[0.845rem]/[1.15rem] sm:text-base 2sm:text-[0.87rem]/[1.15rem] xs:text-base 2xs:text-sm h-540-w-720-landscape:landscape:text-sm h-568-w-320-landscape:text-xs h-667-w-375-landscape-extra:text-sm h-658-w-320-landscape-extra:text-xs";
 

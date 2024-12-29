@@ -6,8 +6,8 @@ import "./index.css";
 
 // Tailwind CSS utility classes
 const dimensions = "min-h-screen";
-const layout = "bg-[#FFFFFF] grid content-between";
-const text = "text-[1.1rem]/relaxed text-zinc-800 font-sans font-light";
+const layout = "bg-white grid content-between";
+const text = "text-base/relaxed text-zinc-900 font-sans font-light";
 const darkMode = "";
 const tailwindClasses = `${dimensions} ${layout} ${text} ${darkMode}`;
 

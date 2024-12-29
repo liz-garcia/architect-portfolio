@@ -1,6 +1,7 @@
 import PropTypes from "prop-types";
 import { useState, useEffect } from "react";
 import PrimaryLink from "../../components/Buttons/PrimaryLink.jsx";
+import SecondaryLink from "../../components/Buttons/SecondaryLink.jsx";
 
 // * ***** Tailwind CSS utility classes *****
 const aboutMeContainer =
@@ -69,7 +70,7 @@ const AboutMeSection = ({ data }) => {
                 id="divider2"
                 className={isSmallScreen ? "hidden" : dividerStyle2}
               ></div>
-              <PrimaryLink to="/#resume">CV Highlights</PrimaryLink>
+              <SecondaryLink to="/#resume">CV Highlights</SecondaryLink>
               <PrimaryLink
                 to={
                   isSmallScreen ? "/#featuredProjects" : "/portfolio/projects"
