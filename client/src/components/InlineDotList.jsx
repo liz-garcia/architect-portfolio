@@ -4,7 +4,8 @@ import PropTypes from "prop-types";
 // Tailwind CSS styles
 const softwareList =
   "leading-tight flex flex-wrap gap-2 text-center justify-center lg:p-1 lg:pt-0 3xl:text-2xl 3xl:gap-4 sm:px-0 xs:pt-1 h-568-w-320-landscape:text-sm h-568-w-320-landscape:py-2 h-658-w-320-landscape-extra:text-sm h-667-w-375-landscape-extra:text-sm";
-const dotStyle = "w-1 h-1 bg-lime-400 rounded place-self-center ml-2";
+const dotStyle =
+  "w-1 h-1 bg-sky-400 border border-sky-400 rounded place-self-center ml-2";
 
 // InlineDotList component
 const InlineDotList = ({ array }) => {
