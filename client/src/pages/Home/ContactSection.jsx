@@ -6,15 +6,15 @@ import SecondaryLink from "../../components/Buttons/SecondaryLink.jsx";
 
 // Tailwind utility classes
 const contactStyle =
-  "relative h-[50vh] min-h-fit p-24 xl:p-20 lg:p-16 mt-4 flex items-center bg-gradient-to-br from-sky-200 to-sky-400 place-content-center portrait:h-fit 3xl:h-[50vh] h-1260-w-1024:h-[50vh] h-1260-w-1024:max-h-fit ipad-surface-pro:portrait:h-fit xs:portrait:py-8 xs:portrait:px-6 md:landscape:h-fit";
+  "relative h-screen min-h-fit p-24 xl:p-20 lg:p-16 mt-4 flex items-center bg-gradient-to-br from-zinc-900 to-zinc-950 place-content-center portrait:h-fit 3xl:h-screen h-1260-w-1024:h-[50vh] h-1260-w-1024:max-h-fit ipad-surface-pro:portrait:h-fit xs:portrait:py-8 xs:portrait:px-6 md:landscape:h-fit";
 const contactImageBgStyle =
-  "absolute size-full mix-blend-overlay opacity-45 bg-white";
+  "absolute size-full mix-blend-overlay opacity-15 bg-white";
 const containerStyle =
   "box-content mx-auto my-auto flex flex-col place-content-stretch gap-8 md:landscape:gap-4 3xl:gap-8 portrait:h-5/6 portrait:w-7/8 xs:portrait:w-full landscape:h-4/6 landscape:w-6/8 landscape:flex-row md:landscape:flex-col min-h-fit portrait:place-content-center ipad-surface-pro:portrait:h-[80vh] ipad-surface-pro:portrait:h-fit";
 const contactImageStyle =
-  "min-h-[40vh] basis-1/3 rounded-2xl bg-white border border-zinc-950 drop-shadow overflow-hidden ipad-surface-pro:portrait:min-h-[20vh] portrait:basis-0 md:landscape:basis-0";
+  "min-h-[40vh] basis-1/3 rounded-2xl bg-white drop-shadow overflow-hidden ipad-surface-pro:portrait:min-h-[20vh] portrait:basis-0 md:landscape:basis-0";
 const textContainerStyle =
-  "min-h-fit basis-2/3 rounded-2xl bg-white border border-zinc-950 drop-shadow p-8 pr-12 flex flex-col gap-4 portrait:pr-8 max-h-fit xs:portrait:p-4";
+  "min-h-fit basis-2/3 rounded-2xl bg-white drop-shadow p-8 pr-12 flex flex-col gap-4 portrait:pr-8 max-h-fit xs:portrait:p-4";
 const textBoxStyle = "flex flex-col gap-2 pb-4";
 const titleStyle = "font-serif font-bold text-3xl pb-2 border-b sm:text-2xl";
 const textStyle = "sm:text-base md:py-2";
