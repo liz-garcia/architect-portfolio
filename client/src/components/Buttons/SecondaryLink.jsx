@@ -7,7 +7,7 @@ const text =
   "font-normal text-zinc-900 text-center uppercase text-sm 3xl:text-xl";
 const layout = "block px-5 py-4 rounded-xl 3xl:px-8 3xl:py-5";
 const color = "bg-white border border-zinc-900 drop-shadow";
-const hoverColor = "hover:bg-sky-200 hover:border-sky-400";
+const hoverColor = "hover:bg-lime-100 hover:border-lime-500";
 const hoverFont = "hover:text-zinc-900 hover:text-sm 3xl:hover:text-xl";
 const transition =
   "hover:scale-105 transform transition ease-in-out duration-500";
