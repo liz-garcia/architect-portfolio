@@ -1,12 +1,14 @@
 import PropTypes from "prop-types";
 
-const LoadingSpinner = ({ height = "h-full", width = "w-full" }) => {
+const LoadingSpinner = () => {
   return (
     <div
       id="loadingSpinner"
-      className={`flex ${height} ${width} place-content-center`}
+      className={
+        "flex h-full w-full place-content-center items-center justify-center pb-8"
+      }
     >
-      <div className="mx-auto my-auto">
+      <div className="">
         <svg
           className="h-12 w-12 animate-spin text-zinc-700"
           xmlns="http://www.w3.org/2000/svg"

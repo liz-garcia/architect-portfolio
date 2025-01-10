@@ -48,18 +48,12 @@ function Home() {
 
   // * Handle 'isLoading' state
   if (isLoading) {
-    return <LoadingSpinner height="h-[50vh]" width="w-full" />;
+    return <LoadingSpinner />;
   }
 
   // * Handle 'error' state
   if (error) {
-    return (
-      <ErrorDisplay
-        error={new Error("Failed to load Portfolio data")}
-        height="h-[50vh]"
-        width="w-full"
-      />
-    );
+    return <ErrorDisplay error={new Error("Failed to load Portfolio data")} />;
   }
 
   return (
