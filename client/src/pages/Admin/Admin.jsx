@@ -1,5 +1,5 @@
 // Tailwind CSS classes
-const admin = "";
+const admin = "size-full";
 
 const Admin = () => {
   return (

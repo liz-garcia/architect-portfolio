@@ -1,7 +1,7 @@
 import PrimaryLink from "../components/Buttons/PrimaryLink";
 
 const notFoundStyle =
-  " flex flex-col items-center justify-center gap-2 h-[50vh] px-16 text-center xs-landscape:gap-1 xs-landscape:scale-90 m-12 py-8";
+  " flex flex-col items-center justify-center gap-2 h-full p-4 text-center xs-landscape:gap-1 xs-landscape:scale-90";
 
 const NotFoundPage = () => {
   return (

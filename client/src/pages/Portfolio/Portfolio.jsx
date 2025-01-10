@@ -3,10 +3,10 @@ import project1 from "../../assets/projects/project1.png";
 import project2 from "../../assets/projects/project2.png";
 import project3 from "../../assets/projects/project3.png";
 
-const portfolioPageStyle = "bg-white animate-fadeIn w-screen h-[75vh]";
+const portfolioPageStyle = "relative bg-red-200 animate-fadeIn w-full h-full";
 
 const Portfolio = () => {
-  const images = [project1, project2, project3, project2];
+  const images = [project1, project2, project3, project3];
 
   return (
     <div id="portfolioPage" className={portfolioPageStyle}>

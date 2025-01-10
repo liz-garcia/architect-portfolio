@@ -4,8 +4,9 @@ import Input from "../../components/Input.jsx";
 import PrimaryButton from "../../components/Buttons/PrimaryButton.jsx";
 import useFetch from "../../hooks/useFetch.js";
 
+const layoutContainer = "size-full flex items-center justify-center";
 const createUserStyle =
-  "flex flex-col text-center items-center justify-center gap-1 p-8 w-fit justify-self-center border border-zinc-800 rounded-2xl text-base m-8 3xl:text-lg/relaxed";
+  "flex flex-col text-center items-center justify-center gap-1 p-8 w-fit justify-self-center border border-zinc-800 rounded-2xl text-base 3xl:text-lg/relaxed mb-2";
 const headerStyle = "pb-4 mb-4 border-b border-zinc-800";
 const h1Style = "text-xl/tight font-bold 3xl:text-3xl/relaxed";
 const h2Style = "text-base 3xl:text-xl/relaxed";
@@ -59,56 +60,58 @@ const CreateUser = () => {
   }
 
   return (
-    <div id="createUser" className={createUserStyle}>
-      <header className={headerStyle}>
-        <h1 className={h1Style}>Create a new user</h1>
-        <h2 className={h2Style}>Please provide new user credentials.</h2>
-      </header>
-      <form onSubmit={handleSubmit} className={formStyle}>
-        <div className={containerStyle}>
-          <label htmlFor="username" className={labelStyle}>
-            Enter new username:
-          </label>
-          <Input
-            id="username"
-            name="username"
-            type="text"
-            value={username}
-            onChange={(value) => setUsername(value)}
-            required
-          />
-        </div>
-        <div className={containerStyle}>
-          <label htmlFor="password" className={labelStyle}>
-            Enter password:
-          </label>
-          <Input
-            id="password"
-            name="password"
-            type="password"
-            value={password}
-            onChange={(value) => setPassword(value)}
-            required
-          />
-        </div>
-        <div className={containerStyle}>
-          <label htmlFor="authCode" className={labelStyle}>
-            Enter authorization code:
-          </label>
-          <Input
-            id="authCode"
-            name="authCode"
-            type="password"
-            value={authCode}
-            onChange={(value) => setAuthCode(value)}
-            required
-          />
-        </div>
-        <div className={buttonContainer}>
-          <PrimaryButton type="submit">Submit</PrimaryButton>
-        </div>
-      </form>
-      {statusComponent}
+    <div className={layoutContainer}>
+      <div id="createUser" className={createUserStyle}>
+        <header className={headerStyle}>
+          <h1 className={h1Style}>Create a new user</h1>
+          <h2 className={h2Style}>Please provide new user credentials.</h2>
+        </header>
+        <form onSubmit={handleSubmit} className={formStyle}>
+          <div className={containerStyle}>
+            <label htmlFor="username" className={labelStyle}>
+              Enter new username:
+            </label>
+            <Input
+              id="username"
+              name="username"
+              type="text"
+              value={username}
+              onChange={(value) => setUsername(value)}
+              required
+            />
+          </div>
+          <div className={containerStyle}>
+            <label htmlFor="password" className={labelStyle}>
+              Enter password:
+            </label>
+            <Input
+              id="password"
+              name="password"
+              type="password"
+              value={password}
+              onChange={(value) => setPassword(value)}
+              required
+            />
+          </div>
+          <div className={containerStyle}>
+            <label htmlFor="authCode" className={labelStyle}>
+              Enter authorization code:
+            </label>
+            <Input
+              id="authCode"
+              name="authCode"
+              type="password"
+              value={authCode}
+              onChange={(value) => setAuthCode(value)}
+              required
+            />
+          </div>
+          <div className={buttonContainer}>
+            <PrimaryButton type="submit">Submit</PrimaryButton>
+          </div>
+        </form>
+        {statusComponent}
+      </div>
     </div>
   );
 };
