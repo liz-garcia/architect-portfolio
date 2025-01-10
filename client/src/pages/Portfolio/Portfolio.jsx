@@ -1,4 +1,4 @@
-import ImageGridCover from "../../components/Galleries/ImageGridCover.jsx";
+import ImageGrid from "../../components/Galleries/ImageGrid.jsx";
 import project1 from "../../assets/projects/project1.png";
 import project2 from "../../assets/projects/project2.png";
 import project3 from "../../assets/projects/project3.png";
@@ -10,7 +10,7 @@ const Portfolio = () => {
 
   return (
     <div id="portfolioPage" className={portfolioPageStyle}>
-      <ImageGridCover images={images} />
+      <ImageGrid images={images} />
     </div>
   );
 };
