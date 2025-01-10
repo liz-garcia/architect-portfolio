@@ -13,7 +13,7 @@ const featuredProjectsBgStyle =
 const imageContainerStyle =
   "flex items-center justify-center animate-fadeInUp min-h-[40px] overflow-hidden h-540-w-720-landscape:landscape:w-[27.5vw] 3xl:w-4/12 lg:w-3/12 2xl:w-4/12 mb-2 rounded-xl 3xl:rounded-2xl sm:size-full lg-md-portrait:w-4/12 lg-md-portrait:h-full xs-landscape:h-[80vh] drop-shadow-lg bg-white border border-zinc-900";
 const transition =
-  "hover:cursor-pointer hover:scale-105 transform transition ease-in-out duration-400";
+  "hover:cursor-pointer hover:scale-105 transform transition ease-in-out duration-800";
 
 const projectContainerStyle = `${imageContainerStyle} ${transition}`;
 
@@ -33,9 +33,9 @@ const FeaturedProjectsSection = () => {
           src={project1}
           altText="Project 1"
           objectFit="cover"
-          objectExtra="object-right-bottom sm:object-left-bottom xs:object-right-bottom hover:opacity-10 z-40"
+          objectExtra="object-right-bottom sm:object-left-bottom xs:object-right-bottom hover:opacity-10 z-40 transform transition ease-in-out duration-800"
         />
-        <p className="absolute z-10 transform place-self-center text-lg italic text-zinc-950 transition duration-500 ease-in-out">
+        <p className="duration-800 absolute z-10 transform place-self-center text-lg italic text-zinc-950 transition ease-in-out">
           Title Project 1
         </p>
       </div>
@@ -46,7 +46,7 @@ const FeaturedProjectsSection = () => {
           objectFit="cover"
           objectExtra="hover:opacity-10 z-40"
         />
-        <p className="absolute z-10 transform place-self-center text-lg italic text-zinc-950 transition duration-500 ease-in-out">
+        <p className="duration-800 absolute z-10 transform place-self-center text-lg italic text-zinc-950 transition ease-in-out">
           Title Project 2
         </p>
       </div>
@@ -57,7 +57,7 @@ const FeaturedProjectsSection = () => {
           objectFit="cover"
           objectExtra="object-bottom hover:opacity-10 z-40"
         />
-        <p className="absolute z-10 transform place-self-center text-lg italic text-zinc-950 transition duration-500 ease-in-out">
+        <p className="duration-800 absolute z-10 transform place-self-center text-lg italic text-zinc-950 transition ease-in-out">
           Title Project 3
         </p>
       </div>
