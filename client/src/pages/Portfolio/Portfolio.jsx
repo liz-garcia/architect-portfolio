@@ -3,7 +3,8 @@ import project1 from "../../assets/projects/project1.png";
 import project2 from "../../assets/projects/project2.png";
 import project3 from "../../assets/projects/project3.png";
 
-const portfolioPageStyle = "relative bg-white animate-fadeIn w-full h-full";
+const portfolioPageStyle =
+  "relative bg-gradient-to-br from-zinc-900 to-zinc-950 animate-fadeIn w-full h-full";
 
 const Portfolio = () => {
   const projects = [
