@@ -1,19 +1,13 @@
+import usePortfolio from "../../contexts/usePortfolio.js";
 import ImageGrid from "../../components/Galleries/ImageGrid.jsx";
-import project1 from "../../assets/projects/project1.png";
-import project2 from "../../assets/projects/project2.png";
-import project3 from "../../assets/projects/project3.png";
 
 const portfolioPageStyle =
   "relative bg-gradient-to-br from-zinc-900 to-zinc-950 animate-fadeIn w-full h-full";
 
 const Portfolio = () => {
-  const projects = [
-    { title: "Project 1", src: project1 },
-    { title: "Project 2", src: project2 },
-    { title: "Project 3", src: project3 },
-    { title: "Project 4", src: project3 },
-    { title: "Project 5", src: project1 },
-  ];
+  const { portfolio } = usePortfolio();
+
+  const projects = portfolio ? portfolio.projects : null;
 
   return (
     <div id="portfolioPage" className={portfolioPageStyle}>

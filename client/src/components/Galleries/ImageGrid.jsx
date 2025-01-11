@@ -1,4 +1,5 @@
 import PropTypes from "prop-types";
+import { Link } from "react-router-dom";
 
 // Tailwind CSS styles
 const gridContainerStyle =
@@ -17,13 +18,16 @@ const ImageGrid = ({ items }) => {
     <div className={gridContainerStyle}>
       {items.map((item, index) => (
         <div key={index} className={gridItemContainer}>
-          <div className="duration-400 z-40 size-full transform transition ease-in-out hover:opacity-10">
+          <Link
+            to={`/portfolio/${item.projectId}`}
+            className="duration-400 z-40 size-full transform transition ease-in-out hover:opacity-10"
+          >
             <img
               src={item.src}
               alt={`Image ${index + 1}`}
               className={gridImgStyle}
             />
-          </div>
+          </Link>
           <p className={titleStyle}>{item.title}</p>
         </div>
       ))}

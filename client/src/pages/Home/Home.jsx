@@ -1,6 +1,4 @@
 import usePortfolio from "../../contexts/usePortfolio.js";
-import LoadingSpinner from "../../components/LoadingSpinner.jsx";
-import ErrorDisplay from "../../components/ErrorDisplay.jsx";
 import { useEffect } from "react";
 import { useLocation } from "react-router-dom";
 import HeroSection from "./HeroSection.jsx";
@@ -13,7 +11,7 @@ const homeStyle = "animate-fadeInUp w-screen flex flex-col";
 // Home page
 function Home() {
   const location = useLocation();
-  const { portfolio, isLoading, error } = usePortfolio();
+  const { portfolio } = usePortfolio();
 
   // * If a hash is present in the URL, scroll to the corresponding id. After the transition, reset the URL to "/".
   useEffect(() => {
@@ -45,16 +43,6 @@ function Home() {
   const heroSectionData = portfolio ? portfolio.heroSection : null;
   const aboutSectionData = portfolio ? portfolio.aboutSection : null;
   const contactSectionData = portfolio ? portfolio.contactSection : null;
-
-  // * Handle 'isLoading' state
-  if (isLoading) {
-    return <LoadingSpinner />;
-  }
-
-  // * Handle 'error' state
-  if (error) {
-    return <ErrorDisplay error={new Error("Failed to load Portfolio data")} />;
-  }
 
   return (
     <>
