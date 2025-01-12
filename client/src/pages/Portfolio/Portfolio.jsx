@@ -2,7 +2,7 @@ import usePortfolio from "../../contexts/usePortfolio.js";
 import ImageGrid from "../../components/Galleries/ImageGrid.jsx";
 
 const portfolioPageStyle =
-  "relative bg-gradient-to-br from-zinc-900 to-zinc-950 animate-fadeIn w-full h-full";
+  "relative bg-gradient-to-br from-zinc-900 to-zinc-950 animate-fadeInUp w-full h-full";
 
 const Portfolio = () => {
   const { portfolio } = usePortfolio();
