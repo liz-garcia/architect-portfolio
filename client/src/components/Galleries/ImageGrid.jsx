@@ -23,7 +23,7 @@ const ImageGrid = ({ items }) => {
             className="duration-400 z-40 size-full transform transition ease-in-out hover:opacity-10"
           >
             <img
-              src={item.src}
+              src={item.mainImg}
               alt={`Image ${index + 1}`}
               className={gridImgStyle}
             />
