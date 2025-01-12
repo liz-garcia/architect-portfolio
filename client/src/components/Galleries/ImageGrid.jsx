@@ -11,6 +11,7 @@ const titleStyle =
   "absolute z-10 transform place-self-center text-lg italic text-zinc-950 transition duration-400 ease-in-out";
 
 // * Parent container to this component should always be set to 'relative' and set clear dimensions for the ImageGridCover component to inherit
+// * This component is designed to work with the projects array from our database
 
 // ImageGrid component
 const ImageGrid = ({ items }) => {
