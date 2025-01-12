@@ -8,7 +8,7 @@ import SecondaryLink from "../../components/Buttons/SecondaryLink.jsx";
 const contactStyle =
   "relative h-screen min-h-fit p-24 xl:p-20 lg:p-16 mt-4 flex items-center bg-gradient-to-br from-zinc-900 to-zinc-950 place-content-center portrait:h-fit 3xl:h-screen h-1260-w-1024:h-[50vh] h-1260-w-1024:max-h-fit ipad-surface-pro:portrait:h-fit xs:portrait:py-8 xs:portrait:px-6 md:landscape:h-fit";
 const contactImageBgStyle =
-  "absolute size-full mix-blend-overlay opacity-15 bg-white";
+  "absolute size-full mix-blend-overlay opacity-100 bg-white";
 const containerStyle =
   "box-content mx-auto my-auto flex flex-col place-content-stretch gap-8 md:landscape:gap-4 3xl:gap-8 portrait:h-5/6 portrait:w-7/8 xs:portrait:w-full landscape:h-4/6 landscape:w-6/8 landscape:flex-row md:landscape:flex-col min-h-fit portrait:place-content-center ipad-surface-pro:portrait:h-[80vh] ipad-surface-pro:portrait:h-fit";
 const contactImageStyle =
