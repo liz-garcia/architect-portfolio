@@ -80,6 +80,7 @@ export default {
       },
       // ! Extend to add specific tag for specific screen size (max-values)
       screens: {
+        "h-3xl": "(min-height: 1000px) and (min-width: 1100px)",
         // ! Specific for 'iPhone X' screen size
         "h-375-w-812": {
           raw: "(max-width: 375px) and (min-width: 374px) and (max-height: 812px) and (min-height: 811px)",
@@ -136,6 +137,9 @@ export default {
         },
         "h-1260-w-1024": {
           raw: "(min-width: 1024px) and (max-width: 1536px) and (min-height: 1081px) and (max-height: 1370px)",
+        },
+        "h-3xl": {
+          raw: "(min-width: 1024px) and (min-height: 900px) and (max-height: 2800px)",
         },
         // ! Specific for 'lg' screens, excluding md and smaller
         "lg-portrait": {

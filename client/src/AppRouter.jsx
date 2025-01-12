@@ -5,7 +5,8 @@ import NotFoundPage from "./pages/NotFoundPage.jsx";
 
 // * Lazy loading
 const Home = React.lazy(() => import("./pages/Home/Home.jsx"));
-const Projects = React.lazy(() => import("./pages/Portfolio/Projects.jsx"));
+const Portfolio = React.lazy(() => import("./pages/Portfolio/Portfolio.jsx"));
+const Project = React.lazy(() => import("./pages/Portfolio/Project.jsx"));
 
 // * Admin pages
 import Admin from "./pages/Admin/Admin.jsx";
@@ -17,7 +18,8 @@ const AppRouter = () => {
       <Routes>
         {/* Home page includes the About page as AboutSection */}
         <Route path="/" element={<Home />} />
-        <Route path="/portfolio/projects" element={<Projects />} />
+        <Route path="/portfolio" element={<Portfolio />} />
+        <Route path="/portfolio/:projectId" element={<Project />} />
 
         {/* Admin routes */}
         <Route path="/admin" element={<Admin />} />

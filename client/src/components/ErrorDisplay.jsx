@@ -1,14 +1,18 @@
 import PropTypes from "prop-types";
 
-const ErrorDisplay = ({ error, height = "h-full", width = "w-full" }) => {
+const ErrorDisplay = ({ error }) => {
   return (
     <div
       id="errorDisplay"
-      className={`flex ${height} ${width} place-content-center`}
+      className={
+        "flex h-full w-full place-content-center items-center justify-center text-center"
+      }
     >
-      <div className="mx-auto my-auto">
-        <p className="mx-auto my-auto text-center italic">
-          {`Unexpected error: ${error?.message.toString() || "Unknown error"}. Please try again later.`}
+      <div className="mx-auto my-auto pb-8">
+        <h1 className="text-2xl font-black 3xl:text-6xl">Oops!</h1>
+        <h2 className="text-xl font-bold 3xl:text-4xl">Unexpected error</h2>
+        <p className="mx-auto my-auto text-center text-lg italic">
+          {`${error?.message.toString() || "Unknown error"}. Please try again later.`}
         </p>
       </div>
     </div>
@@ -18,8 +22,6 @@ const ErrorDisplay = ({ error, height = "h-full", width = "w-full" }) => {
 // Prop-types validation
 ErrorDisplay.propTypes = {
   error: PropTypes.oneOfType([PropTypes.string, PropTypes.object]).isRequired,
-  height: PropTypes.string.isRequired,
-  width: PropTypes.string.isRequired,
 };
 
 export default ErrorDisplay;

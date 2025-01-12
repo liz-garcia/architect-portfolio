@@ -24,7 +24,7 @@ const elevatorPitchStyle =
 const dividerStyle1 =
   "absolute -right-[56px] xl:-right-[56px] 2xl:-right-[36px] xl:w-4/5 w-2/3 h-12 border-b border-zinc-300 lg:hidden h-1260-w-1024:hidden 3xl:hidden";
 const buttonContainerStyle =
-  "flex justify-between gap-4 sm:py-0 md:py-4 xl:py-2 2xl:py-0 3xl:py-4 3xl:gap-4 items-center h-1180-1550:pb-2 xs-landscape:py-1 xs-landscape:pb-0 xs-landscape:gap-2 h-658-w-320-landscape:landscape:scale-95 h-658-w-320-landscape:landscape:ml-24 h-667-w-375-landscape:landscape:pt-1 h-540-w-720-landscape:landscape:pt-2 h-540-w-720-landscape:landscape:pb-2 h-414-w-736-landscape:landscape:pt-2 h-375-w-812-landscape:landscape:scale-95 h-375-w-812-landscape:landscape:ml-8";
+  "flex justify-between gap-2 sm:py-0 md:py-4 xl:py-2 2xl:py-0 3xl:py-4 3xl:gap-4 items-center h-1180-1550:pb-2 xs-landscape:py-1 xs-landscape:pb-0 xs-landscape:gap-2 h-658-w-320-landscape:landscape:scale-95 h-658-w-320-landscape:landscape:ml-24 h-667-w-375-landscape:landscape:pt-1 h-540-w-720-landscape:landscape:pt-2 h-540-w-720-landscape:landscape:pb-2 h-414-w-736-landscape:landscape:pt-2 h-375-w-812-landscape:landscape:scale-95 h-375-w-812-landscape:landscape:ml-8";
 const dividerStyle2 =
   "flex-1 border-b border-zinc-300 h-658-w-320-landscape:landscape:scale-x-[2.5] h-658-w-320-landscape:landscape:mr-20 h-375-w-812-landscape:landscape:mr-10 h-375-w-812-landscape:landscape:scale-x-[1.2]";
 
@@ -72,9 +72,7 @@ const AboutMeSection = ({ data }) => {
               ></div>
               <SecondaryLink to="/#resume">CV Highlights</SecondaryLink>
               <PrimaryLink
-                to={
-                  isSmallScreen ? "/#featuredProjects" : "/portfolio/projects"
-                }
+                to={isSmallScreen ? "/#featuredProjects" : "/portfolio"}
               >
                 {isSmallScreen ? "Featured projects" : "View all projects"}
               </PrimaryLink>
