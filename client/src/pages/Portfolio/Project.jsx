@@ -2,14 +2,20 @@ import { useEffect } from "react";
 import { useParams } from "react-router-dom";
 import usePortfolio from "../../contexts/usePortfolio.js";
 import Image from "../../components/Image";
+import InlineBoxList from "../../components/InlineBoxList.jsx";
 import NotFoundPage from "../NotFoundPage.jsx";
 
-const projectPageStyle = "animate-fadeInUp w-full flex flex-col";
-const projectHeroSectionStyle = "h-[88dvh] xs:h-[84dvh] xs-landscape:h-[84dvh]";
-const projectHeroImgStyle = "h-3/4";
-const projectTitleStyle = "bg-gradient-to-br from-zinc-900 to-zinc-950 h-1/4";
-const aboutProjectStyle = "h-screen";
+const projectPageStyle = "animate-fadeInUp w-full flex flex-col items-stretch";
+const projectHeroSectionStyle = "h-[40dvh]";
+const projectHeroImgStyle = "size-full";
+const aboutProjectStyle = "w-full flex px-16 pb-2";
+const projectDataStyle = "w-1/2 p-12";
+const projectTitle = "font-serif text-3xl font-bold italic";
+const projectDetails = "mb-1";
+const projectDescriptionText = "";
+const projectHighlightsStyle = "w-1/2 bg-sky-200";
 
+// Project page component
 const Project = () => {
   const { projectId } = useParams();
   const { portfolio } = usePortfolio();
@@ -44,9 +50,17 @@ const Project = () => {
             objectExtra="object-bottom"
           />
         </div>
-        <div id="projectTitle" className={projectTitleStyle}></div>
       </div>
-      <div id="aboutProject" className={aboutProjectStyle}></div>
+      <div id="aboutProject" className={aboutProjectStyle}>
+        <div id="projectData" className={projectDataStyle}>
+          <h1 className={projectTitle}>{projectData.title}</h1>
+          <div className={projectDetails}>
+            <InlineBoxList array={projectData.details} />
+          </div>
+          <p className={projectDescriptionText}>{projectData.description}</p>
+        </div>
+        <div id="projectHighlights" className={projectHighlightsStyle}></div>
+      </div>
     </div>
   );
 };
