@@ -10,7 +10,7 @@ const gridImgStyle = "w-full h-full object-cover rounded-xl 3xl:rounded-2xl";
 const titleStyle =
   "absolute z-10 transform place-self-center text-lg italic text-zinc-950 transition duration-400 ease-in-out p-8";
 
-// * Parent container to this component should always be set to 'relative' and set clear dimensions for the ImageGridCover component to inherit
+// * Parent container to this component should always set clear dimensions for the ImageGrid component to inherit
 // * This component is designed to work with the projects array from our database
 
 // ImageGrid component
