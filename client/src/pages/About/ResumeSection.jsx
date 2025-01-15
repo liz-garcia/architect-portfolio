@@ -4,7 +4,7 @@ import resumePicture2 from "../../assets/resumePictures/resumePicture2.png";
 import Image from "../../components/Image.jsx";
 import PrimaryLink from "../../components/Buttons/PrimaryLink.jsx";
 import InfoContainer from "../../components/InfoContainer.jsx";
-import InlineDotList from "../../components/InlineDotList.jsx";
+import InlineDotList from "../../components/Lists/InlineDotList.jsx";
 
 const resumeSectionStyle =
   "min-h-fit h-screen grid grid-cols-3 xl:grid-cols-[1fr_1fr_1fr] grid-rows-[1fr_2fr] lg:grid-rows-[2fr_1fr_3fr] lg:grid-cols-[1fr_1fr_1fr] gap-4 xl:gap-2 px-16 py-12 pb-4 lg:px-12 3xl:pt-10 lg:pt-8 lg:pb-2 lg:portrait:grid-rows-[auto_auto_1fr] lg:portrait:px-14 lg:portrait:py-12 lg:portrait:gap-4 3xl:p-20 md:portrait:gap-4 md:portrait:px-10 md:portrait:pt-10 md:portrait:pb-0 sm:portrait:min-h-fit sm:portrait:h-screen sm:flex sm:flex-col sm:portrait:flex sm:portrait:flex-col sm:portrait:px-12 sm:portrait:gap-4 xs:portrait:gap-4 sm:portrait:place-content-center sm:portrait:pt-8 sm:portrait:pb-8 xs:portrait:py-8 xs:portrait:px-8 xs-landscape:px-10 xs-landscape:pb-8 h-1260-w-1024:h-[50vh] ipad-surface-pro:portrait:h-[100vh] ipad-surface-pro:portrait:gap-2 ipad-surface-pro:portrait:p-12 ipad-surface-pro:portrait:pb-2 h-568-w-320-landscape:grid-rows-[2fr_1fr] h-568-w-320-landscape:landscape:py-6 h-568-w-320-landscape:landscape:px-8 h-667-w-375-landscape-extra:gap-1 h-667-w-375-landscape-extra:py-6 h-667-w-375-landscape-extra:grid-rows-[2fr_1fr] 2xs:portrait:gap-2 ipad-surface-pro-landscape:pt-20 ipad-surface-pro-landscape:pb-12";

@@ -2,7 +2,7 @@ import { useEffect } from "react";
 import { useParams } from "react-router-dom";
 import usePortfolio from "../../contexts/usePortfolio.js";
 import Image from "../../components/Image";
-import InlineBoxList from "../../components/InlineBoxList.jsx";
+import InlineBoxList from "../../components/Lists/InlineBoxList.jsx";
 import NotFoundPage from "../NotFoundPage.jsx";
 
 const projectPageStyle = "animate-fadeInUp w-full flex flex-col items-stretch";
@@ -13,7 +13,7 @@ const projectDataStyle = "w-1/2 p-12";
 const projectTitle = "font-serif text-3xl font-bold italic";
 const projectDetails = "mb-1";
 const projectDescriptionText = "";
-const projectHighlightsStyle = "w-1/2 bg-sky-200";
+const projectHighlightsStyle = "w-1/2 bg-sky-200 p-12";
 
 // Project page component
 const Project = () => {
