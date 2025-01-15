@@ -3,6 +3,7 @@ import { useParams } from "react-router-dom";
 import usePortfolio from "../../contexts/usePortfolio.js";
 import Image from "../../components/Image";
 import InlineBoxList from "../../components/Lists/InlineBoxList.jsx";
+import RegularList from "../../components/Lists/RegularList.jsx";
 import NotFoundPage from "../NotFoundPage.jsx";
 
 const projectPageStyle = "animate-fadeInUp w-full flex flex-col items-stretch";
@@ -13,7 +14,7 @@ const projectDataStyle = "w-1/2 p-12";
 const projectTitle = "font-serif text-3xl font-bold italic";
 const projectDetails = "mb-1";
 const projectDescriptionText = "";
-const projectHighlightsStyle = "w-1/2 bg-sky-200 p-12";
+const projectHighlightsStyle = "w-1/2 bg-sky-200 p-12 flex items-center";
 
 // Project page component
 const Project = () => {
@@ -59,7 +60,9 @@ const Project = () => {
           </div>
           <p className={projectDescriptionText}>{projectData.description}</p>
         </div>
-        <div id="projectHighlights" className={projectHighlightsStyle}></div>
+        <div id="projectHighlights" className={projectHighlightsStyle}>
+          <RegularList array={projectData.highlights} />
+        </div>
       </div>
     </div>
   );
