@@ -1,9 +1,9 @@
 import PropTypes from "prop-types";
 
 // Tailwind CSS styles
-const list = "leading-tight flex flex-col gap-4 h-fit border-2";
+const list = "leading-tight flex flex-col gap-4 h-fit";
 const dotStyle =
-  "w-1 h-1 3xl:w-2 3xl:h-2 bg-lime-400 border border-lime-400 rounded place-self-center ml-2 3xl:ml-4";
+  "w-2 h-2 3xl:w-2 3xl:h-2 bg-lime-400 border border-lime-400 rounded place-self-center ml-2 3xl:ml-4";
 
 // RegularList component
 const RegularList = ({ array }) => {

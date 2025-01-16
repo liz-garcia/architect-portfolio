@@ -14,7 +14,7 @@ const projectDataStyle = "w-1/2 p-12";
 const projectTitle = "font-serif text-3xl font-bold italic";
 const projectDetails = "mb-1";
 const projectDescriptionText = "";
-const projectHighlightsStyle = "w-1/2 bg-sky-200 p-12 flex items-center";
+const projectDataHighlightsStyle = "w-1/2 p-12 flex items-center";
 
 // Project page component
 const Project = () => {
@@ -60,7 +60,7 @@ const Project = () => {
           </div>
           <p className={projectDescriptionText}>{projectData.description}</p>
         </div>
-        <div id="projectHighlights" className={projectHighlightsStyle}>
+        <div id="projectDataHighlights" className={projectDataHighlightsStyle}>
           <RegularList array={projectData.highlights} />
         </div>
       </div>
