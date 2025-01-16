@@ -5,7 +5,9 @@ import Image from "../../components/Image";
 import InlineBoxList from "../../components/Lists/InlineBoxList.jsx";
 import RegularList from "../../components/Lists/RegularList.jsx";
 import NotFoundPage from "../NotFoundPage.jsx";
+import MasonryGallery from "../../components/Galleries/MasonryGallery.jsx";
 
+// Tailwind utility classes
 const projectPageStyle = "animate-fadeInUp w-full flex flex-col items-stretch";
 const projectHeroSectionStyle = "h-[40dvh]";
 const projectHeroImgStyle = "size-full";
@@ -15,6 +17,7 @@ const projectTitle = "font-serif text-3xl font-bold italic";
 const projectDetails = "mb-1";
 const projectDescriptionText = "";
 const projectDataHighlightsStyle = "w-1/2 p-12 flex items-center";
+const projectGalleryStyle = "px-36";
 
 // Project page component
 const Project = () => {
@@ -64,6 +67,9 @@ const Project = () => {
           <RegularList array={projectData.highlights} />
         </div>
       </div>
+      <section id="projectGallery" className={projectGalleryStyle}>
+        <MasonryGallery imageUrls={projectData.gallery} />
+      </section>
     </div>
   );
 };
