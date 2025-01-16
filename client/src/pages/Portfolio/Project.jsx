@@ -8,7 +8,8 @@ import NotFoundPage from "../NotFoundPage.jsx";
 import MasonryGallery from "../../components/Galleries/MasonryGallery.jsx";
 
 // Tailwind utility classes
-const projectPageStyle = "animate-fadeInUp w-full flex flex-col items-stretch";
+const projectPageStyle =
+  "animate-fadeInUp w-full flex flex-col items-stretch mb-12 sm:mb-8";
 const projectHeroSectionStyle = "h-[40dvh]";
 const projectHeroImgStyle = "size-full";
 const aboutProjectStyle = "w-full flex px-16 pb-2";
@@ -17,7 +18,7 @@ const projectTitle = "font-serif text-3xl font-bold italic";
 const projectDetails = "mb-1";
 const projectDescriptionText = "";
 const projectDataHighlightsStyle = "w-1/2 p-12 flex items-center";
-const projectGalleryStyle = "px-36";
+const projectGalleryStyle = "place-self-center w-5/6  p-4";
 
 // Project page component
 const Project = () => {
