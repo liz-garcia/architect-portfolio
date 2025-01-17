@@ -12,12 +12,14 @@ const projectPageStyle =
   "animate-fadeInUp w-full flex flex-col items-stretch mb-12 sm:mb-8";
 const projectHeroSectionStyle = "h-[40dvh]";
 const projectHeroImgStyle = "size-full";
-const aboutProjectStyle = "w-full flex px-16 pb-2";
-const projectDataStyle = "w-1/2 p-12";
+const aboutProjectStyle =
+  "w-full flex px-16 pb-2 gap-2 md:flex-col md:px-8 md:pt-4";
+const projectDataStyle = "w-1/2 p-12 md:w-full md:p-4";
 const projectTitle = "font-serif text-3xl font-bold italic";
 const projectDetails = "mb-1";
-const projectDescriptionText = "";
-const projectDataHighlightsStyle = "w-1/2 p-12 flex items-center";
+const projectDescriptionText = "mt-2";
+const projectDataHighlightsStyle =
+  "w-1/2 p-12 flex items-center md:w-full md:p-4 md:pl-2";
 const projectGalleryStyle = "place-self-center w-5/6  p-4";
 
 // Project page component
