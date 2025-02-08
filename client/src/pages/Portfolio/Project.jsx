@@ -2,14 +2,27 @@ import { useEffect } from "react";
 import { useParams } from "react-router-dom";
 import usePortfolio from "../../contexts/usePortfolio.js";
 import Image from "../../components/Image";
+import InlineBoxList from "../../components/Lists/InlineBoxList.jsx";
+import RegularList from "../../components/Lists/RegularList.jsx";
 import NotFoundPage from "../NotFoundPage.jsx";
+import MasonryGallery from "../../components/Galleries/MasonryGallery.jsx";
 
-const projectPageStyle = "animate-fadeInUp w-full flex flex-col";
-const projectHeroSectionStyle = "h-[88dvh] xs:h-[84dvh] xs-landscape:h-[84dvh]";
-const projectHeroImgStyle = "h-3/4";
-const projectTitleStyle = "bg-gradient-to-br from-zinc-900 to-zinc-950 h-1/4";
-const aboutProjectStyle = "h-screen";
+// Tailwind utility classes
+const projectPageStyle =
+  "animate-fadeInUp w-full flex flex-col items-stretch mb-12 sm:mb-8";
+const projectHeroSectionStyle = "h-[40dvh]";
+const projectHeroImgStyle = "size-full";
+const aboutProjectStyle =
+  "w-full flex px-16 pb-2 gap-2 md:flex-col md:px-8 md:pt-4";
+const projectDataStyle = "w-1/2 p-12 md:w-full md:p-4";
+const projectTitle = "font-serif text-3xl font-bold italic";
+const projectDetails = "mb-1";
+const projectDescriptionText = "mt-2";
+const projectDataHighlightsStyle =
+  "w-1/2 p-12 flex items-center md:w-full md:p-4 md:pl-2";
+const projectGalleryStyle = "place-self-center w-5/6  p-4";
 
+// Project page component
 const Project = () => {
   const { projectId } = useParams();
   const { portfolio } = usePortfolio();
@@ -44,9 +57,22 @@ const Project = () => {
             objectExtra="object-bottom"
           />
         </div>
-        <div id="projectTitle" className={projectTitleStyle}></div>
       </div>
-      <div id="aboutProject" className={aboutProjectStyle}></div>
+      <div id="aboutProject" className={aboutProjectStyle}>
+        <div id="projectData" className={projectDataStyle}>
+          <h1 className={projectTitle}>{projectData.title}</h1>
+          <div className={projectDetails}>
+            <InlineBoxList array={projectData.details} />
+          </div>
+          <p className={projectDescriptionText}>{projectData.description}</p>
+        </div>
+        <div id="projectDataHighlights" className={projectDataHighlightsStyle}>
+          <RegularList array={projectData.highlights} />
+        </div>
+      </div>
+      <section id="projectGallery" className={projectGalleryStyle}>
+        <MasonryGallery imageUrls={projectData.gallery} />
+      </section>
     </div>
   );
 };

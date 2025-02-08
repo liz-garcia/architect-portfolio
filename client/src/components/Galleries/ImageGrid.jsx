@@ -3,14 +3,14 @@ import { Link } from "react-router-dom";
 
 // Tailwind CSS styles
 const gridContainerStyle =
-  "absolute w-full h-full grid grid-cols-3 auto-rows-fr gap-6 lg:relative lg:grid-cols-2 sm:grid-cols-1 xs:gap-4 p-12 xs:p-4 xs-landscape:landscape:h-[200vh]";
+  "w-full h-full grid grid-cols-3 auto-rows-fr gap-8 lg:grid-cols-2 sm:grid-cols-1 p-16 xs:p-12 xs-landscape:landscape:grid-cols-3 3xl:grid-cols-5 3xl:p-20 3xl:gap-10 3xl:py-24";
 const gridItemContainer =
   "flex items-center justify-center overflow-hidden drop-shadow-lg hover:bg-white rounded-xl 3xl:rounded-2xl hover:border hover:border-zinc-800 hover:cursor-pointer hover:scale-105 transform transition ease-in-out duration-400";
 const gridImgStyle = "w-full h-full object-cover rounded-xl 3xl:rounded-2xl";
 const titleStyle =
-  "absolute z-10 transform place-self-center text-lg italic text-zinc-950 transition duration-400 ease-in-out";
+  "absolute z-10 transform place-self-center text-lg italic text-zinc-950 transition duration-400 ease-in-out p-8";
 
-// * Parent container to this component should always be set to 'relative' and set clear dimensions for the ImageGridCover component to inherit
+// * Parent container to this component should always set clear dimensions for the ImageGrid component to inherit
 // * This component is designed to work with the projects array from our database
 
 // ImageGrid component
